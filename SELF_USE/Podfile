@@ -1,6 +1,18 @@
 platform :ios, '7.0'
 
 
+pod 'MJExtension'
+
+pod 'AFNetworking'
+
+pod 'Masonry'
+
+pod 'MJRefresh'
+
+pod 'MJPhotoBrowser'
+
+pod 'YYKit'
+
 
 target 'sdfd' do
 
