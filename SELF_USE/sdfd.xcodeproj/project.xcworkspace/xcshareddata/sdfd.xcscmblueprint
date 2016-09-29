@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8e640d66-b22b-4ea2-b94f-869352220f67++8436",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8e640d66-b22b-4ea2-b94f-869352220f67++8436" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8e640d66-b22b-4ea2-b94f-869352220f67++8436" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DEDDFB7C-E8E8-4680-A8AD-A266E6D29895",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8e640d66-b22b-4ea2-b94f-869352220f67++8436" : "%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "sdfd",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "sdfd.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/myfirstTest_liangqica",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8e640d66-b22b-4ea2-b94f-869352220f67++8436"
+    }
+  ]
+}

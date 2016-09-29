@@ -1,0 +1,36 @@
+//
+//  projectPch.pch
+//  sdfd
+//
+//  Created by 梁齐才 on 16/5/26.
+//  Copyright © 2016年 梁齐才. All rights reserved.
+//
+
+#ifndef projectPch_pch
+#define projectPch_pch
+
+// 日志输出
+#ifdef DEBUG
+#define LQCDLog(...) NSLog(__VA_ARGS__)
+#else
+#define LQCDLog(...)
+#endif
+
+//设备的高度
+#define DeviceWidth  [UIScreen mainScreen].bounds.size.width
+#define DeviceHeight [UIScreen mainScreen].bounds.size.height
+
+
+//pods 引入的第三方库
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import <MJExtension.h>
+
+//常见的分类
+#import "UIColor+Usual.h"
+#import "NSString+Usual.h"
+#import "NSObject+Usual.h"
+#import "NSArray+Usual.h"
+
+
+#endif

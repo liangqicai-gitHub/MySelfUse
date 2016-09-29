@@ -1,0 +1,50 @@
+//
+//  BaseNavigationControl.m
+//  sdfd
+//
+//  Created by 梁齐才 on 16/5/30.
+//  Copyright © 2016年 梁齐才. All rights reserved.
+//
+
+#import "BaseNavigationControl.h"
+
+@interface BaseNavigationControl ()
+
+@end
+
+@implementation BaseNavigationControl
+
+
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
+{
+    if (self = [super initWithRootViewController:rootViewController]){
+        [self configerNavigationBar];
+    }
+    return self;
+}
+
+
+- (void)configerNavigationBar
+{
+    self.navigationBar.translucent = NO;
+    UIColor *barTintColor = HexRGB(0x262e2e);
+    self.navigationBar.barTintColor = barTintColor;
+    
+    UIColor *titleColor = HexRGB(0xfecb16);
+    NSDictionary *titleAttributes = @{
+                                      NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
+                                      NSForegroundColorAttributeName:titleColor
+                                      };
+    [self.navigationBar setTitleTextAttributes:titleAttributes];
+}
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+
+
+
+@end
