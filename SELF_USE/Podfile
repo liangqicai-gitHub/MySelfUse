@@ -1,5 +1,6 @@
 platform :ios, '7.0'
 
+target 'sdfd' do
 
 pod 'MJExtension'
 
@@ -13,7 +14,10 @@ pod 'MJPhotoBrowser'
 
 pod 'YYKit'
 
+end
 
-target 'sdfd' do
+target 'mytodayWidge' do
+
+pod 'AFNetworking'
 
 end

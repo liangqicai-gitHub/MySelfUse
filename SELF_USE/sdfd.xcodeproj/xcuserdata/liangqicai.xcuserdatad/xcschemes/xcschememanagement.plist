@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>mytodayWidge.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>sdfd.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>DFA7ACE61CF5B1EE00BFDB62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DFE354F91DAA1AA90023432B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

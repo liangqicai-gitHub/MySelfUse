@@ -7,7 +7,10 @@
 //
 
 #import "MineMainControl.h"
-#import "TestKeyBoradVC.h"
+
+
+#import "OpenURLTestVC.h"
+
 
 
 @interface MineMainControl ()
@@ -22,8 +25,10 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender {
     
-    TestKeyBoradVC *vc = [[TestKeyBoradVC alloc] init];
     
+    
+    OpenURLTestVC *vc = [[OpenURLTestVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
     
 }

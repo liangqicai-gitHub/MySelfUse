@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69D56EF086B6BB07F7DCC0E1 /* libPods-mytodayWidge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */; };
 		DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D198A1CFBEAF40032083A /* AppDelegate.m */; };
 		DF2D198E1CFBEB090032083A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D198D1CFBEB090032083A /* main.m */; };
 		DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2D199A1CFBED590032083A /* Assets.xcassets */; };
@@ -39,6 +40,12 @@
 		DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA651CF6F1A400A4AF48 /* UIColor+Usual.m */; };
 		DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */; };
 		DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */; };
+		DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */; };
+		DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE354FF1DAA1AA90023432B /* TodayViewController.m */; };
+		DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE355011DAA1AA90023432B /* MainInterface.storyboard */; };
+		DFE355071DAA1AA90023432B /* mytodayWidge.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */; };
+		DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */; };
 		DFED5D031D08131E0081F4AD /* UILabel+SelfAdaption.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED5D021D08131E0081F4AD /* UILabel+SelfAdaption.m */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
 		F18915BE02ABEED0D008D105 /* libPods-sdfd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */; };
@@ -52,10 +59,33 @@
 			remoteGlobalIDString = DFA7ACCD1CF5B1EE00BFDB62;
 			remoteInfo = sdfd;
 		};
+		DFE355051DAA1AA90023432B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFA7ACC61CF5B1EE00BFDB62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE354F91DAA1AA90023432B;
+			remoteInfo = mytodayWidge;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DFE3550B1DAA1AA90023432B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFE355071DAA1AA90023432B /* mytodayWidge.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F06D23A08A3A93E89D89AEA /* Pods-mytodayWidge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.release.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.release.xcconfig"; sourceTree = "<group>"; };
 		50521BE7CC82AE295AE7F64D /* Pods-sdfd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.debug.xcconfig"; sourceTree = "<group>"; };
+		7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mytodayWidge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sdfd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47AFF679C745063B96491B8 /* Pods-sdfd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.release.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.release.xcconfig"; sourceTree = "<group>"; };
 		DF2D198A1CFBEAF40032083A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,10 +144,20 @@
 		DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Usual.m"; sourceTree = "<group>"; };
 		DFB5CA6A1CF6FB8400A4AF48 /* NSArray+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Usual.h"; sourceTree = "<group>"; };
 		DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Usual.m"; sourceTree = "<group>"; };
+		DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = mytodayWidge.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		DFE354FE1DAA1AA90023432B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		DFE354FF1DAA1AA90023432B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		DFE355021DAA1AA90023432B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DFE355041DAA1AA90023432B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFED53941DA9DE4E001D558A /* OpenURLTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenURLTestVC.h; sourceTree = "<group>"; };
+		DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenURLTestVC.m; sourceTree = "<group>"; };
+		DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenURLTestVC.xib; sourceTree = "<group>"; };
 		DFED5D011D08131E0081F4AD /* UILabel+SelfAdaption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SelfAdaption.h"; sourceTree = "<group>"; };
 		DFED5D021D08131E0081F4AD /* UILabel+SelfAdaption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SelfAdaption.m"; sourceTree = "<group>"; };
 		DFF52FF71D01977300BAC9F3 /* NSAttributedString+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Usual.h"; sourceTree = "<group>"; };
 		DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Usual.m"; sourceTree = "<group>"; };
+		E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +176,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFE354F71DAA1AA90023432B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */,
+				69D56EF086B6BB07F7DCC0E1 /* libPods-mytodayWidge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -144,6 +193,8 @@
 			children = (
 				50521BE7CC82AE295AE7F64D /* Pods-sdfd.debug.xcconfig */,
 				C47AFF679C745063B96491B8 /* Pods-sdfd.release.xcconfig */,
+				E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */,
+				3F06D23A08A3A93E89D89AEA /* Pods-mytodayWidge.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -152,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */,
+				DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */,
+				7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -309,6 +362,7 @@
 			children = (
 				DFA7ACD01CF5B1EE00BFDB62 /* sdfd */,
 				DFA7ACEA1CF5B1EE00BFDB62 /* sdfdTests */,
+				DFE354FD1DAA1AA90023432B /* mytodayWidge */,
 				DFA7ACCF1CF5B1EE00BFDB62 /* Products */,
 				28FF801FC5505EDBCD802447 /* Pods */,
 				A2314579EA92A85AF7121E2A /* Frameworks */,
@@ -320,6 +374,7 @@
 			children = (
 				DFA7ACCE1CF5B1EE00BFDB62 /* sdfd.app */,
 				DFA7ACE71CF5B1EE00BFDB62 /* sdfdTests.xctest */,
+				DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,6 +440,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFED53931DA9DE2C001D558A /* 测试跳转系统设置 */,
 				DF8FBC241D66ED3D00E5BDC6 /* 测试YYKeyBroad */,
 				DFA7ACFA1CF5B98B00BFDB62 /* Root */,
 				DF85ED6B1CFD5C7A00D3FE0C /* 发现 */,
@@ -424,6 +480,27 @@
 			path = "同步的AF";
 			sourceTree = "<group>";
 		};
+		DFE354FD1DAA1AA90023432B /* mytodayWidge */ = {
+			isa = PBXGroup;
+			children = (
+				DFE354FE1DAA1AA90023432B /* TodayViewController.h */,
+				DFE354FF1DAA1AA90023432B /* TodayViewController.m */,
+				DFE355011DAA1AA90023432B /* MainInterface.storyboard */,
+				DFE355041DAA1AA90023432B /* Info.plist */,
+			);
+			path = mytodayWidge;
+			sourceTree = "<group>";
+		};
+		DFED53931DA9DE2C001D558A /* 测试跳转系统设置 */ = {
+			isa = PBXGroup;
+			children = (
+				DFED53941DA9DE4E001D558A /* OpenURLTestVC.h */,
+				DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */,
+				DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */,
+			);
+			path = "测试跳转系统设置";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -437,10 +514,12 @@
 				DFA7ACCC1CF5B1EE00BFDB62 /* Resources */,
 				141A8DF5F036AFF83995BF8A /* [CP] Embed Pods Frameworks */,
 				043B8344881AB4C6B335C4C3 /* [CP] Copy Pods Resources */,
+				DFE3550B1DAA1AA90023432B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DFE355061DAA1AA90023432B /* PBXTargetDependency */,
 			);
 			name = sdfd;
 			productName = sdfd;
@@ -465,6 +544,26 @@
 			productReference = DFA7ACE71CF5B1EE00BFDB62 /* sdfdTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DFE354F91DAA1AA90023432B /* mytodayWidge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE3550A1DAA1AA90023432B /* Build configuration list for PBXNativeTarget "mytodayWidge" */;
+			buildPhases = (
+				3627502884413F51671AA99D /* [CP] Check Pods Manifest.lock */,
+				DFE354F61DAA1AA90023432B /* Sources */,
+				DFE354F71DAA1AA90023432B /* Frameworks */,
+				DFE354F81DAA1AA90023432B /* Resources */,
+				448CED03131245CDE1F30FBD /* [CP] Embed Pods Frameworks */,
+				9F6198669BD288FC19F1852B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mytodayWidge;
+			productName = mytodayWidge;
+			productReference = DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -476,10 +575,16 @@
 				TargetAttributes = {
 					DFA7ACCD1CF5B1EE00BFDB62 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LNK6YB89GN;
 					};
 					DFA7ACE61CF5B1EE00BFDB62 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = DFA7ACCD1CF5B1EE00BFDB62;
+					};
+					DFE354F91DAA1AA90023432B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LNK6YB89GN;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -498,6 +603,7 @@
 			targets = (
 				DFA7ACCD1CF5B1EE00BFDB62 /* sdfd */,
 				DFA7ACE61CF5B1EE00BFDB62 /* sdfdTests */,
+				DFE354F91DAA1AA90023432B /* mytodayWidge */,
 			);
 		};
 /* End PBXProject section */
@@ -515,6 +621,7 @@
 				DF85ED821CFD5F2A00D3FE0C /* MineMainControl.xib in Resources */,
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
 				DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */,
+				DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */,
 				DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */,
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
 				DF8FBC291D66ED5B00E5BDC6 /* TestKeyBoradVC.xib in Resources */,
@@ -525,6 +632,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE354F81DAA1AA90023432B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +676,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sdfd/Pods-sdfd-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3627502884413F51671AA99D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		448CED03131245CDE1F30FBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9CA51DE43B85110FBC5F0E98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -574,6 +719,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6198669BD288FC19F1852B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -593,6 +753,7 @@
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
+				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
@@ -616,6 +777,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFE354F61DAA1AA90023432B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -623,6 +792,11 @@
 			isa = PBXTargetDependency;
 			target = DFA7ACCD1CF5B1EE00BFDB62 /* sdfd */;
 			targetProxy = DFA7ACE81CF5B1EE00BFDB62 /* PBXContainerItemProxy */;
+		};
+		DFE355061DAA1AA90023432B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE354F91DAA1AA90023432B /* mytodayWidge */;
+			targetProxy = DFE355051DAA1AA90023432B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -633,6 +807,14 @@
 				DF2D199E1CFC04730032083A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DFE355011DAA1AA90023432B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFE355021DAA1AA90023432B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -724,11 +906,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LNK6YB89GN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sdfd/classes/base/projectPch.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/sdfd/SupportFiles/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.sdfd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.BMKAggregationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -739,11 +922,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LNK6YB89GN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sdfd/classes/base/projectPch.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/sdfd/SupportFiles/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.sdfd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.BMKAggregationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -769,6 +953,44 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.sdfdTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sdfd.app/sdfd";
+			};
+			name = Release;
+		};
+		DFE355081DAA1AA90023432B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LNK6YB89GN;
+				INFOPLIST_FILE = mytodayWidge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.BMKAggregationDemo.mytodayWidge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DFE355091DAA1AA90023432B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F06D23A08A3A93E89D89AEA /* Pods-mytodayWidge.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LNK6YB89GN;
+				INFOPLIST_FILE = mytodayWidge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LQC.BMKAggregationDemo.mytodayWidge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -798,6 +1020,15 @@
 			buildConfigurations = (
 				DFA7ACF41CF5B1EE00BFDB62 /* Debug */,
 				DFA7ACF51CF5B1EE00BFDB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFE3550A1DAA1AA90023432B /* Build configuration list for PBXNativeTarget "mytodayWidge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE355081DAA1AA90023432B /* Debug */,
+				DFE355091DAA1AA90023432B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
