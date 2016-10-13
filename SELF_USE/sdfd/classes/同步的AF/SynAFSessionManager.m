@@ -13,7 +13,10 @@
 
 
 + (id)synGET:(NSString *)URLString parameters:(id)parameters
-{    
+{
+    
+    //this is a code in develop
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.completionQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
