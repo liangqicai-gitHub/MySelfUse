@@ -23,13 +23,36 @@
 
 
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (IBAction)back:(UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 - (IBAction)toTestKeyBorad:(UIButton *)sender {
     
-    
-    
-    OpenURLTestVC *vc = [[OpenURLTestVC alloc] init];
+    MineMainControl *vc = [[MineMainControl alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
+    
+//    OpenURLTestVC *vc = [[OpenURLTestVC alloc] init];
+//    vc.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

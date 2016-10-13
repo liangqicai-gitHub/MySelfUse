@@ -21,46 +21,16 @@
 
 + (NSString *)documentsDirectory
 {
-    return NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    return NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                               NSUserDomainMask,
+                                               YES)[0];
 }
-
 
 - (NSString *)trimString
 {
     NSCharacterSet *spaceSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     return [self stringByTrimmingCharactersInSet:spaceSet];
 }
-
-
-
-- (CGFloat)expectHeight:(CGFloat)labelWidth font:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode
-{
-    NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
-    NSLineBreakMode correntMode = NSLineBreakByWordWrapping;
-    if (lineBreakMode == NSLineBreakByCharWrapping){
-        correntMode = NSLineBreakByCharWrapping;
-    }
-    [style setLineBreakMode:correntMode];
-    
-    
-    NSStringDrawingOptions op = (NSStringDrawingUsesLineFragmentOrigin |
-                                 NSStringDrawingUsesFontLeading|
-                                 NSStringDrawingTruncatesLastVisibleLine
-                                 );
-    
-    
-    CGRect textRect = [self
-                       boundingRectWithSize:CGSizeMake(labelWidth, 8000)
-                       options:op
-                       attributes:@{NSFontAttributeName:font,
-                                    NSParagraphStyleAttributeName:style
-                                    }
-                       context:nil];
-    
-    return CGRectGetHeight(textRect);
-
-}
-
 
 - (CGSize)sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode {
     CGSize result;
@@ -84,6 +54,25 @@
 #pragma clang diagnostic pop
     }
     return result;
+}
+
+
+- (NSArray *)rangesOfString:(NSString *)searchString
+{
+    NSMutableArray *results = [NSMutableArray array];
+    NSRange searchRange = NSMakeRange(0, [self length]);
+    NSRange range;
+    
+    while ((range = [self
+                     rangeOfString:searchString
+                     options:0
+                     range:searchRange]).location != NSNotFound)
+    {
+        [results addObject:[NSValue valueWithRange:range]];
+        searchRange = NSMakeRange(NSMaxRange(range),
+                                  [self length] - NSMaxRange(range));
+    }
+    return results;
 }
 
 

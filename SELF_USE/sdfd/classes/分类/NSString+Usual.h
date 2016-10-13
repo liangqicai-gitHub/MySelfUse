@@ -14,20 +14,22 @@
 @interface NSString (Usual)
 
 
+//判断是不是空串
 + (BOOL)isEmptyString:(NSString *)string;
 
-
+//document目录
 + (NSString *)documentsDirectory;
 
-
+//去掉空格
 - (NSString *)trimString;
 
+//计算高度
+- (CGSize)sizeForFont:(UIFont *)font
+                 size:(CGSize)size
+                 mode:(NSLineBreakMode)lineBreakMode;
 
-// only in ios7 later  and your label's LineBreakMode should not be setted as  
-- (CGFloat)expectHeight:(CGFloat)labelWidth font:(UIFont *)font lineBreakMode:(NSLineBreakMode)lineBreakMode;
 
-
-
-- (CGSize)sizeForFont:(UIFont *)font size:(CGSize)size mode:(NSLineBreakMode)lineBreakMode;
+//子串出现的所有range 从左到右排列
+- (NSArray<NSValue *> *)rangesOfString:(NSString *)searchString;
 
 @end

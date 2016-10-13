@@ -19,6 +19,7 @@
 {
     if (self = [super initWithRootViewController:rootViewController]){
         [self configerNavigationBar];
+        self.interactivePopGestureRecognizer.delegate = self;
     }
     return self;
 }
@@ -27,7 +28,8 @@
 - (void)configerNavigationBar
 {
     self.navigationBar.translucent = NO;
-    UIColor *barTintColor = HexRGB(0x262e2e);
+//    UIColor *barTintColor = HexRGB(0x262e2e);
+    UIColor *barTintColor = [[UIColor alloc] initWithRed:1.0f green:0 blue:0 alpha:0.5];
     self.navigationBar.barTintColor = barTintColor;
     
     UIColor *titleColor = HexRGB(0xfecb16);

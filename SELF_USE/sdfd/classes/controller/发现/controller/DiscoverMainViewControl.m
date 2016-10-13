@@ -7,6 +7,7 @@
 //
 
 #import "DiscoverMainViewControl.h"
+#import "MineMainControl.h"
 
 
 @interface DiscoverMainViewControl ()
@@ -16,6 +17,13 @@
 
 @implementation DiscoverMainViewControl
 
+- (IBAction)ddfa:(UIButton *)sender {
+    
+    MineMainControl *vc = [[MineMainControl alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 
 @end

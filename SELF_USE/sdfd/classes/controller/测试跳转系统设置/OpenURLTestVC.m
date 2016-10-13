@@ -14,6 +14,16 @@
 
 @implementation OpenURLTestVC
 
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+//    self.navigationController.navigationBarHidden = YES;
+}
+
+
 - (IBAction)openUrl:(UIButton *)sender
 {
 //    NSURL *url = [NSURL URLWithString:@"prefs:root=NOTIFICATIONS_ID"];
