@@ -19,10 +19,6 @@
 
 - (IBAction)ddfa:(UIButton *)sender {
     
-    MineMainControl *vc = [[MineMainControl alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 

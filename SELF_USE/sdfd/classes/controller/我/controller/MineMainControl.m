@@ -7,55 +7,26 @@
 //
 
 #import "MineMainControl.h"
-
-
-#import "OpenURLTestVC.h"
-
-
+#import "iOS8CellSelfCalculate.h"
 
 @interface MineMainControl ()
-
-
 
 @end
 
 @implementation MineMainControl
 
-
-
-- (void)viewWillAppear:(BOOL)animated
+- (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBarHidden = YES;
+    [self testIOS8CellSelfCalculate];
 }
 
 
-- (void)viewWillDisappear:(BOOL)animated
+//测试iOS8 cell高度子计算
+- (void)testIOS8CellSelfCalculate
 {
-    [super viewWillDisappear:animated];
-    
-    self.navigationController.navigationBarHidden = NO;
-}
-
-- (IBAction)back:(UIButton *)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-
-- (IBAction)toTestKeyBorad:(UIButton *)sender {
-    
-    MineMainControl *vc = [[MineMainControl alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
+    iOS8CellSelfCalculate *vc = [[iOS8CellSelfCalculate alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
-    
-//    OpenURLTestVC *vc = [[OpenURLTestVC alloc] init];
-//    vc.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:vc animated:YES];
-    
 }
-
 
 
 @end
