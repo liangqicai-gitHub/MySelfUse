@@ -96,13 +96,10 @@ UITableViewDelegate,UITableViewDataSource
             NSInteger colorRangeG = (arc4random() % 224) + 1;
             NSInteger colorRangeB = (arc4random() % 224) + 1;
             
-            NSAttributedString *stringM = [[NSAttributedString alloc]
-                                           initWithString:Str_F(@"__第%zd个哈哈medadsns__",i)
-                                           attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontRange],
-                                                        NSForegroundColorAttributeName:RGB(colorRangeR,
-                                                                                           colorRangeB,
-                                                                                           colorRangeG)
-                                                        }];
+            NSAttributedString *stringM =
+            [[NSAttributedString alloc] initWithString:Str_F(@"__第%zd个哈哈medadsns__",i)
+                                            attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontRange],
+                                                         NSForegroundColorAttributeName:RGB(colorRangeR,colorRangeB,colorRangeG)}];
             
             [des appendAttributedString:stringM];
             
