@@ -29,6 +29,8 @@
 		DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D31DC04C83001CD592 /* BMKClusterItem.m */; };
 		DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D51DC04C83001CD592 /* BMKClusterManager.m */; };
 		DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */; };
+		DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793DE1DC04D33001CD592 /* BaiduMapClusterTest.m */; };
+		DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */; };
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
@@ -141,6 +143,9 @@
 		DF4793D51DC04C83001CD592 /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
 		DF4793D61DC04C83001CD592 /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
 		DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
+		DF4793DD1DC04D33001CD592 /* BaiduMapClusterTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapClusterTest.h; sourceTree = "<group>"; };
+		DF4793DE1DC04D33001CD592 /* BaiduMapClusterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapClusterTest.m; sourceTree = "<group>"; };
+		DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapClusterTest.xib; sourceTree = "<group>"; };
 		DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PullToRefresh.xcassets; sourceTree = "<group>"; };
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
@@ -334,6 +339,7 @@
 		DF4793981DC04A58001CD592 /* 点聚合 */ = {
 			isa = PBXGroup;
 			children = (
+				DF4793DC1DC04CE1001CD592 /* controller */,
 				DF4793C11DC04AC8001CD592 /* lib */,
 				DF4793BA1DC04AB8001CD592 /* model */,
 				DF4793B11DC04AB3001CD592 /* view */,
@@ -395,6 +401,16 @@
 				DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */,
 			);
 			path = Cluster;
+			sourceTree = "<group>";
+		};
+		DF4793DC1DC04CE1001CD592 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793DD1DC04D33001CD592 /* BaiduMapClusterTest.h */,
+				DF4793DE1DC04D33001CD592 /* BaiduMapClusterTest.m */,
+				DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		DF85ED6B1CFD5C7A00D3FE0C /* 发现 */ = {
@@ -766,6 +782,7 @@
 				DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */,
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
+				DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */,
 				DF8FBC291D66ED5B00E5BDC6 /* TestKeyBoradVC.xib in Resources */,
 				DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */,
 			);
@@ -896,6 +913,7 @@
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
+				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
 				DF8FBC281D66ED5B00E5BDC6 /* TestKeyBoradVC.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DF2D19AD1CFC30FD0032083A /* RootTabbarItem.m in Sources */,

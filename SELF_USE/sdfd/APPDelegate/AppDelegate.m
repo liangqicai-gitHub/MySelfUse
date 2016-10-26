@@ -11,6 +11,9 @@
 #import "BaseNavigationControl.h"
 
 @interface AppDelegate ()
+{
+    BMKMapManager* _mapManager; 
+}
 
 @end
 
@@ -19,6 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setUpBaiDuMap];
     [self configerRoot];
     return YES;
 }
@@ -32,12 +36,19 @@
         [_window makeKeyAndVisible];
     }
     
-    
-    
     RootControl *root = [RootControl defaultRoot];
     _window.rootViewController = root;
 }
 
+
+
+- (void)setUpBaiDuMap
+{
+    _mapManager = [[BMKMapManager alloc]init];
+    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+    [_mapManager start:@"AHOuEkh1P36zmR6zG8pVy6DHq8K6Ie33"
+                  generalDelegate:nil];
+}
 
 
 
