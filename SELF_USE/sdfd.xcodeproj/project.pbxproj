@@ -18,6 +18,17 @@
 		DF2D19AD1CFC30FD0032083A /* RootTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D19AC1CFC30FD0032083A /* RootTabbarItem.m */; };
 		DF2D19AF1CFC32880032083A /* RootTabbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2D19AE1CFC32880032083A /* RootTabbarItem.xib */; };
 		DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2D19B11CFC33520032083A /* RootTabbarItemsImage.xcassets */; };
+		DF47936D1DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793611DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.m */; };
+		DF47936E1DC043F1001CD592 /* KTRFootPrintPhotosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793631DC043F1001CD592 /* KTRFootPrintPhotosModel.m */; };
+		DF47936F1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793661DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */; };
+		DF4793701DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793691DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.m */; };
+		DF4793711DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF47936A1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib */; };
+		DF4793721DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF47936C1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.m */; };
+		DF47937D1DC0459D001CD592 /* BMKClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793761DC0459D001CD592 /* BMKClusterAlgorithm.m */; };
+		DF47937E1DC0459D001CD592 /* BMKClusterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793781DC0459D001CD592 /* BMKClusterItem.m */; };
+		DF47937F1DC0459D001CD592 /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF47937A1DC0459D001CD592 /* BMKClusterManager.m */; };
+		DF4793801DC0459D001CD592 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = DF47937C1DC0459D001CD592 /* BMKClusterQuadtree.m */; };
+		DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4793811DC047D2001CD592 /* 点聚合.xcassets */; };
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
@@ -110,6 +121,26 @@
 		DF2D19AC1CFC30FD0032083A /* RootTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabbarItem.m; sourceTree = "<group>"; };
 		DF2D19AE1CFC32880032083A /* RootTabbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootTabbarItem.xib; sourceTree = "<group>"; };
 		DF2D19B11CFC33520032083A /* RootTabbarItemsImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RootTabbarItemsImage.xcassets; sourceTree = "<group>"; };
+		DF4793601DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotation.h; sourceTree = "<group>"; };
+		DF4793611DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotation.m; sourceTree = "<group>"; };
+		DF4793621DC043F1001CD592 /* KTRFootPrintPhotosModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosModel.h; sourceTree = "<group>"; };
+		DF4793631DC043F1001CD592 /* KTRFootPrintPhotosModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosModel.m; sourceTree = "<group>"; };
+		DF4793651DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotationCalculator.h; sourceTree = "<group>"; };
+		DF4793661DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotationCalculator.m; sourceTree = "<group>"; };
+		DF4793681DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotationContentView.h; sourceTree = "<group>"; };
+		DF4793691DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotationContentView.m; sourceTree = "<group>"; };
+		DF47936A1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTRFootPrintPhotosAnnotationContentView.xib; sourceTree = "<group>"; };
+		DF47936B1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotationView.h; sourceTree = "<group>"; };
+		DF47936C1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotationView.m; sourceTree = "<group>"; };
+		DF4793751DC0459D001CD592 /* BMKClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterAlgorithm.h; sourceTree = "<group>"; };
+		DF4793761DC0459D001CD592 /* BMKClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterAlgorithm.m; sourceTree = "<group>"; };
+		DF4793771DC0459D001CD592 /* BMKClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterItem.h; sourceTree = "<group>"; };
+		DF4793781DC0459D001CD592 /* BMKClusterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterItem.m; sourceTree = "<group>"; };
+		DF4793791DC0459D001CD592 /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
+		DF47937A1DC0459D001CD592 /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
+		DF47937B1DC0459D001CD592 /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
+		DF47937C1DC0459D001CD592 /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
+		DF4793811DC047D2001CD592 /* 点聚合.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "点聚合.xcassets"; sourceTree = "<group>"; };
 		DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PullToRefresh.xcassets; sourceTree = "<group>"; };
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
@@ -295,8 +326,75 @@
 				DF2D19B11CFC33520032083A /* RootTabbarItemsImage.xcassets */,
 				DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */,
 				DF5A759C1D96798A00D416F1 /* Common.xcassets */,
+				DF4793811DC047D2001CD592 /* 点聚合.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF47935E1DC043D9001CD592 /* 点聚合 */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793731DC04565001CD592 /* lib */,
+				DF47935F1DC043F1001CD592 /* model */,
+				DF4793641DC043F1001CD592 /* service */,
+				DF4793671DC043F1001CD592 /* view */,
+			);
+			path = "点聚合";
+			sourceTree = "<group>";
+		};
+		DF47935F1DC043F1001CD592 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793601DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.h */,
+				DF4793611DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.m */,
+				DF4793621DC043F1001CD592 /* KTRFootPrintPhotosModel.h */,
+				DF4793631DC043F1001CD592 /* KTRFootPrintPhotosModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DF4793641DC043F1001CD592 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793651DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.h */,
+				DF4793661DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		DF4793671DC043F1001CD592 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793681DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.h */,
+				DF4793691DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.m */,
+				DF47936A1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib */,
+				DF47936B1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.h */,
+				DF47936C1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DF4793731DC04565001CD592 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793741DC0459D001CD592 /* Cluster */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		DF4793741DC0459D001CD592 /* Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				DF4793751DC0459D001CD592 /* BMKClusterAlgorithm.h */,
+				DF4793761DC0459D001CD592 /* BMKClusterAlgorithm.m */,
+				DF4793771DC0459D001CD592 /* BMKClusterItem.h */,
+				DF4793781DC0459D001CD592 /* BMKClusterItem.m */,
+				DF4793791DC0459D001CD592 /* BMKClusterManager.h */,
+				DF47937A1DC0459D001CD592 /* BMKClusterManager.m */,
+				DF47937B1DC0459D001CD592 /* BMKClusterQuadtree.h */,
+				DF47937C1DC0459D001CD592 /* BMKClusterQuadtree.m */,
+			);
+			path = Cluster;
 			sourceTree = "<group>";
 		};
 		DF85ED6B1CFD5C7A00D3FE0C /* 发现 */ = {
@@ -455,6 +553,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF47935E1DC043D9001CD592 /* 点聚合 */,
 				DFBE716D1DB0E3B300AF9A79 /* iOS8Cell自计算 */,
 				DFED53931DA9DE2C001D558A /* 测试跳转系统设置 */,
 				DF8FBC241D66ED3D00E5BDC6 /* 测试YYKeyBroad */,
@@ -592,7 +691,6 @@
 				DFE354F61DAA1AA90023432B /* Sources */,
 				DFE354F71DAA1AA90023432B /* Frameworks */,
 				DFE354F81DAA1AA90023432B /* Resources */,
-				448CED03131245CDE1F30FBD /* [CP] Embed Pods Frameworks */,
 				9F6198669BD288FC19F1852B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -653,6 +751,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4793711DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
 				DF2D19AF1CFC32880032083A /* RootTabbarItem.xib in Resources */,
@@ -663,6 +762,7 @@
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
 				DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */,
 				DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */,
+				DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */,
 				DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */,
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
@@ -731,22 +831,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		448CED03131245CDE1F30FBD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9CA51DE43B85110FBC5F0E98 /* [CP] Check Pods Manifest.lock */ = {
@@ -761,7 +846,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9F6198669BD288FC19F1852B /* [CP] Copy Pods Resources */ = {
@@ -795,17 +880,26 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
+				DF4793801DC0459D001CD592 /* BMKClusterQuadtree.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
+				DF47937F1DC0459D001CD592 /* BMKClusterManager.m in Sources */,
 				DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */,
+				DF47936F1DC043F1001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
+				DF47936E1DC043F1001CD592 /* KTRFootPrintPhotosModel.m in Sources */,
+				DF47936D1DC043F1001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
+				DF47937D1DC0459D001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
+				DF4793701DC043F1001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
+				DF47937E1DC0459D001CD592 /* BMKClusterItem.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
 				DF8FBC281D66ED5B00E5BDC6 /* TestKeyBoradVC.m in Sources */,
 				DF2D19AD1CFC30FD0032083A /* RootTabbarItem.m in Sources */,
+				DF4793721DC043F1001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,
