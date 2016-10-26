@@ -8,6 +8,7 @@
 
 #import "MineMainControl.h"
 #import "iOS8CellSelfCalculate.h"
+#import "BaiduMapClusterTest.h"
 
 @interface MineMainControl ()
 
@@ -17,7 +18,8 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    [self testIOS8CellSelfCalculate];
+    [self testBaiDuMapClusterFunction];
+//    [self testIOS8CellSelfCalculate];
 }
 
 //测试iOS8 cell高度子计算
@@ -26,6 +28,15 @@
     iOS8CellSelfCalculate *vc = [[iOS8CellSelfCalculate alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+
+//测试百度地图点聚合
+- (void)testBaiDuMapClusterFunction
+{
+    BaiduMapClusterTest *vc = [[BaiduMapClusterTest alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 
 @end

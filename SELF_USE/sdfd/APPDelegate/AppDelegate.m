@@ -46,8 +46,14 @@
 {
     _mapManager = [[BMKMapManager alloc]init];
     // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
-    [_mapManager start:@"AHOuEkh1P36zmR6zG8pVy6DHq8K6Ie33"
+    BOOL okay = [_mapManager start:@"AHOuEkh1P36zmR6zG8pVy6DHq8K6Ie33"
                   generalDelegate:nil];
+    
+    if (okay){
+        LQCDLog(@"百度地图授权成功");
+    }else{
+        LQCDLog(@"百度地图授权失败");
+    }
 }
 
 
