@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KTRFootPrintPhotosAnnotationContentView">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FP_PA_trackpoint.png" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-OU-duq" userLabel="轨迹点标识">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="3Nx-HS-8sf"/>
+                        <constraint firstAttribute="width" constant="19" id="of2-Av-a3T"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FP_PA_photoBG1.png" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-fa-ajY" userLabel="照片背景图">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="5UO-Ei-unU"/>
+                        <constraint firstAttribute="width" constant="69" id="ngz-pe-1LF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3JF-F5-kAZ" userLabel="照片">
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="Xma-GH-fLJ"/>
+                        <constraint firstAttribute="height" constant="55" id="xRJ-to-AM2"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FP_PA_NumberBG2.png" translatesAutoresizingMaskIntoConstraints="NO" id="PVn-nZ-gLu" userLabel="数量背景图"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD4-Ia-hU3" userLabel="数量label">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PVn-nZ-gLu" firstAttribute="bottom" secondItem="oD4-Ia-hU3" secondAttribute="bottom" id="0Bg-nt-SP1"/>
+                <constraint firstItem="GcQ-OU-duq" firstAttribute="top" secondItem="oRR-fa-ajY" secondAttribute="bottom" constant="-2" id="65q-cU-bng"/>
+                <constraint firstItem="oRR-fa-ajY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7L5-iP-b4n"/>
+                <constraint firstItem="GcQ-OU-duq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9jq-0X-xj9"/>
+                <constraint firstItem="PVn-nZ-gLu" firstAttribute="centerX" secondItem="oRR-fa-ajY" secondAttribute="centerX" constant="29" id="Apd-Aj-Mz7"/>
+                <constraint firstItem="PVn-nZ-gLu" firstAttribute="centerY" secondItem="oRR-fa-ajY" secondAttribute="centerY" constant="-30" id="HER-NA-hxP"/>
+                <constraint firstAttribute="bottom" secondItem="GcQ-OU-duq" secondAttribute="bottom" id="QZF-aZ-a2P"/>
+                <constraint firstItem="PVn-nZ-gLu" firstAttribute="leading" secondItem="oD4-Ia-hU3" secondAttribute="leading" id="X6k-aw-hhR"/>
+                <constraint firstItem="oRR-fa-ajY" firstAttribute="top" secondItem="3JF-F5-kAZ" secondAttribute="top" constant="-6" id="d0f-JJ-Pio"/>
+                <constraint firstItem="PVn-nZ-gLu" firstAttribute="trailing" secondItem="oD4-Ia-hU3" secondAttribute="trailing" id="p0k-Hz-0o2"/>
+                <constraint firstItem="oRR-fa-ajY" firstAttribute="leading" secondItem="3JF-F5-kAZ" secondAttribute="leading" constant="-7" id="tkS-dC-yrS"/>
+                <constraint firstItem="PVn-nZ-gLu" firstAttribute="top" secondItem="oD4-Ia-hU3" secondAttribute="top" id="vdL-IE-Qvj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lphotoBgImageView" destination="oRR-fa-ajY" id="B64-9S-Xnn"/>
+                <outlet property="lphotoImageView" destination="3JF-F5-kAZ" id="tXG-KJ-S5X"/>
+                <outlet property="lphotoNumberBgImageView" destination="PVn-nZ-gLu" id="40I-5s-0DU"/>
+                <outlet property="lphotoNumberLabel" destination="oD4-Ia-hU3" id="A6e-8O-68J"/>
+            </connections>
+            <point key="canvasLocation" x="-383" y="-453"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FP_PA_NumberBG2.png" width="26" height="18"/>
+        <image name="FP_PA_photoBG1.png" width="69" height="72"/>
+        <image name="FP_PA_trackpoint.png" width="19" height="19"/>
+    </resources>
+</document>
