@@ -20,7 +20,6 @@
     [self testIOS8CellSelfCalculate];
 }
 
-
 //测试iOS8 cell高度子计算
 - (void)testIOS8CellSelfCalculate
 {

@@ -25,10 +25,10 @@
 		DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793B61DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m */; };
 		DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793BC1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m */; };
 		DF4793C01DC04AB8001CD592 /* KTRFootPrintPhotosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793BE1DC04AB8001CD592 /* KTRFootPrintPhotosModel.m */; };
-		DF4793CB1DC04AF5001CD592 /* BMKClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793C41DC04AF5001CD592 /* BMKClusterAlgorithm.m */; };
-		DF4793CC1DC04AF5001CD592 /* BMKClusterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793C61DC04AF5001CD592 /* BMKClusterItem.m */; };
-		DF4793CD1DC04AF5001CD592 /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793C81DC04AF5001CD592 /* BMKClusterManager.m */; };
-		DF4793CE1DC04AF5001CD592 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793CA1DC04AF5001CD592 /* BMKClusterQuadtree.m */; };
+		DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D11DC04C83001CD592 /* BMKClusterAlgorithm.m */; };
+		DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D31DC04C83001CD592 /* BMKClusterItem.m */; };
+		DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D51DC04C83001CD592 /* BMKClusterManager.m */; };
+		DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */; };
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
@@ -133,14 +133,14 @@
 		DF4793BC1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotation.m; sourceTree = "<group>"; };
 		DF4793BD1DC04AB8001CD592 /* KTRFootPrintPhotosModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosModel.h; sourceTree = "<group>"; };
 		DF4793BE1DC04AB8001CD592 /* KTRFootPrintPhotosModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosModel.m; sourceTree = "<group>"; };
-		DF4793C31DC04AF5001CD592 /* BMKClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterAlgorithm.h; sourceTree = "<group>"; };
-		DF4793C41DC04AF5001CD592 /* BMKClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterAlgorithm.m; sourceTree = "<group>"; };
-		DF4793C51DC04AF5001CD592 /* BMKClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterItem.h; sourceTree = "<group>"; };
-		DF4793C61DC04AF5001CD592 /* BMKClusterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterItem.m; sourceTree = "<group>"; };
-		DF4793C71DC04AF5001CD592 /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
-		DF4793C81DC04AF5001CD592 /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
-		DF4793C91DC04AF5001CD592 /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
-		DF4793CA1DC04AF5001CD592 /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
+		DF4793D01DC04C83001CD592 /* BMKClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterAlgorithm.h; sourceTree = "<group>"; };
+		DF4793D11DC04C83001CD592 /* BMKClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterAlgorithm.m; sourceTree = "<group>"; };
+		DF4793D21DC04C83001CD592 /* BMKClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterItem.h; sourceTree = "<group>"; };
+		DF4793D31DC04C83001CD592 /* BMKClusterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterItem.m; sourceTree = "<group>"; };
+		DF4793D41DC04C83001CD592 /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
+		DF4793D51DC04C83001CD592 /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
+		DF4793D61DC04C83001CD592 /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
+		DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
 		DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PullToRefresh.xcassets; sourceTree = "<group>"; };
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
@@ -334,7 +334,6 @@
 		DF4793981DC04A58001CD592 /* 点聚合 */ = {
 			isa = PBXGroup;
 			children = (
-				DF4793C21DC04AF5001CD592 /* Cluster */,
 				DF4793C11DC04AC8001CD592 /* lib */,
 				DF4793BA1DC04AB8001CD592 /* model */,
 				DF4793B11DC04AB3001CD592 /* view */,
@@ -378,21 +377,22 @@
 		DF4793C11DC04AC8001CD592 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				DF4793CF1DC04C83001CD592 /* Cluster */,
 			);
 			path = lib;
 			sourceTree = "<group>";
 		};
-		DF4793C21DC04AF5001CD592 /* Cluster */ = {
+		DF4793CF1DC04C83001CD592 /* Cluster */ = {
 			isa = PBXGroup;
 			children = (
-				DF4793C31DC04AF5001CD592 /* BMKClusterAlgorithm.h */,
-				DF4793C41DC04AF5001CD592 /* BMKClusterAlgorithm.m */,
-				DF4793C51DC04AF5001CD592 /* BMKClusterItem.h */,
-				DF4793C61DC04AF5001CD592 /* BMKClusterItem.m */,
-				DF4793C71DC04AF5001CD592 /* BMKClusterManager.h */,
-				DF4793C81DC04AF5001CD592 /* BMKClusterManager.m */,
-				DF4793C91DC04AF5001CD592 /* BMKClusterQuadtree.h */,
-				DF4793CA1DC04AF5001CD592 /* BMKClusterQuadtree.m */,
+				DF4793D01DC04C83001CD592 /* BMKClusterAlgorithm.h */,
+				DF4793D11DC04C83001CD592 /* BMKClusterAlgorithm.m */,
+				DF4793D21DC04C83001CD592 /* BMKClusterItem.h */,
+				DF4793D31DC04C83001CD592 /* BMKClusterItem.m */,
+				DF4793D41DC04C83001CD592 /* BMKClusterManager.h */,
+				DF4793D51DC04C83001CD592 /* BMKClusterManager.m */,
+				DF4793D61DC04C83001CD592 /* BMKClusterQuadtree.h */,
+				DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */,
 			);
 			path = Cluster;
 			sourceTree = "<group>";
@@ -880,22 +880,22 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
-				DF4793CE1DC04AF5001CD592 /* BMKClusterQuadtree.m in Sources */,
+				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DF4793C01DC04AB8001CD592 /* KTRFootPrintPhotosModel.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
-				DF4793CD1DC04AF5001CD592 /* BMKClusterManager.m in Sources */,
+				DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
 				DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
 				DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */,
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
-				DF4793CB1DC04AF5001CD592 /* BMKClusterAlgorithm.m in Sources */,
+				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
-				DF4793CC1DC04AF5001CD592 /* BMKClusterItem.m in Sources */,
+				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF8FBC281D66ED5B00E5BDC6 /* TestKeyBoradVC.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DF2D19AD1CFC30FD0032083A /* RootTabbarItem.m in Sources */,
