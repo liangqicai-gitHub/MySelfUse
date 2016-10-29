@@ -14,7 +14,7 @@
 
 +(KTRFootPrintPhotosAnnotationContentView *)contentView;
 
-+ (CGSize)expectedSize;
++(CGSize)expectedSize;
 
 @property (nonatomic,strong) NSArray *images;
 

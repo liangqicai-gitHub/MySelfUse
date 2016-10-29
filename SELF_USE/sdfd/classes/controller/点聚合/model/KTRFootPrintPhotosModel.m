@@ -23,14 +23,18 @@
         return _coordinateStored;
     }
     
+    NSLog(@"modele set %@  %@",_lat ,_log);
+    
     double lat = 0;
     if ([_lat isKindOfClass:[NSNumber class]]){
         lat = [_lat doubleValue];
+        NSLog(@"_lat set ");
     }
     
     double log = 0;
     if ([_log isKindOfClass:[NSNumber class]]){
         log = [_log doubleValue];
+         NSLog(@"_log set ");
     }
     
     _coordinateStored = CLLocationCoordinate2DMake(lat, log);

@@ -9,6 +9,7 @@
 #import "MineMainControl.h"
 #import "iOS8CellSelfCalculate.h"
 #import "BaiduMapClusterTest.h"
+#import "histroyTrackVC.h"
 
 @interface MineMainControl ()
 
@@ -18,6 +19,7 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
+//    [self testHis];
     [self testBaiDuMapClusterFunction];
 //    [self testIOS8CellSelfCalculate];
 }
@@ -37,6 +39,10 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+- (void)testHis
+{
+    histroyTrackVC *vc = [[histroyTrackVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

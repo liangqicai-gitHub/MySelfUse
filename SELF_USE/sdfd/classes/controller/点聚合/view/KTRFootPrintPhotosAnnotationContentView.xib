@@ -62,7 +62,7 @@
                 <outlet property="lphotoNumberBgImageView" destination="PVn-nZ-gLu" id="40I-5s-0DU"/>
                 <outlet property="lphotoNumberLabel" destination="oD4-Ia-hU3" id="A6e-8O-68J"/>
             </connections>
-            <point key="canvasLocation" x="-383" y="-453"/>
+            <point key="canvasLocation" x="-534" y="-533"/>
         </view>
     </objects>
     <resources>

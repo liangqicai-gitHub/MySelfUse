@@ -11,10 +11,8 @@
 @interface KTRFootPrintPhotosModel : NSObject
 
 //真实环境时，请放到M文件中
-@property(nonatomic,assign) NSNumber *log;
-@property(nonatomic,assign) NSNumber *lat;
-
-
+@property(nonatomic,strong) NSNumber *log;
+@property(nonatomic,strong) NSNumber *lat;
 @property(nonatomic,strong) NSArray *imageUrls;
 
 @property(readonly) CLLocationCoordinate2D coordinate;

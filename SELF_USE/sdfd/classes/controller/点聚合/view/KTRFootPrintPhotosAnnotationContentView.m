@@ -65,8 +65,8 @@
     NSInteger numbers = images.count;
     
     //数量背景图
-    NSString *numberImageName = @"FP_PA_NumberBG1";
-    if (numbers > 9) numberImageName = @"FP_PA_NumberBG1";
+    NSString *numberImageName = @"FP_PA_NumberBG";
+    if (numbers > 9) numberImageName = @"FP_PA_NumberBG2";
     UIImage *numberBGImage = [UIImage imageNamed:numberImageName];
     _lphotoNumberBgImageView.image = numberBGImage;
     
@@ -80,6 +80,14 @@
     NSString *numberDes = Str_F(@"%zd",numbers);
     if (numbers > 99) numberDes = @"99+";
     _lphotoNumberLabel.text = numberDes;
+    
+    if (images.count > 0){
+        [_lphotoImageView sd_setImageWithURL:_images.firstObject];
+    }else{
+        [_lphotoImageView sd_cancelCurrentImageLoad];
+        [_lphotoImageView setImage:nil];
+    }
+    
 }
 
 

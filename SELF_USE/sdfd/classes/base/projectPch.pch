@@ -25,6 +25,7 @@
 #import <Masonry.h>
 #import <AFNetworking.h>
 #import <MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 //常见的分类
 #import "UIColor+Usual.h"

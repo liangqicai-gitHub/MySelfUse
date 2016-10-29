@@ -12,7 +12,7 @@
 @class KTRFootPrintPhotosAnnotation;
 @class KTRFootPrintPhotosModel;
 
-typedef void(^calculateClustersCompleteBlock)(NSArray <KTRFootPrintPhotosAnnotation *>*);
+typedef void(^calculateClustersCompleteBlock)(NSArray <KTRFootPrintPhotosAnnotation *>* annotations);
 
 @interface KTRFootPrintPhotosAnnotationCalculator : NSObject
 

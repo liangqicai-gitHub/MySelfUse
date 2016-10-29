@@ -20,6 +20,7 @@
     KTRFootPrintPhotosModel *fristModel = models[0];
     if ([fristModel isKindOfClass:[KTRFootPrintPhotosModel class]]){
         self.coordinate = fristModel.coordinate;
+        NSLog(@"set  %f   %f",fristModel.coordinate.latitude,fristModel.coordinate.longitude);
     }
 }
 

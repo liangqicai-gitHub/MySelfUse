@@ -8,13 +8,16 @@
 
 #import "KTRFootPrintPhotosAnnotationView.h"
 #import "KTRFootPrintPhotosAnnotationContentView.h"
+#import "KTRFootPrintPhotosAnnotation.h"
+#import "KTRFootPrintPhotosModel.h"
 
 @interface KTRFootPrintPhotosAnnotationView ()
 {
     //view
     KTRFootPrintPhotosAnnotationContentView *_contentView;
     
-    CGPoint _selfOffPoint;//这个AnnotationView的便宜量是固定的
+    //这个AnnotationView的便宜量是固定的
+    CGPoint _offPoint;
 }
 
 @end
@@ -62,5 +65,30 @@
     _contentView.images = nil;
 }
 
+- (void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [super willMoveToSuperview:newSuperview];
+    if (!newSuperview) return;
+    
+    id annotation = self.annotation;
+    if (![annotation isKindOfClass:[KTRFootPrintPhotosAnnotation class]]) return;
+    
+    NSArray<KTRFootPrintPhotosModel *> *FootPrintPhotosModels =
+    [(KTRFootPrintPhotosAnnotation *)annotation models];
+    
+    NSMutableArray *images = [NSMutableArray array];
+    
+    [FootPrintPhotosModels enumerateObjectsUsingBlock:^(KTRFootPrintPhotosModel * _Nonnull obj,
+                                                        NSUInteger idx,
+                                                        BOOL * _Nonnull stop)
+    {
+        if (![NSArray isEmpty:obj.imageUrls]){
+            [images addObjectsFromArray:obj.imageUrls];
+        }
+        
+    }];
+    
+    _contentView.images = images;
+}
 
 @end

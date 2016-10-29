@@ -6,6 +6,10 @@
 //  Copyright © 2016年 CST. All rights reserved.
 //
 
+
 @interface KTRFootPrintPhotosAnnotationView : BMKAnnotationView
+
+
+
 
 @end
