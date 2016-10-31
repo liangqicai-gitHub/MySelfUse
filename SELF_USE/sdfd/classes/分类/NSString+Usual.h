@@ -20,6 +20,9 @@
 //document目录
 + (NSString *)documentsDirectory;
 
++ (NSString *)mainBundelResourcePath:(NSString *)resourceName;
+
+
 //去掉空格
 - (NSString *)trimString;
 

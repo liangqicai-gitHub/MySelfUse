@@ -26,6 +26,11 @@
                                                YES)[0];
 }
 
++ (NSString *)mainBundelResourcePath:(NSString *)resourceName
+{
+    return [[NSBundle mainBundle] pathForResource:resourceName ofType:nil];
+}
+
 - (NSString *)trimString
 {
     NSCharacterSet *spaceSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];

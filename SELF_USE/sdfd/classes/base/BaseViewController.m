@@ -20,15 +20,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.view.backgroundColor = [UIColor whiteColor];
 }
-
 
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
 }
+
+
+
 
 
 

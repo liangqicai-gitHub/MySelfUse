@@ -10,6 +10,7 @@
 #import "iOS8CellSelfCalculate.h"
 #import "BaiduMapClusterTest.h"
 #import "histroyTrackVC.h"
+#import "PortraitPlayerController.h"
 
 @interface MineMainControl ()
 
@@ -20,8 +21,10 @@
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
 //    [self testHis];
-    [self testBaiDuMapClusterFunction];
+//    [self testBaiDuMapClusterFunction];
 //    [self testIOS8CellSelfCalculate];
+    
+    [self testAVPlayer];
 }
 
 //测试iOS8 cell高度子计算
@@ -38,10 +41,18 @@
     BaiduMapClusterTest *vc = [[BaiduMapClusterTest alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+//测试历史轨迹的cell
 - (void)testHis
 {
     histroyTrackVC *vc = [[histroyTrackVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+- (void)testAVPlayer
+{
+    PortraitPlayerController *vc = [[PortraitPlayerController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

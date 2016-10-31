@@ -128,6 +128,20 @@
 }
 
 
+#pragma mark - 横屏控制
+
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+   return UIInterfaceOrientationMaskPortrait;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
 
 
 

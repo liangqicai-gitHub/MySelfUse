@@ -21,6 +21,10 @@
 		DF2D19AD1CFC30FD0032083A /* RootTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D19AC1CFC30FD0032083A /* RootTabbarItem.m */; };
 		DF2D19AF1CFC32880032083A /* RootTabbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2D19AE1CFC32880032083A /* RootTabbarItem.xib */; };
 		DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2D19B11CFC33520032083A /* RootTabbarItemsImage.xcassets */; };
+		DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3061DC486EE00DEDE68 /* PortraitPlayerController.m */; };
+		DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3091DC4882400DEDE68 /* PlayerView.m */; };
+		DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2ED30D1DC49BF300DEDE68 /* test.mp4 */; };
+		DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */; };
 		DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4793811DC047D2001CD592 /* 点聚合.xcassets */; };
 		DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793AF1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */; };
 		DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793B31DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m */; };
@@ -123,6 +127,13 @@
 		DF2D19AC1CFC30FD0032083A /* RootTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabbarItem.m; sourceTree = "<group>"; };
 		DF2D19AE1CFC32880032083A /* RootTabbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootTabbarItem.xib; sourceTree = "<group>"; };
 		DF2D19B11CFC33520032083A /* RootTabbarItemsImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RootTabbarItemsImage.xcassets; sourceTree = "<group>"; };
+		DF2ED3051DC486EE00DEDE68 /* PortraitPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortraitPlayerController.h; sourceTree = "<group>"; };
+		DF2ED3061DC486EE00DEDE68 /* PortraitPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortraitPlayerController.m; sourceTree = "<group>"; };
+		DF2ED3081DC4882400DEDE68 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		DF2ED3091DC4882400DEDE68 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		DF2ED30D1DC49BF300DEDE68 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		DF2ED30F1DC4B05E00DEDE68 /* LandscapePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapePlayerController.h; sourceTree = "<group>"; };
+		DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapePlayerController.m; sourceTree = "<group>"; };
 		DF4793811DC047D2001CD592 /* 点聚合.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "点聚合.xcassets"; sourceTree = "<group>"; };
 		DF4793AE1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotationCalculator.h; sourceTree = "<group>"; };
 		DF4793AF1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotationCalculator.m; sourceTree = "<group>"; };
@@ -330,12 +341,42 @@
 		DF2D19B01CFC330C0032083A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DF2ED30D1DC49BF300DEDE68 /* test.mp4 */,
 				DF2D19B11CFC33520032083A /* RootTabbarItemsImage.xcassets */,
 				DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */,
 				DF5A759C1D96798A00D416F1 /* Common.xcassets */,
 				DF4793811DC047D2001CD592 /* 点聚合.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF2ED3021DC485FF00DEDE68 /* 仿腾讯视频横屏 */ = {
+			isa = PBXGroup;
+			children = (
+				DF2ED3041DC4868A00DEDE68 /* view */,
+				DF2ED3031DC4868300DEDE68 /* controller */,
+			);
+			path = "仿腾讯视频横屏";
+			sourceTree = "<group>";
+		};
+		DF2ED3031DC4868300DEDE68 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF2ED3051DC486EE00DEDE68 /* PortraitPlayerController.h */,
+				DF2ED3061DC486EE00DEDE68 /* PortraitPlayerController.m */,
+				DF2ED30F1DC4B05E00DEDE68 /* LandscapePlayerController.h */,
+				DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DF2ED3041DC4868A00DEDE68 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DF2ED3081DC4882400DEDE68 /* PlayerView.h */,
+				DF2ED3091DC4882400DEDE68 /* PlayerView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		DF4793981DC04A58001CD592 /* 点聚合 */ = {
@@ -560,6 +601,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF2ED3021DC485FF00DEDE68 /* 仿腾讯视频横屏 */,
 				DF1A171F1DC0A0FB003881C6 /* 测试历史轨迹cel */,
 				DF4793981DC04A58001CD592 /* 点聚合 */,
 				DFBE716D1DB0E3B300AF9A79 /* iOS8Cell自计算 */,
@@ -739,6 +781,7 @@
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
 				DF4793B81DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
+				DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */,
 				DF2D19AF1CFC32880032083A /* RootTabbarItem.xib in Resources */,
 				DF1A17241DC0A111003881C6 /* KTRHistoryTrackCell.xib in Resources */,
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
@@ -855,6 +898,7 @@
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
+				DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */,
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
@@ -868,6 +912,7 @@
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
 				DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
+				DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
 				DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */,
 				DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
@@ -889,6 +934,7 @@
 				DF2D19AA1CFC2E980032083A /* RootTabbar.m in Sources */,
 				DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */,
 				DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */,
+				DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
