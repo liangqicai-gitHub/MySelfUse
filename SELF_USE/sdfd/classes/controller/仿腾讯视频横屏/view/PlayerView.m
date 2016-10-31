@@ -47,7 +47,7 @@
     
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"全屏" forState:UIControlStateNormal];
+    [btn setTitle:@"切换" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn];
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
