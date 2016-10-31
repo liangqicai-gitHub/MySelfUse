@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @class PlayerView;
+@class LandscapePlayerController;
+@protocol LandscapePlayerControllerDelegate <NSObject>
+
+- (void)didDismiss;
+
+@end
+
 @interface LandscapePlayerController : UIViewController
 
 @property (nonatomic,weak) PlayerView *playerView;
+
+@property (nonatomic,weak) id <LandscapePlayerControllerDelegate>delegate;
 
 @end

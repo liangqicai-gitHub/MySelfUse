@@ -11,7 +11,10 @@
 #import "LandscapePlayerController.h"
 
 @interface PortraitPlayerController ()
-<PlayerViewDelegate>
+<
+PlayerViewDelegate,
+LandscapePlayerControllerDelegate
+>
 
 @property (nonatomic,strong) PlayerView *playerView;
 
@@ -23,9 +26,14 @@
 {
     [super viewDidLoad];
     [self initViews];
-    
     [_playerView playVideo];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
 
 - (void)initViews
 {
@@ -34,7 +42,7 @@
     _playerView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_playerView];
     [_playerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(0);
+        make.top.mas_equalTo(70);
         make.right.left.mas_equalTo(0);
         make.height.mas_equalTo(150);
     }];
@@ -45,17 +53,35 @@
 
 - (void)didClickedPlayerView:(PlayerView *)playerView
 {
+    _playerView.delegate = nil;
     LandscapePlayerController *vc = [[LandscapePlayerController alloc] init];
+    vc.delegate = self;
     vc.playerView = _playerView;
-    [self.tabBarController presentViewController:vc animated:NO completion:^{
-        [_playerView removeFromSuperview];
-        _playerView.delegate = nil;
-        [vc.view addSubview:_playerView];
-        [_playerView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(UIEdgeInsetsZero);
-        }];
-        
-    }];
+    [_playerView removeFromSuperview];
+    [self.tabBarController presentViewController:vc animated:NO completion:nil];
 }
+
+#pragma mark - LandscapePlayerControllerDelegate
+
+- (void)didDismiss
+{
+    [self.view addSubview:_playerView];
+    _playerView.delegate = self;
+    [_playerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(70);
+        make.right.left.mas_equalTo(0);
+        make.height.mas_equalTo(150);
+    }];
+    
+    CGAffineTransform transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_2);
+    _playerView.transform = transform;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.25 animations:^{
+            _playerView.transform = CGAffineTransformIdentity;
+        }];
+    });
+}
+
 
 @end
