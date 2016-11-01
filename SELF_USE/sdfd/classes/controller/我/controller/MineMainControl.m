@@ -11,6 +11,7 @@
 #import "BaiduMapClusterTest.h"
 #import "histroyTrackVC.h"
 #import "PortraitPlayerController.h"
+#import "FootprintTestVC.h"
 
 @interface MineMainControl ()
 
@@ -20,11 +21,11 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
+    [self testFootPrint];
 //    [self testHis];
 //    [self testBaiDuMapClusterFunction];
 //    [self testIOS8CellSelfCalculate];
-    
-    [self testAVPlayer];
+//    [self testAVPlayer];
 }
 
 //测试iOS8 cell高度子计算
@@ -48,10 +49,18 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+//测试爱奇艺横屏例子
 - (void)testAVPlayer
 {
     PortraitPlayerController *vc = [[PortraitPlayerController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+//测试驾图足迹列表
+- (void)testFootPrint
+{
+    FootprintTestVC *vc = [[FootprintTestVC alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
