@@ -8,7 +8,7 @@
 
 #import "BaseNavigationControl.h"
 
-@interface BaseNavigationControl ()
+@interface BaseNavigationControl ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -24,11 +24,9 @@
     return self;
 }
 
-
 - (void)configerNavigationBar
 {
     self.navigationBar.translucent = NO;
-//    UIColor *barTintColor = HexRGB(0x262e2e);
     UIColor *barTintColor = [[UIColor alloc] initWithRed:1.0f green:0 blue:0 alpha:0.5];
     self.navigationBar.barTintColor = barTintColor;
     
@@ -46,7 +44,13 @@
     return UIStatusBarStyleLightContent;
 }
 
-
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    NSArray *controllers = self.childViewControllers;
+    if ([NSArray isEmpty:controllers]) return NO;
+    if (controllers.count > 1) return YES;
+    return NO;
+}
 
 
 @end

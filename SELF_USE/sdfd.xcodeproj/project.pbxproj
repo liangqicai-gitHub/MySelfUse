@@ -64,6 +64,9 @@
 		DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA651CF6F1A400A4AF48 /* UIColor+Usual.m */; };
 		DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */; };
 		DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */; };
+		DFBCAC421DCB002000E7601A /* PhotoBrowseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC411DCB002000E7601A /* PhotoBrowseController.m */; };
+		DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */; };
+		DFBCAC4A1DCB169300E7601A /* LQCPhotoBrowseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBCAC481DCB169300E7601A /* LQCPhotoBrowseCell.xib */; };
 		DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE71721DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m */; };
 		DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE71731DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib */; };
 		DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE71781DB0E5D100AF9A79 /* iOS8FixedCell.m */; };
@@ -207,6 +210,11 @@
 		DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Usual.m"; sourceTree = "<group>"; };
 		DFB5CA6A1CF6FB8400A4AF48 /* NSArray+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Usual.h"; sourceTree = "<group>"; };
 		DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Usual.m"; sourceTree = "<group>"; };
+		DFBCAC401DCB002000E7601A /* PhotoBrowseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowseController.h; sourceTree = "<group>"; };
+		DFBCAC411DCB002000E7601A /* PhotoBrowseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowseController.m; sourceTree = "<group>"; };
+		DFBCAC461DCB169300E7601A /* LQCPhotoBrowseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseCell.h; sourceTree = "<group>"; };
+		DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseCell.m; sourceTree = "<group>"; };
+		DFBCAC481DCB169300E7601A /* LQCPhotoBrowseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQCPhotoBrowseCell.xib; sourceTree = "<group>"; };
 		DFBE71711DB0E45B00AF9A79 /* iOS8CellSelfCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS8CellSelfCalculate.h; sourceTree = "<group>"; };
 		DFBE71721DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS8CellSelfCalculate.m; sourceTree = "<group>"; };
 		DFBE71731DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8CellSelfCalculate.xib; sourceTree = "<group>"; };
@@ -615,6 +623,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFBCAC3F1DCAFE8700E7601A /* 防腾讯选照片 */,
 				DFB474E01DC89ECF0024F77B /* 驾图足迹测试 */,
 				DF2ED3021DC485FF00DEDE68 /* 仿腾讯视频横屏 */,
 				DF1A171F1DC0A0FB003881C6 /* 测试历史轨迹cel */,
@@ -688,6 +697,18 @@
 				DFB474ED1DC89F8C0024F77B /* UILabel+Convenient.m */,
 			);
 			path = UIlabel;
+			sourceTree = "<group>";
+		};
+		DFBCAC3F1DCAFE8700E7601A /* 防腾讯选照片 */ = {
+			isa = PBXGroup;
+			children = (
+				DFBCAC401DCB002000E7601A /* PhotoBrowseController.h */,
+				DFBCAC411DCB002000E7601A /* PhotoBrowseController.m */,
+				DFBCAC461DCB169300E7601A /* LQCPhotoBrowseCell.h */,
+				DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */,
+				DFBCAC481DCB169300E7601A /* LQCPhotoBrowseCell.xib */,
+			);
+			path = "防腾讯选照片";
 			sourceTree = "<group>";
 		};
 		DFBE716D1DB0E3B300AF9A79 /* iOS8Cell自计算 */ = {
@@ -833,6 +854,7 @@
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
 				DFB474EA1DC89F490024F77B /* FootPrintCell.xcassets in Resources */,
+				DFBCAC4A1DCB169300E7601A /* LQCPhotoBrowseCell.xib in Resources */,
 				DF2D199F1CFC04730032083A /* LaunchScreen.storyboard in Resources */,
 				DF85ED821CFD5F2A00D3FE0C /* MineMainControl.xib in Resources */,
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
@@ -962,6 +984,7 @@
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
 				DFB474EE1DC89F8C0024F77B /* UILabel+Convenient.m in Sources */,
 				DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */,
+				DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
 				DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */,
 				DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
@@ -981,6 +1004,7 @@
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,
+				DFBCAC421DCB002000E7601A /* PhotoBrowseController.m in Sources */,
 				DF2D19AA1CFC2E980032083A /* RootTabbar.m in Sources */,
 				DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */,
 				DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */,

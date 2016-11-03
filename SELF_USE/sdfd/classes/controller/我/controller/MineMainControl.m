@@ -12,6 +12,7 @@
 #import "histroyTrackVC.h"
 #import "PortraitPlayerController.h"
 #import "FootprintTestVC.h"
+#import "PhotoBrowseController.h"
 
 @interface MineMainControl ()
 
@@ -21,7 +22,8 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    [self testFootPrint];
+    [self testPhotoBrose];
+//    [self testFootPrint];
 //    [self testHis];
 //    [self testBaiDuMapClusterFunction];
 //    [self testIOS8CellSelfCalculate];
@@ -61,6 +63,14 @@
 - (void)testFootPrint
 {
     FootprintTestVC *vc = [[FootprintTestVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+//测试选照片
+- (void)testPhotoBrose
+{
+    PhotoBrowseController *vc = [[PhotoBrowseController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
