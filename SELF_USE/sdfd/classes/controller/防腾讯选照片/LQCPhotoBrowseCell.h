@@ -10,4 +10,7 @@
 
 @interface LQCPhotoBrowseCell : UICollectionViewCell
 
+
+@property (nonatomic,copy) NSString *labelText;
+
 @end

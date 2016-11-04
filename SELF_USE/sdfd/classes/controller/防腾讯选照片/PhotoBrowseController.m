@@ -39,35 +39,49 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (void)initViews
 {
     
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.minimumLineSpacing = 0.0f;
-    layout.minimumInteritemSpacing = 0.0f;
-    layout.itemSize = CGSizeMake(DeviceWidth, DeviceHeight - 70);
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    UICollectionViewFlowLayout *layout = [self newLayoutWithItemSize:CGSizeMake(DeviceWidth, DeviceHeight)];
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, DeviceWidth, DeviceHeight)
                                          collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-//    [_collectionView registerClass:[LQCPhotoBrowseCell class]
-//        forCellWithReuseIdentifier:_cellId];
-    
     [_collectionView registerNib:[UINib nibWithNibName:@"LQCPhotoBrowseCell" bundle:nil]
       forCellWithReuseIdentifier:_cellId];
-
     [self.view addSubview:_collectionView];
-    
-}
-
-- (void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
+    _collectionView.pagingEnabled = YES;
+    _collectionView.backgroundColor = [UIColor greenColor];
     [_collectionView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsZero);
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, -10));
     }];
 }
 
 
+
+- (UICollectionViewFlowLayout *)newLayoutWithItemSize:(CGSize)itemSize
+{
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize = itemSize;
+    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 10);
+    return layout;
+}
+
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    CGSize newSize = self.view.bounds.size;
+    UICollectionViewFlowLayout *layout =
+    [self newLayoutWithItemSize:newSize];
+    layout.minimumLineSpacing = 10.0f;
+    [_collectionView setCollectionViewLayout:layout animated:YES];
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+}
+
+
+
+
 #pragma mark - delegate
+
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -84,8 +98,10 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LQCPhotoBrowseCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellId forIndexPath:indexPath];
+    cell.labelText = Str_F(@"memeda--%zd",indexPath.row + 1);
     return cell;
 }
+
 
 
 

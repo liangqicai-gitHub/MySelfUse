@@ -71,8 +71,8 @@
 - (void)testPhotoBrose
 {
     PhotoBrowseController *vc = [[PhotoBrowseController alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+   
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
