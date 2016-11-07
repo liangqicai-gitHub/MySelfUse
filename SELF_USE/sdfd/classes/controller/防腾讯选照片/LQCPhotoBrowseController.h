@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LQCPhotoBrowseConfigure.h"
 
-@interface PhotoBrowseController : UIViewController
+@interface LQCPhotoBrowseController : UIViewController
 
-
+@property (nonatomic,strong) LQCPhotoBrowseConfigure *configure;
 
 @end
+
+
+

@@ -7,33 +7,45 @@
 //
 
 #import "LQCPhotoBrowseCell.h"
+#import "LQCPhotoBrowseModel.h"
 
-@interface LQCPhotoBrowseCell ()
-<
-UIScrollViewDelegate
->
+
+@interface LQCPhotoBrowseCell ()<UIScrollViewDelegate>
 {
-    UILabel *_label;
+    UILabel *_percentageLabel;
+    UIScrollView *_scrollView;
+    UIImageView *_imageView;
 }
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
 
 @end
 
 
 @implementation LQCPhotoBrowseCell
 
-- (void)awakeFromNib
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    [super awakeFromNib];
-    self.backgroundColor = [UIColor blackColor];
-    _scrollView.minimumZoomScale = 1.0f;
-    _scrollView.maximumZoomScale = 10.0f;
-    _imageView.userInteractionEnabled = YES;
-    _imageView.backgroundColor = [UIColor redColor];
-    _label = [[UILabel alloc] init];
-    [self.contentView addSubview:_label];
+    self = [super initWithFrame:frame];
+    if (self){
+        [self initViews];
+    }
+    return self;
+}
+
+
+- (void)initViews
+{
+    self.backgroundView.backgroundColor = [UIColor blackColor];
+    self.contentView.backgroundColor = [UIColor blackColor];
+    
+    _scrollView = [[UIScrollView alloc] init];
+    [self.contentView addSubview:_scrollView];
+    
+    _imageView = [[UIImageView alloc] init];
+    [_scrollView addSubview:_imageView];
+    
+    _percentageLabel = [[UILabel alloc] init];
+    [self.contentView addSubview:_percentageLabel];
+    _percentageLabel.text = @"20%";
 }
 
 
@@ -42,7 +54,6 @@ UIScrollViewDelegate
     return _imageView;
 }
 
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -50,19 +61,15 @@ UIScrollViewDelegate
     [_imageView setFrame:CGRectMake(0, 0, 150, 80)];
     [_imageView setCenter:_scrollView.center];
     [_imageView setImage:[UIImage imageNamed:@"root_tabar_02_ss"]];
-    _label.frame = CGRectMake(0, 0, 100, 100);
-    [_label setCenter:_scrollView.center];
+    [_percentageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(CGPointZero);
+    }];
 }
 
 
-- (void)setLabelText:(NSString *)labelText
-{
-    _label.text = labelText;
-}
 
 -(void)scrollViewDidZoom:(UIScrollView *)scrollView
 {
-    
     CGSize calculateSize = scrollView.contentSize;
     if (calculateSize.width < scrollView.frame.size.width){
         calculateSize.width = scrollView.frame.size.width;
@@ -71,35 +78,17 @@ UIScrollViewDelegate
     if (calculateSize.height < scrollView.frame.size.height){
         calculateSize.height = scrollView.frame.size.height;
     }
-    
     _imageView.center = CGPointMake(calculateSize.width / 2.0f, calculateSize.height / 2.0f);
 }
 
-//
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
-//    NSLog(@"");
-//}
-//
-//
-//-(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale
-//{
-//    NSLog(@"_imageView.Size %@",NSStringFromCGSize(_imageView.frame.size));
-//    NSLog(@"width / 150 == %f",_imageView.frame.size.width / 150.f);
-//    NSLog(@"height / 80 == %f",_imageView.frame.size.height / 80.0f);
-//    NSLog(@"========== scale = %f",scale);
-//    
-//    NSLog(@"scrollView frame %@",NSStringFromCGRect(scrollView.frame));
-//    NSLog(@"scrollView contentSize %@",NSStringFromCGSize(scrollView.contentSize));
-//    
-//}
 
 
-
-- (void)prepareForReuse
+- (void)setModel:(LQCPhotoBrowseModel *)model
 {
-    [super prepareForReuse];
-    _scrollView.zoomScale = 1.0f;
+    _model = model;
 }
+
+
+
 
 @end

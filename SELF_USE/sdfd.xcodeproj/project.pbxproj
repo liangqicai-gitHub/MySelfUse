@@ -11,6 +11,7 @@
 		DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */; };
 		DF1A17241DC0A111003881C6 /* KTRHistoryTrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */; };
 		DF1A17281DC0A12E003881C6 /* histroyTrackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */; };
+		DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */; };
 		DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D198A1CFBEAF40032083A /* AppDelegate.m */; };
 		DF2D198E1CFBEB090032083A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D198D1CFBEB090032083A /* main.m */; };
 		DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2D199A1CFBED590032083A /* Assets.xcassets */; };
@@ -64,15 +65,15 @@
 		DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA651CF6F1A400A4AF48 /* UIColor+Usual.m */; };
 		DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */; };
 		DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */; };
-		DFBCAC421DCB002000E7601A /* PhotoBrowseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC411DCB002000E7601A /* PhotoBrowseController.m */; };
+		DFBCAC421DCB002000E7601A /* LQCPhotoBrowseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC411DCB002000E7601A /* LQCPhotoBrowseController.m */; };
 		DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */; };
-		DFBCAC4A1DCB169300E7601A /* LQCPhotoBrowseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBCAC481DCB169300E7601A /* LQCPhotoBrowseCell.xib */; };
 		DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE71721DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m */; };
 		DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE71731DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib */; };
 		DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE71781DB0E5D100AF9A79 /* iOS8FixedCell.m */; };
 		DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE71791DB0E5D100AF9A79 /* iOS8FixedCell.xib */; };
 		DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */; };
 		DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */; };
+		DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */; };
 		DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */; };
 		DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE354FF1DAA1AA90023432B /* TodayViewController.m */; };
 		DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE355011DAA1AA90023432B /* MainInterface.storyboard */; };
@@ -119,6 +120,8 @@
 		DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTRHistoryTrackCell.xib; sourceTree = "<group>"; };
 		DF1A17251DC0A12E003881C6 /* histroyTrackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histroyTrackVC.h; sourceTree = "<group>"; };
 		DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = histroyTrackVC.m; sourceTree = "<group>"; };
+		DF23E9AB1DCD8554002613D1 /* LQCPhotoBrowseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseModel.h; sourceTree = "<group>"; };
+		DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseModel.m; sourceTree = "<group>"; };
 		DF2D198A1CFBEAF40032083A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DF2D198B1CFBEAF40032083A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF2D198D1CFBEB090032083A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -210,11 +213,10 @@
 		DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Usual.m"; sourceTree = "<group>"; };
 		DFB5CA6A1CF6FB8400A4AF48 /* NSArray+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Usual.h"; sourceTree = "<group>"; };
 		DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Usual.m"; sourceTree = "<group>"; };
-		DFBCAC401DCB002000E7601A /* PhotoBrowseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowseController.h; sourceTree = "<group>"; };
-		DFBCAC411DCB002000E7601A /* PhotoBrowseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowseController.m; sourceTree = "<group>"; };
+		DFBCAC401DCB002000E7601A /* LQCPhotoBrowseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseController.h; sourceTree = "<group>"; };
+		DFBCAC411DCB002000E7601A /* LQCPhotoBrowseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseController.m; sourceTree = "<group>"; };
 		DFBCAC461DCB169300E7601A /* LQCPhotoBrowseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseCell.h; sourceTree = "<group>"; };
 		DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseCell.m; sourceTree = "<group>"; };
-		DFBCAC481DCB169300E7601A /* LQCPhotoBrowseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQCPhotoBrowseCell.xib; sourceTree = "<group>"; };
 		DFBE71711DB0E45B00AF9A79 /* iOS8CellSelfCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS8CellSelfCalculate.h; sourceTree = "<group>"; };
 		DFBE71721DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS8CellSelfCalculate.m; sourceTree = "<group>"; };
 		DFBE71731DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8CellSelfCalculate.xib; sourceTree = "<group>"; };
@@ -224,6 +226,8 @@
 		DFBE717C1DB0EBFC00AF9A79 /* iOS8VariableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS8VariableCell.h; sourceTree = "<group>"; };
 		DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS8VariableCell.m; sourceTree = "<group>"; };
 		DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8VariableCell.xib; sourceTree = "<group>"; };
+		DFD434381DCDE8F20049464E /* LQCPhotoBrowseConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseConfigure.h; sourceTree = "<group>"; };
+		DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseConfigure.m; sourceTree = "<group>"; };
 		DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = mytodayWidge.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		DFE354FE1DAA1AA90023432B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -623,7 +627,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				DFBCAC3F1DCAFE8700E7601A /* 防腾讯选照片 */,
+				DFBCAC3F1DCAFE8700E7601A /* 仿腾讯照片浏览 */,
 				DFB474E01DC89ECF0024F77B /* 驾图足迹测试 */,
 				DF2ED3021DC485FF00DEDE68 /* 仿腾讯视频横屏 */,
 				DF1A171F1DC0A0FB003881C6 /* 测试历史轨迹cel */,
@@ -699,15 +703,19 @@
 			path = UIlabel;
 			sourceTree = "<group>";
 		};
-		DFBCAC3F1DCAFE8700E7601A /* 防腾讯选照片 */ = {
+		DFBCAC3F1DCAFE8700E7601A /* 仿腾讯照片浏览 */ = {
 			isa = PBXGroup;
 			children = (
-				DFBCAC401DCB002000E7601A /* PhotoBrowseController.h */,
-				DFBCAC411DCB002000E7601A /* PhotoBrowseController.m */,
+				DFBCAC401DCB002000E7601A /* LQCPhotoBrowseController.h */,
+				DFBCAC411DCB002000E7601A /* LQCPhotoBrowseController.m */,
 				DFBCAC461DCB169300E7601A /* LQCPhotoBrowseCell.h */,
 				DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */,
-				DFBCAC481DCB169300E7601A /* LQCPhotoBrowseCell.xib */,
+				DF23E9AB1DCD8554002613D1 /* LQCPhotoBrowseModel.h */,
+				DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */,
+				DFD434381DCDE8F20049464E /* LQCPhotoBrowseConfigure.h */,
+				DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */,
 			);
+			name = "仿腾讯照片浏览";
 			path = "防腾讯选照片";
 			sourceTree = "<group>";
 		};
@@ -854,7 +862,6 @@
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
 				DFB474EA1DC89F490024F77B /* FootPrintCell.xcassets in Resources */,
-				DFBCAC4A1DCB169300E7601A /* LQCPhotoBrowseCell.xib in Resources */,
 				DF2D199F1CFC04730032083A /* LaunchScreen.storyboard in Resources */,
 				DF85ED821CFD5F2A00D3FE0C /* MineMainControl.xib in Resources */,
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
@@ -994,8 +1001,10 @@
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
+				DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */,
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
+				DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */,
 				DF8FBC281D66ED5B00E5BDC6 /* TestKeyBoradVC.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DFB474F21DC8A2620024F77B /* FootprintTestVC.m in Sources */,
@@ -1004,7 +1013,7 @@
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,
-				DFBCAC421DCB002000E7601A /* PhotoBrowseController.m in Sources */,
+				DFBCAC421DCB002000E7601A /* LQCPhotoBrowseController.m in Sources */,
 				DF2D19AA1CFC2E980032083A /* RootTabbar.m in Sources */,
 				DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */,
 				DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */,

@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LQCPhotoBrowseController.h"
 
+@class LQCPhotoBrowseModel;
 @interface LQCPhotoBrowseCell : UICollectionViewCell
 
 
-@property (nonatomic,copy) NSString *labelText;
+
+@property (nonatomic,strong) LQCPhotoBrowseModel *model;
 
 @end

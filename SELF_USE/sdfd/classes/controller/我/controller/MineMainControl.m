@@ -12,9 +12,13 @@
 #import "histroyTrackVC.h"
 #import "PortraitPlayerController.h"
 #import "FootprintTestVC.h"
-#import "PhotoBrowseController.h"
+#import "LQCPhotoBrowseController.h"
+#import "LQCPhotoBrowseModel.h"
+#import <SDWebImage/SDWebImageManager.h>
+
 
 @interface MineMainControl ()
+
 
 @end
 
@@ -70,9 +74,26 @@
 //测试选照片
 - (void)testPhotoBrose
 {
-    PhotoBrowseController *vc = [[PhotoBrowseController alloc] init];
-   
+    LQCPhotoBrowseController *vc = [[LQCPhotoBrowseController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
 }
+
+#pragma mark - LQCPhotoBrowseSetImageDelegate
+
+- (void)LQCPB_asynFetchImageWithPath:(NSURL *)imagePath
+                            progress:(void (^)(NSInteger, NSInteger))progressBlock
+                            complete:(void (^)(UIImage *, NSError *, NSURL *))completeBlock
+{
+ 
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+    [manager
+     downloadImageWithURL:imagePath
+     options:SDWebImageLowPriority
+     progress:progressBlock
+     completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+         if (completeBlock) completeBlock(image,error,imageURL);
+    }];
+}
+
 
 @end

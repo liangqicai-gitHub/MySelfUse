@@ -6,10 +6,10 @@
 //  Copyright © 2016年 梁齐才. All rights reserved.
 //
 
-#import "PhotoBrowseController.h"
+#import "LQCPhotoBrowseController.h"
 #import "LQCPhotoBrowseCell.h"
 
-@interface PhotoBrowseController ()
+@interface LQCPhotoBrowseController ()
 <
 UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 >
@@ -20,7 +20,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 
 @end
 
-@implementation PhotoBrowseController
+@implementation LQCPhotoBrowseController
 
 - (void)viewDidLoad
 {
@@ -35,7 +35,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
     _cellId = @"a";
 }
 
-
 - (void)initViews
 {
     
@@ -44,8 +43,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                                          collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    [_collectionView registerNib:[UINib nibWithNibName:@"LQCPhotoBrowseCell" bundle:nil]
-      forCellWithReuseIdentifier:_cellId];
+    [_collectionView registerClass:[LQCPhotoBrowseCell class] forCellWithReuseIdentifier:_cellId];
     [self.view addSubview:_collectionView];
     _collectionView.pagingEnabled = YES;
     _collectionView.backgroundColor = [UIColor greenColor];
@@ -53,8 +51,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, -10));
     }];
 }
-
-
 
 - (UICollectionViewFlowLayout *)newLayoutWithItemSize:(CGSize)itemSize
 {
@@ -64,7 +60,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 10);
     return layout;
 }
-
 
 - (void)viewDidLayoutSubviews
 {
@@ -78,10 +73,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 }
 
 
-
-
 #pragma mark - delegate
-
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -98,7 +90,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LQCPhotoBrowseCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellId forIndexPath:indexPath];
-    cell.labelText = Str_F(@"memeda--%zd",indexPath.row + 1);
+   
     return cell;
 }
 
