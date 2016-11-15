@@ -33,6 +33,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (void)initVars
 {
     _cellId = @"a";
+    
+    //this is 啊啊啊
 }
 
 
