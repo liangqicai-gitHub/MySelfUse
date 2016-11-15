@@ -16,6 +16,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 {
     UICollectionView *_collectionView;
     NSString *_cellId;
+    
+    //bug fixed
 }
 
 @end
