@@ -6,23 +6,21 @@
 //  Copyright © 2016年 梁齐才. All rights reserved.
 //
 
-#import "LQCPhotoBrowseController.h"
+#import "PhotoBrowseController.h"
 #import "LQCPhotoBrowseCell.h"
 
-@interface LQCPhotoBrowseController ()
+@interface PhotoBrowseController ()
 <
 UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 >
 {
     UICollectionView *_collectionView;
     NSString *_cellId;
-    
-    //bug fixed
 }
 
 @end
 
-@implementation LQCPhotoBrowseController
+@implementation PhotoBrowseController
 
 - (void)viewDidLoad
 {
@@ -30,17 +28,13 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
     self.view.backgroundColor = [UIColor whiteColor];
     [self initVars];
     [self initViews];
-    
-    
-    //I fixed bug2 in branch bugfix2
 }
 
 - (void)initVars
 {
     _cellId = @"a";
-    
-    //I did something om master
 }
+
 
 - (void)initViews
 {
@@ -50,7 +44,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                                          collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    [_collectionView registerClass:[LQCPhotoBrowseCell class] forCellWithReuseIdentifier:_cellId];
+    [_collectionView registerNib:[UINib nibWithNibName:@"LQCPhotoBrowseCell" bundle:nil]
+      forCellWithReuseIdentifier:_cellId];
     [self.view addSubview:_collectionView];
     _collectionView.pagingEnabled = YES;
     _collectionView.backgroundColor = [UIColor greenColor];
@@ -58,6 +53,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, -10));
     }];
 }
+
+
 
 - (UICollectionViewFlowLayout *)newLayoutWithItemSize:(CGSize)itemSize
 {
@@ -67,6 +64,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 10);
     return layout;
 }
+
 
 - (void)viewDidLayoutSubviews
 {
@@ -80,14 +78,17 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 }
 
 
+
+
 #pragma mark - delegate
+
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
     
     
-    // I did something in master whiling someone fixing bug 3
+    // I fiex bug 3 
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
@@ -100,7 +101,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LQCPhotoBrowseCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellId forIndexPath:indexPath];
-   
+    cell.labelText = Str_F(@"memeda--%zd",indexPath.row + 1);
     return cell;
 }
 
