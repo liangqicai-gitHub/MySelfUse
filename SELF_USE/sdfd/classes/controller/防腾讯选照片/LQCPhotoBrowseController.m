@@ -86,9 +86,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
-    
-    
-    // I fiex bug 3 
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
@@ -101,7 +98,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LQCPhotoBrowseCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellId forIndexPath:indexPath];
-//    cell.labelText = Str_F(@"memeda--%zd",indexPath.row + 1);
     return cell;
 }
 
