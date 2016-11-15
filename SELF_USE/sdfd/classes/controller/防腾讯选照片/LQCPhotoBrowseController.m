@@ -6,10 +6,10 @@
 //  Copyright © 2016年 梁齐才. All rights reserved.
 //
 
-#import "PhotoBrowseController.h"
+#import "LQCPhotoBrowseController.h"
 #import "LQCPhotoBrowseCell.h"
 
-@interface PhotoBrowseController ()
+@interface LQCPhotoBrowseController ()
 <
 UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 >
@@ -20,7 +20,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 
 @end
 
-@implementation PhotoBrowseController
+@implementation LQCPhotoBrowseController
 
 - (void)viewDidLoad
 {
@@ -101,7 +101,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LQCPhotoBrowseCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:_cellId forIndexPath:indexPath];
-    cell.labelText = Str_F(@"memeda--%zd",indexPath.row + 1);
+//    cell.labelText = Str_F(@"memeda--%zd",indexPath.row + 1);
     return cell;
 }
 
