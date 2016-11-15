@@ -86,6 +86,9 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
+    
+    
+    // I did something in master whiling someone fixing bug 3
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
