@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		69D56EF086B6BB07F7DCC0E1 /* libPods-mytodayWidge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */; };
+		DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB661DD07E8000AB88CE /* TestForCollectionView.m */; };
+		DF0AFB691DD07E8000AB88CE /* TestForCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB671DD07E8000AB88CE /* TestForCollectionView.xib */; };
+		DF0AFB6D1DD0814E00AB88CE /* YearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB6B1DD0814E00AB88CE /* YearCell.m */; };
+		DF0AFB6E1DD0814E00AB88CE /* YearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB6C1DD0814E00AB88CE /* YearCell.xib */; };
+		DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB701DD0852000AB88CE /* dayCell.m */; };
+		DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB711DD0852000AB88CE /* dayCell.xib */; };
 		DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */; };
 		DF1A17241DC0A111003881C6 /* KTRHistoryTrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */; };
 		DF1A17281DC0A12E003881C6 /* histroyTrackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */; };
@@ -115,6 +121,15 @@
 		7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mytodayWidge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sdfd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47AFF679C745063B96491B8 /* Pods-sdfd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.release.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.release.xcconfig"; sourceTree = "<group>"; };
+		DF0AFB651DD07E8000AB88CE /* TestForCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestForCollectionView.h; sourceTree = "<group>"; };
+		DF0AFB661DD07E8000AB88CE /* TestForCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestForCollectionView.m; sourceTree = "<group>"; };
+		DF0AFB671DD07E8000AB88CE /* TestForCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestForCollectionView.xib; sourceTree = "<group>"; };
+		DF0AFB6A1DD0814E00AB88CE /* YearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearCell.h; sourceTree = "<group>"; };
+		DF0AFB6B1DD0814E00AB88CE /* YearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearCell.m; sourceTree = "<group>"; };
+		DF0AFB6C1DD0814E00AB88CE /* YearCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearCell.xib; sourceTree = "<group>"; };
+		DF0AFB6F1DD0852000AB88CE /* dayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayCell.h; sourceTree = "<group>"; };
+		DF0AFB701DD0852000AB88CE /* dayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayCell.m; sourceTree = "<group>"; };
+		DF0AFB711DD0852000AB88CE /* dayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dayCell.xib; sourceTree = "<group>"; };
 		DF1A17201DC0A111003881C6 /* KTRHistoryTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRHistoryTrackCell.h; sourceTree = "<group>"; };
 		DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRHistoryTrackCell.m; sourceTree = "<group>"; };
 		DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTRHistoryTrackCell.xib; sourceTree = "<group>"; };
@@ -284,6 +299,22 @@
 				7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF0AFB641DD07E6000AB88CE /* 小测试 */ = {
+			isa = PBXGroup;
+			children = (
+				DF0AFB651DD07E8000AB88CE /* TestForCollectionView.h */,
+				DF0AFB661DD07E8000AB88CE /* TestForCollectionView.m */,
+				DF0AFB671DD07E8000AB88CE /* TestForCollectionView.xib */,
+				DF0AFB6A1DD0814E00AB88CE /* YearCell.h */,
+				DF0AFB6B1DD0814E00AB88CE /* YearCell.m */,
+				DF0AFB6C1DD0814E00AB88CE /* YearCell.xib */,
+				DF0AFB6F1DD0852000AB88CE /* dayCell.h */,
+				DF0AFB701DD0852000AB88CE /* dayCell.m */,
+				DF0AFB711DD0852000AB88CE /* dayCell.xib */,
+			);
+			path = "小测试";
 			sourceTree = "<group>";
 		};
 		DF1A171F1DC0A0FB003881C6 /* 测试历史轨迹cel */ = {
@@ -627,6 +658,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF0AFB641DD07E6000AB88CE /* 小测试 */,
 				DFBCAC3F1DCAFE8700E7601A /* 仿腾讯照片浏览 */,
 				DFB474E01DC89ECF0024F77B /* 驾图足迹测试 */,
 				DF2ED3021DC485FF00DEDE68 /* 仿腾讯视频横屏 */,
@@ -863,6 +895,8 @@
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
 				DFB474EA1DC89F490024F77B /* FootPrintCell.xcassets in Resources */,
 				DF2D199F1CFC04730032083A /* LaunchScreen.storyboard in Resources */,
+				DF0AFB691DD07E8000AB88CE /* TestForCollectionView.xib in Resources */,
+				DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */,
 				DF85ED821CFD5F2A00D3FE0C /* MineMainControl.xib in Resources */,
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
 				DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */,
@@ -873,6 +907,7 @@
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
 				DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */,
 				DF8FBC291D66ED5B00E5BDC6 /* TestKeyBoradVC.xib in Resources */,
+				DF0AFB6E1DD0814E00AB88CE /* YearCell.xib in Resources */,
 				DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -983,6 +1018,7 @@
 				DF1A17281DC0A12E003881C6 /* histroyTrackVC.m in Sources */,
 				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
+				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
 				DF4793C01DC04AB8001CD592 /* KTRFootPrintPhotosModel.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFB474E81DC89F0F0024F77B /* KTRFootprintBottomView.m in Sources */,
@@ -992,6 +1028,7 @@
 				DFB474EE1DC89F8C0024F77B /* UILabel+Convenient.m in Sources */,
 				DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */,
 				DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */,
+				DF0AFB6D1DD0814E00AB88CE /* YearCell.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
 				DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */,
 				DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
@@ -1005,6 +1042,7 @@
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
 				DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */,
+				DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */,
 				DF8FBC281D66ED5B00E5BDC6 /* TestKeyBoradVC.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DFB474F21DC8A2620024F77B /* FootprintTestVC.m in Sources */,

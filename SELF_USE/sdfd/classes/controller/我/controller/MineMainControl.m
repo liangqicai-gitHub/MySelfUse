@@ -15,6 +15,7 @@
 #import "LQCPhotoBrowseController.h"
 #import "LQCPhotoBrowseModel.h"
 #import <SDWebImage/SDWebImageManager.h>
+#import "TestForCollectionView.h"
 
 
 @interface MineMainControl ()
@@ -26,7 +27,8 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    [self testPhotoBrose];
+    [self testCollectionView];
+//    [self testPhotoBrose];
 //    [self testFootPrint];
 //    [self testHis];
 //    [self testBaiDuMapClusterFunction];
@@ -95,5 +97,12 @@
     }];
 }
 
+
+- (void)testCollectionView
+{
+    TestForCollectionView *vc = [[TestForCollectionView alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
