@@ -10,8 +10,6 @@ pod 'Masonry'
 
 pod 'MJRefresh'
 
-pod 'MJPhotoBrowser'
-
 pod 'YYKit'
 
 pod 'BaiduMapKit' #百度地图SDK
