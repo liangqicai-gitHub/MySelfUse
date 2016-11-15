@@ -35,6 +35,8 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (void)initVars
 {
     _cellId = @"a";
+    
+    //I did something om master
 }
 
 - (void)initViews
