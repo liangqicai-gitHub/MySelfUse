@@ -28,6 +28,9 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
     self.view.backgroundColor = [UIColor whiteColor];
     [self initVars];
     [self initViews];
+    
+    
+    //I fixed bug2 in branch bugfix2
 }
 
 - (void)initVars
