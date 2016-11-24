@@ -26,27 +26,31 @@
 
 - (void)configerNavigationBar
 {
-    self.navigationBar.translucent = NO;
-    UIColor *barTintColor = [[UIColor alloc] initWithRed:1.0f green:0 blue:0 alpha:0.5];
-    self.navigationBar.barTintColor = barTintColor;
+    UIColor *barColor = [UIColor whiteColor];
+    barColor = [barColor colorWithAlphaComponent:0.8];
+    UIImage *barImage = [barColor pureColorImage];
+    [self.navigationBar setBackgroundImage:barImage
+                             forBarMetrics:UIBarMetricsDefault];
     
     UIColor *titleColor = HexRGB(0xfecb16);
     NSDictionary *titleAttributes = @{
                                       NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
                                       NSForegroundColorAttributeName:titleColor
                                       };
+    self.navigationBar.translucent = YES;
     [self.navigationBar setTitleTextAttributes:titleAttributes];
 }
 
 
-- (UIStatusBarStyle)preferredStatusBarStyle
+
+- (UIViewController *)childViewControllerForStatusBarStyle
 {
-    return UIStatusBarStyleLightContent;
+    return self.topViewController;
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
-    NSArray *controllers = self.childViewControllers;
+    NSArray *controllers = self.viewControllers;
     if ([NSArray isEmpty:controllers]) return NO;
     if (controllers.count > 1) return YES;
     return NO;

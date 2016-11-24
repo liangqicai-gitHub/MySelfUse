@@ -47,6 +47,10 @@
 		DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */; };
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
+		DF8287D61DE67E5D002C384C /* TestNavigationBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8287D51DE67E5D002C384C /* TestNavigationBaseViewController.m */; };
+		DF8287DA1DE68529002C384C /* searchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8287D81DE68529002C384C /* searchVC.m */; };
+		DF8287DB1DE68529002C384C /* searchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8287D91DE68529002C384C /* searchVC.xib */; };
+		DF8287DD1DE691F3002C384C /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8287DC1DE691F3002C384C /* common.xcassets */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
 		DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */; };
 		DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7F1CFD5F2A00D3FE0C /* MineMainControl.m */; };
@@ -71,6 +75,11 @@
 		DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA651CF6F1A400A4AF48 /* UIColor+Usual.m */; };
 		DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */; };
 		DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */; };
+		DFBCA5251DE40E3B00BF6408 /* AVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCA5231DE40E3B00BF6408 /* AVC.m */; };
+		DFBCA5261DE40E3B00BF6408 /* AVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBCA5241DE40E3B00BF6408 /* AVC.xib */; };
+		DFBCA52A1DE40E8D00BF6408 /* BVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCA5281DE40E8D00BF6408 /* BVC.m */; };
+		DFBCA52B1DE40E8D00BF6408 /* BVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBCA5291DE40E8D00BF6408 /* BVC.xib */; };
+		DFBCA52E1DE40FBD00BF6408 /* ROOTA.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCA52D1DE40FBD00BF6408 /* ROOTA.m */; };
 		DFBCAC421DCB002000E7601A /* LQCPhotoBrowseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC411DCB002000E7601A /* LQCPhotoBrowseController.m */; };
 		DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBCAC471DCB169300E7601A /* LQCPhotoBrowseCell.m */; };
 		DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE71721DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m */; };
@@ -185,6 +194,12 @@
 		DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapClusterTest.xib; sourceTree = "<group>"; };
 		DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PullToRefresh.xcassets; sourceTree = "<group>"; };
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		DF8287D41DE67E5D002C384C /* TestNavigationBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNavigationBaseViewController.h; sourceTree = "<group>"; };
+		DF8287D51DE67E5D002C384C /* TestNavigationBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNavigationBaseViewController.m; sourceTree = "<group>"; };
+		DF8287D71DE68529002C384C /* searchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchVC.h; sourceTree = "<group>"; };
+		DF8287D81DE68529002C384C /* searchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchVC.m; sourceTree = "<group>"; };
+		DF8287D91DE68529002C384C /* searchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchVC.xib; sourceTree = "<group>"; };
+		DF8287DC1DE691F3002C384C /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
 		DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMainControl.m; sourceTree = "<group>"; };
 		DF85ED7B1CFD5EF200D3FE0C /* HomeMainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMainControl.h; sourceTree = "<group>"; };
@@ -228,6 +243,14 @@
 		DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Usual.m"; sourceTree = "<group>"; };
 		DFB5CA6A1CF6FB8400A4AF48 /* NSArray+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Usual.h"; sourceTree = "<group>"; };
 		DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Usual.m"; sourceTree = "<group>"; };
+		DFBCA5221DE40E3B00BF6408 /* AVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVC.h; sourceTree = "<group>"; };
+		DFBCA5231DE40E3B00BF6408 /* AVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVC.m; sourceTree = "<group>"; };
+		DFBCA5241DE40E3B00BF6408 /* AVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVC.xib; sourceTree = "<group>"; };
+		DFBCA5271DE40E8D00BF6408 /* BVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVC.h; sourceTree = "<group>"; };
+		DFBCA5281DE40E8D00BF6408 /* BVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVC.m; sourceTree = "<group>"; };
+		DFBCA5291DE40E8D00BF6408 /* BVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BVC.xib; sourceTree = "<group>"; };
+		DFBCA52C1DE40FBD00BF6408 /* ROOTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROOTA.h; sourceTree = "<group>"; };
+		DFBCA52D1DE40FBD00BF6408 /* ROOTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROOTA.m; sourceTree = "<group>"; };
 		DFBCAC401DCB002000E7601A /* LQCPhotoBrowseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseController.h; sourceTree = "<group>"; };
 		DFBCAC411DCB002000E7601A /* LQCPhotoBrowseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseController.m; sourceTree = "<group>"; };
 		DFBCAC461DCB169300E7601A /* LQCPhotoBrowseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseCell.h; sourceTree = "<group>"; };
@@ -361,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				DF2D199A1CFBED590032083A /* Assets.xcassets */,
+				DF8287DC1DE691F3002C384C /* common.xcassets */,
 			);
 			path = appIcons;
 			sourceTree = "<group>";
@@ -658,6 +682,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFBCA5211DE40D2C00BF6408 /* navigation */,
 				DF0AFB641DD07E6000AB88CE /* 小测试 */,
 				DFBCAC3F1DCAFE8700E7601A /* 仿腾讯照片浏览 */,
 				DFB474E01DC89ECF0024F77B /* 驾图足迹测试 */,
@@ -733,6 +758,26 @@
 				DFB474ED1DC89F8C0024F77B /* UILabel+Convenient.m */,
 			);
 			path = UIlabel;
+			sourceTree = "<group>";
+		};
+		DFBCA5211DE40D2C00BF6408 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DFBCA5221DE40E3B00BF6408 /* AVC.h */,
+				DFBCA5231DE40E3B00BF6408 /* AVC.m */,
+				DFBCA5241DE40E3B00BF6408 /* AVC.xib */,
+				DFBCA5271DE40E8D00BF6408 /* BVC.h */,
+				DFBCA5281DE40E8D00BF6408 /* BVC.m */,
+				DFBCA5291DE40E8D00BF6408 /* BVC.xib */,
+				DF8287D71DE68529002C384C /* searchVC.h */,
+				DF8287D81DE68529002C384C /* searchVC.m */,
+				DF8287D91DE68529002C384C /* searchVC.xib */,
+				DFBCA52C1DE40FBD00BF6408 /* ROOTA.h */,
+				DFBCA52D1DE40FBD00BF6408 /* ROOTA.m */,
+				DF8287D41DE67E5D002C384C /* TestNavigationBaseViewController.h */,
+				DF8287D51DE67E5D002C384C /* TestNavigationBaseViewController.m */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 		DFBCAC3F1DCAFE8700E7601A /* 仿腾讯照片浏览 */ = {
@@ -884,6 +929,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8287DB1DE68529002C384C /* searchVC.xib in Resources */,
+				DFBCA5261DE40E3B00BF6408 /* AVC.xib in Resources */,
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
 				DF4793B81DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
@@ -899,8 +946,10 @@
 				DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */,
 				DF85ED821CFD5F2A00D3FE0C /* MineMainControl.xib in Resources */,
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
+				DF8287DD1DE691F3002C384C /* common.xcassets in Resources */,
 				DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */,
 				DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */,
+				DFBCA52B1DE40E8D00BF6408 /* BVC.xib in Resources */,
 				DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */,
 				DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */,
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
@@ -1009,6 +1058,7 @@
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
+				DF8287DA1DE68529002C384C /* searchVC.m in Sources */,
 				DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */,
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
@@ -1023,6 +1073,7 @@
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFB474E81DC89F0F0024F77B /* KTRFootprintBottomView.m in Sources */,
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
+				DFBCA52A1DE40E8D00BF6408 /* BVC.m in Sources */,
 				DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
 				DFB474EE1DC89F8C0024F77B /* UILabel+Convenient.m in Sources */,
@@ -1036,6 +1087,7 @@
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
+				DF8287D61DE67E5D002C384C /* TestNavigationBaseViewController.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
 				DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */,
@@ -1047,7 +1099,9 @@
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DFB474F21DC8A2620024F77B /* FootprintTestVC.m in Sources */,
 				DF2D19AD1CFC30FD0032083A /* RootTabbarItem.m in Sources */,
+				DFBCA5251DE40E3B00BF6408 /* AVC.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
+				DFBCA52E1DE40FBD00BF6408 /* ROOTA.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,

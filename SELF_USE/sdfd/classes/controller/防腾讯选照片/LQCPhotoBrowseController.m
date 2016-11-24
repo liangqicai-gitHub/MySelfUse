@@ -25,7 +25,7 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blackColor];
     [self initVars];
     [self initViews];
 }
@@ -33,8 +33,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (void)initVars
 {
     _cellId = @"a";
-    
-    //this is 啊啊啊
 }
 
 
@@ -46,11 +44,9 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
                                          collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    [_collectionView registerNib:[UINib nibWithNibName:@"LQCPhotoBrowseCell" bundle:nil]
-      forCellWithReuseIdentifier:_cellId];
+    [_collectionView registerClass:[LQCPhotoBrowseCell class] forCellWithReuseIdentifier:_cellId];
     [self.view addSubview:_collectionView];
     _collectionView.pagingEnabled = YES;
-    _collectionView.backgroundColor = [UIColor greenColor];
     [_collectionView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, -10));
     }];
@@ -88,9 +84,6 @@ UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
-    
-    
-    // I did something in master whiling someone fixing bug 3
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView

@@ -4,6 +4,8 @@ target 'sdfd' do
 
 pod 'MJExtension'
 
+pod 'SDWebImage'
+
 pod 'AFNetworking'
 
 pod 'Masonry'

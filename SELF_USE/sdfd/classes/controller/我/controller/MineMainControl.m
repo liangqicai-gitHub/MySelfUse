@@ -16,9 +16,10 @@
 #import "LQCPhotoBrowseModel.h"
 #import <SDWebImage/SDWebImageManager.h>
 #import "TestForCollectionView.h"
-
+#import "ROOTA.h"
 
 @interface MineMainControl ()
+
 
 
 @end
@@ -27,7 +28,12 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    [self testCollectionView];
+    
+
+    [self testNavigation];
+
+    
+//    [self testCollectionView];
 //    [self testPhotoBrose];
 //    [self testFootPrint];
 //    [self testHis];
@@ -79,6 +85,14 @@
     LQCPhotoBrowseController *vc = [[LQCPhotoBrowseController alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
 }
+
+//去选择root
+- (void)testNavigation
+{
+    ROOTA *root = [ROOTA newInstance];
+    [self presentViewController:root animated:NO completion:nil];
+}
+
 
 #pragma mark - LQCPhotoBrowseSetImageDelegate
 

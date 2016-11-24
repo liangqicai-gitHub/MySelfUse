@@ -128,6 +128,17 @@
 }
 
 
+- (UIViewController *)childViewControllerForStatusBarStyle
+{
+    if ([NSArray isEmpty:self.viewControllers]){
+        return nil;
+    }else{
+       return [self.viewControllers safeObjAtIndex:self.selectedIndex];
+    }
+}
+
+
+
 #pragma mark - 横屏控制
 
 - (BOOL)shouldAutorotate
