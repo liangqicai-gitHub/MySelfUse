@@ -14,9 +14,6 @@
 		DF0AFB6E1DD0814E00AB88CE /* YearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB6C1DD0814E00AB88CE /* YearCell.xib */; };
 		DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB701DD0852000AB88CE /* dayCell.m */; };
 		DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB711DD0852000AB88CE /* dayCell.xib */; };
-		DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */; };
-		DF1A17241DC0A111003881C6 /* KTRHistoryTrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */; };
-		DF1A17281DC0A12E003881C6 /* histroyTrackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */; };
 		DF1DE5DB1DE82C2900DB9C64 /* testNavigationB.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */; };
 		DF1DE5DC1DE82C2900DB9C64 /* testNavigationB.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */; };
 		DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */; };
@@ -137,11 +134,6 @@
 		DF0AFB6F1DD0852000AB88CE /* dayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayCell.h; sourceTree = "<group>"; };
 		DF0AFB701DD0852000AB88CE /* dayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayCell.m; sourceTree = "<group>"; };
 		DF0AFB711DD0852000AB88CE /* dayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dayCell.xib; sourceTree = "<group>"; };
-		DF1A17201DC0A111003881C6 /* KTRHistoryTrackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRHistoryTrackCell.h; sourceTree = "<group>"; };
-		DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRHistoryTrackCell.m; sourceTree = "<group>"; };
-		DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTRHistoryTrackCell.xib; sourceTree = "<group>"; };
-		DF1A17251DC0A12E003881C6 /* histroyTrackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histroyTrackVC.h; sourceTree = "<group>"; };
-		DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = histroyTrackVC.m; sourceTree = "<group>"; };
 		DF1DE5D81DE82C2900DB9C64 /* testNavigationB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testNavigationB.h; sourceTree = "<group>"; };
 		DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testNavigationB.m; sourceTree = "<group>"; };
 		DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testNavigationB.xib; sourceTree = "<group>"; };
@@ -333,18 +325,6 @@
 				DF0AFB711DD0852000AB88CE /* dayCell.xib */,
 			);
 			path = "小测试";
-			sourceTree = "<group>";
-		};
-		DF1A171F1DC0A0FB003881C6 /* 测试历史轨迹cel */ = {
-			isa = PBXGroup;
-			children = (
-				DF1A17201DC0A111003881C6 /* KTRHistoryTrackCell.h */,
-				DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */,
-				DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */,
-				DF1A17251DC0A12E003881C6 /* histroyTrackVC.h */,
-				DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */,
-			);
-			path = "测试历史轨迹cel";
 			sourceTree = "<group>";
 		};
 		DF2D19861CFBEAC80032083A /* APPDelegate */ = {
@@ -683,7 +663,6 @@
 				DFBCAC3F1DCAFE8700E7601A /* 仿腾讯照片浏览 */,
 				DFB474E01DC89ECF0024F77B /* 驾图足迹测试 */,
 				DF2ED3021DC485FF00DEDE68 /* 仿腾讯视频横屏 */,
-				DF1A171F1DC0A0FB003881C6 /* 测试历史轨迹cel */,
 				DF4793981DC04A58001CD592 /* 点聚合 */,
 				DFBE716D1DB0E3B300AF9A79 /* iOS8Cell自计算 */,
 				DFED53931DA9DE2C001D558A /* 测试跳转系统设置 */,
@@ -891,7 +870,7 @@
 		DFA7ACC61CF5B1EE00BFDB62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "梁齐才";
 				TargetAttributes = {
 					DFA7ACCD1CF5B1EE00BFDB62 = {
@@ -936,7 +915,6 @@
 				DFB474F31DC8A2620024F77B /* FootprintTestVC.xib in Resources */,
 				DF2D19AF1CFC32880032083A /* RootTabbarItem.xib in Resources */,
 				DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */,
-				DF1A17241DC0A111003881C6 /* KTRHistoryTrackCell.xib in Resources */,
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
 				DFB474EA1DC89F490024F77B /* FootPrintCell.xcassets in Resources */,
@@ -1063,7 +1041,6 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
-				DF1A17281DC0A12E003881C6 /* histroyTrackVC.m in Sources */,
 				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
@@ -1080,7 +1057,6 @@
 				DF0AFB6D1DD0814E00AB88CE /* YearCell.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
 				DFC506681DE7D6BA00DD7555 /* UIButton+Factory.m in Sources */,
-				DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */,
 				DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
 				DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */,
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
@@ -1162,8 +1138,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1185,7 +1163,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1205,8 +1183,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1222,7 +1202,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

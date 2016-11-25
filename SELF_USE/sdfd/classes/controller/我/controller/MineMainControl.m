@@ -9,7 +9,6 @@
 #import "MineMainControl.h"
 #import "iOS8CellSelfCalculate.h"
 #import "BaiduMapClusterTest.h"
-#import "histroyTrackVC.h"
 #import "PortraitPlayerController.h"
 #import "FootprintTestVC.h"
 #import "LQCPhotoBrowseController.h"
@@ -57,12 +56,7 @@
     BaiduMapClusterTest *vc = [[BaiduMapClusterTest alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-//测试历史轨迹的cell
-- (void)testHis
-{
-    histroyTrackVC *vc = [[histroyTrackVC alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+
 
 //测试爱奇艺横屏例子
 - (void)testAVPlayer
