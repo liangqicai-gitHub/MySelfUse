@@ -195,9 +195,10 @@ pushAnimation:(BOOL)animation
          initWithTarget:self
          action:@selector(keyboardHide:)];
         tapGestureRecognizer.cancelsTouchesInView = NO;
+        _tapToRetrunKeyboard = tapGestureRecognizer;
     }
     
-    [self.view addGestureRecognizer:tapGestureRecognizer];
+    [self.view addGestureRecognizer:_tapToRetrunKeyboard];
 }
 
 - (void)keyboardHide:(UITapGestureRecognizer *)sender
@@ -240,18 +241,19 @@ pushAnimation:(BOOL)animation
 
 - (void)keyboardWillShow:(NSNotification *)sender
 {
-    NSDictionary*info = [sender userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    NSTimeInterval animationTime = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    [self handleKeyBoardWillShow:animationTime keyBoardHeight:kbSize.height];
+    NSDictionary *info = [sender userInfo];
+    CGSize kbSize = [info [UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    NSTimeInterval time = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [self handleKeyBoardWillShow:time
+                  keyBoardHeight:kbSize.height];
 }
 
 - (void)keyboardWillHide:(NSNotification *)sender
 {
-    NSDictionary*info = [sender userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
-    NSTimeInterval animationTime = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    [self handleKeyBoardWillHide:animationTime
+    NSDictionary *info = [sender userInfo];
+    CGSize kbSize = [info [UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    NSTimeInterval time = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [self handleKeyBoardWillHide:time
                   keyBoardHeight:kbSize.height];
 }
 
