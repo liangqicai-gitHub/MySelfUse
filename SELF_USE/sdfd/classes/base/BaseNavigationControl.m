@@ -7,6 +7,7 @@
 //
 
 #import "BaseNavigationControl.h"
+#import "BaseViewController.h"
 
 @interface BaseNavigationControl ()<UIGestureRecognizerDelegate>
 
@@ -26,13 +27,13 @@
 
 - (void)configerNavigationBar
 {
-    UIColor *barColor = [UIColor whiteColor];
-    barColor = [barColor colorWithAlphaComponent:0.8];
+    UIColor *barColor = [UIColor orangeColor];
+    barColor = [barColor colorWithAlphaComponent:0.9];
     UIImage *barImage = [barColor pureColorImage];
     [self.navigationBar setBackgroundImage:barImage
                              forBarMetrics:UIBarMetricsDefault];
     
-    UIColor *titleColor = HexRGB(0xfecb16);
+    UIColor *titleColor = [UIColor whiteColor];
     NSDictionary *titleAttributes = @{
                                       NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
                                       NSForegroundColorAttributeName:titleColor
@@ -41,8 +42,6 @@
     [self.navigationBar setTitleTextAttributes:titleAttributes];
 }
 
-
-
 - (UIViewController *)childViewControllerForStatusBarStyle
 {
     return self.topViewController;
@@ -50,10 +49,15 @@
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
+    //是否是root，如果是，则返回NO
     NSArray *controllers = self.viewControllers;
     if ([NSArray isEmpty:controllers]) return NO;
-    if (controllers.count > 1) return YES;
-    return NO;
+    if (controllers.count == 1) return NO;
+    
+    UIViewController *top = self.topViewController;
+    if (![top isKindOfClass:[BaseViewController class]]) return NO;
+    return [(BaseViewController *)top supportSlideBack];
+    
 }
 
 

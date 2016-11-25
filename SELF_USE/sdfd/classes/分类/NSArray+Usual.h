@@ -13,6 +13,10 @@
 
 + (BOOL)isEmpty:(id)sender;
 
+
++ (BOOL)  isArray:(id)sender
+equalOrLongerThan:(NSInteger)count;
+
 /**
  *  在取的时候，我会帮你判断是不是越界。
  *  
@@ -23,6 +27,8 @@
  *  @return
  */
 - (id)safeObjAtIndex:(NSUInteger)index;
+
+
 
 
 

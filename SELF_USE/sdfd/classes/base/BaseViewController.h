@@ -12,18 +12,17 @@
 
 #pragma mark - navigation
 
-/*
- 默认是NO，
- 子类可以重写该方法
- */
-- (BOOL)navigationHidden;
+- (BOOL)navigationBarHidden;
+
+- (BOOL)supportSlideBack;
+
+- (void)setDefaultNavigationBack:(BOOL)useLastControllerTitle;
 
 - (void)popTo:(BaseViewController *)vc
       animation:(BOOL)animation;
 
-- (void)pustTo:(BaseViewController *)vc
+- (void)pushTo:(BaseViewController *)vc
      animation:(BOOL)animation;
 
-- (void)setDefaultNavigationBack;
 
 @end

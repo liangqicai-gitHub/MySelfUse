@@ -20,6 +20,14 @@
 }
 
 
++ (BOOL)  isArray:(id)sender
+equalOrLongerThan:(NSInteger)count
+{
+    if (![sender isKindOfClass:[NSArray class]]) return NO;
+    
+    return [sender count] >= count;
+}
+
 
 - (id)safeObjAtIndex:(NSUInteger)index
 {

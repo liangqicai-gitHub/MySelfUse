@@ -7,6 +7,7 @@
 //
 
 #import "HomeMainControl.h"
+#import "testButtonVC.h"
 
 @interface HomeMainControl ()
 
@@ -16,6 +17,17 @@
 @implementation HomeMainControl
 
 
+- (NSString *)title
+{
+    return @"首页";
+}
+
+
+- (IBAction)testButtonLayout:(UIButton *)sender
+{
+    
+    [self pushTo:[[testButtonVC alloc] init] animation:YES];
+}
 
 
 
