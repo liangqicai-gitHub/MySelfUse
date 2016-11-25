@@ -32,9 +32,8 @@ pushAnimation:(BOOL)animation;
      animation:(BOOL)animation;
 
 
-
-
 #pragma mark - keyboard
+
 - (BOOL)needObserveKeyBorad;
 
 - (void)handleKeyBoardWillShow:(NSTimeInterval)anmationTime

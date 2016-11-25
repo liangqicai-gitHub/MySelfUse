@@ -36,11 +36,6 @@
     [self.navigationController
      setNavigationBarHidden:[self navigationBarHidden]
      animated:animated];
-    
-    //控制键盘
-    if ([self needObserveKeyBorad]){
-        [self addOrRemoveKeyBoardObserver:YES];
-    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -51,7 +46,14 @@
     [self addOrRemoveKeyBoardObserver:NO];
 }
 
-
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //控制键盘
+    if ([self needObserveKeyBorad]){
+        [self addOrRemoveKeyBoardObserver:YES];
+    }
+}
 
 #pragma mark - statusbar
 
@@ -188,12 +190,15 @@ pushAnimation:(BOOL)animation
 
 - (void)addGlobalTapToReturnKeyborad
 {
-    if (_tapToRetrunKeyboard) return;
-    UITapGestureRecognizer *tapGestureRecognizer =
-    [[UITapGestureRecognizer alloc] initWithTarget:self
-                                            action:@selector(keyboardHide:)];
-    tapGestureRecognizer.cancelsTouchesInView = NO;
-    [self.view addGestureRecognizer: tapGestureRecognizer];
+    if (_tapToRetrunKeyboard) {
+        UITapGestureRecognizer *tapGestureRecognizer =
+        [[UITapGestureRecognizer alloc]
+         initWithTarget:self
+         action:@selector(keyboardHide:)];
+        tapGestureRecognizer.cancelsTouchesInView = NO;
+    }
+    
+    [self.view addGestureRecognizer:tapGestureRecognizer];
 }
 
 - (void)keyboardHide:(UITapGestureRecognizer *)sender
@@ -203,6 +208,10 @@ pushAnimation:(BOOL)animation
 
 - (void)addOrRemoveKeyBoardObserver:(BOOL)add
 {
+    if (_tapToRetrunKeyboard){
+        [self.view removeGestureRecognizer:_tapToRetrunKeyboard];
+    }
+    
     [[NSNotificationCenter defaultCenter]
      removeObserver:self
      name:UIKeyboardWillShowNotification
@@ -236,7 +245,6 @@ pushAnimation:(BOOL)animation
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
     NSTimeInterval animationTime = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     [self handleKeyBoardWillShow:animationTime keyBoardHeight:kbSize.height];
-    //在这里调整UI位置
 }
 
 - (void)keyboardWillHide:(NSNotification *)sender
