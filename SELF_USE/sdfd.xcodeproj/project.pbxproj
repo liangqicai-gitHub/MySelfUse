@@ -17,6 +17,8 @@
 		DF1A17231DC0A111003881C6 /* KTRHistoryTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17211DC0A111003881C6 /* KTRHistoryTrackCell.m */; };
 		DF1A17241DC0A111003881C6 /* KTRHistoryTrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */; };
 		DF1A17281DC0A12E003881C6 /* histroyTrackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */; };
+		DF1DE5DB1DE82C2900DB9C64 /* testNavigationB.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */; };
+		DF1DE5DC1DE82C2900DB9C64 /* testNavigationB.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */; };
 		DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */; };
 		DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D198A1CFBEAF40032083A /* AppDelegate.m */; };
 		DF2D198E1CFBEB090032083A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D198D1CFBEB090032083A /* main.m */; };
@@ -140,6 +142,9 @@
 		DF1A17221DC0A111003881C6 /* KTRHistoryTrackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTRHistoryTrackCell.xib; sourceTree = "<group>"; };
 		DF1A17251DC0A12E003881C6 /* histroyTrackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histroyTrackVC.h; sourceTree = "<group>"; };
 		DF1A17261DC0A12E003881C6 /* histroyTrackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = histroyTrackVC.m; sourceTree = "<group>"; };
+		DF1DE5D81DE82C2900DB9C64 /* testNavigationB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testNavigationB.h; sourceTree = "<group>"; };
+		DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testNavigationB.m; sourceTree = "<group>"; };
+		DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testNavigationB.xib; sourceTree = "<group>"; };
 		DF23E9AB1DCD8554002613D1 /* LQCPhotoBrowseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseModel.h; sourceTree = "<group>"; };
 		DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseModel.m; sourceTree = "<group>"; };
 		DF2D198A1CFBEAF40032083A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -819,6 +824,9 @@
 				DFE751141DE6C0D700BAB23F /* testButtonVC.h */,
 				DFE751151DE6C0D700BAB23F /* testButtonVC.m */,
 				DFE751161DE6C0D700BAB23F /* testButtonVC.xib */,
+				DF1DE5D81DE82C2900DB9C64 /* testNavigationB.h */,
+				DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */,
+				DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */,
 			);
 			path = "测试按钮";
 			sourceTree = "<group>";
@@ -939,6 +947,7 @@
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
 				DF8287DD1DE691F3002C384C /* common.xcassets in Resources */,
 				DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */,
+				DF1DE5DC1DE82C2900DB9C64 /* testNavigationB.xib in Resources */,
 				DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */,
 				DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */,
 				DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */,
@@ -1097,6 +1106,7 @@
 				DF2D19AA1CFC2E980032083A /* RootTabbar.m in Sources */,
 				DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */,
 				DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */,
+				DF1DE5DB1DE82C2900DB9C64 /* testNavigationB.m in Sources */,
 				DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

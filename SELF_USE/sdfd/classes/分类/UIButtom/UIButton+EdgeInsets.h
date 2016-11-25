@@ -20,18 +20,4 @@ typedef NS_ENUM(NSUInteger, ButtonEdgeInsetsStyle) {
 - (void)layoutButtonWithEdgeInsetsStyle:(ButtonEdgeInsetsStyle)style
                         imageTitlespace:(CGFloat)space;
 
-
-+ (UIButton *)newInstanceWithTitle:(NSString *)title
-                              font:(UIFont *)font
-                  normalTitleColor:(UIColor *)normalTitleColor
-               highlightTitleColor:(UIColor *)highlightTitleColor
-                selectedTitleColor:(UIColor *)selectedTitleColor
-                 disableTitleColor:(UIColor *)selectedTitleColor
-               horizontalAlignment:(UIControlContentHorizontalAlignment)horizontalAlignment
-                 verticalAlignment:(UIControlContentVerticalAlignment)verticalAlignment
-                       normalImage:(UIImage *)normalImage
-                    highlightImage:(UIImage *)highlightImage
-                     selectedImage:(UIImage *)selectedImage
-                      disableImage:(UIImage *)disableImage;
-
 @end

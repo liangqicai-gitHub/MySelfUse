@@ -7,6 +7,7 @@
 //
 
 #import "testButtonVC.h"
+#import "testNavigationB.h"
 
 
 @interface testButtonVC ()
@@ -26,6 +27,20 @@
         
     }
     
+}
+
+
+- (IBAction)A:(UIButton *)sender
+{
+//    [self popToRootanimation:NO];
+
+    [self popTo:nil
+       thenPush:[[testNavigationB alloc] init]
+  pushAnimation:YES];
+    
+//    NSLog(@"self.navigation %@",self.navigationController);
+    
+//    [self pushTo:[[testNavigationB alloc] init] animation:YES];
 }
 
 

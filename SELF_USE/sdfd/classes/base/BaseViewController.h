@@ -10,6 +10,7 @@
 
 @interface BaseViewController : UIViewController
 
+
 #pragma mark - navigation
 
 - (BOOL)navigationBarHidden;
@@ -21,8 +22,25 @@
 - (void)popTo:(BaseViewController *)vc
       animation:(BOOL)animation;
 
+- (void)popToRootAnimation:(BOOL)animation;
+
+- (void)popTo:(BaseViewController *)povc
+     thenPush:(BaseViewController *)pushvc
+pushAnimation:(BOOL)animation;
+
 - (void)pushTo:(BaseViewController *)vc
      animation:(BOOL)animation;
 
+
+
+
+#pragma mark - keyboard
+- (BOOL)needObserveKeyBorad;
+
+- (void)handleKeyBoardWillShow:(NSTimeInterval)anmationTime
+                keyBoardHeight:(CGFloat)height;
+
+- (void)handleKeyBoardWillHide:(NSTimeInterval)anmationTime
+                keyBoardHeight:(CGFloat)height;
 
 @end

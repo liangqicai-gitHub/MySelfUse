@@ -9,6 +9,9 @@
 #import "BaseViewController.h"
 
 @interface BaseViewController ()
+{
+    UITapGestureRecognizer *_tapToRetrunKeyboard;
+}
 
 @end
 
@@ -21,17 +24,35 @@
 {
     [super viewDidLoad];
     [self setDefaultNavigationBack:YES];
-     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    if ([self.view.backgroundColor isEqual:[UIColor clearColor]]){
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
+    //控制navigation
     [self.navigationController
      setNavigationBarHidden:[self navigationBarHidden]
      animated:animated];
+    
+    //控制键盘
+    if ([self needObserveKeyBorad]){
+        [self addOrRemoveKeyBoardObserver:YES];
+    }
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    //控制键盘
+    [self addOrRemoveKeyBoardObserver:NO];
+}
+
 
 
 #pragma mark - statusbar
@@ -82,8 +103,12 @@
                                        size:(CGSize){CGFLOAT_MAX,30}
                                        mode:backBtn.titleLabel.lineBreakMode].width;
     CGFloat backBtnWidth = titleWidth + backImage.size.width;
+    
     [backBtn setFrame:(CGRect){0,0,backBtnWidth + 7,44}];
     [backBtn setTitleEdgeInsets:(UIEdgeInsets){0,5,0,0}];
+    [backBtn addTarget:self
+                action:@selector(backBtnClick:)
+      forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *navigationSpacer = [[UIBarButtonItem alloc] init];
     navigationSpacer.width = -5;
@@ -94,6 +119,12 @@
     
     self.navigationItem.leftBarButtonItems = leftItems;
 }
+
+- (void)backBtnClick:(UIButton *)sender
+{
+    [self popTo:nil animation:YES];
+}
+
 
 - (void)popTo:(BaseViewController *)vc
     animation:(BOOL)animation
@@ -110,6 +141,35 @@
     }
 }
 
+
+- (void)popToRootAnimation:(BOOL)animation
+{
+    [self.view endEditing:YES];
+    
+    UINavigationController *navi = self.navigationController;
+    if (![navi isKindOfClass:[UINavigationController class]]) return;
+    
+    [navi popToRootViewControllerAnimated:animation];
+}
+
+- (void)popTo:(BaseViewController *)povc
+     thenPush:(BaseViewController *)pushvc
+pushAnimation:(BOOL)animation
+{
+    UINavigationController *navi = self.navigationController;
+    if (![navi isKindOfClass:[UINavigationController class]]) return;
+    
+    if (povc){
+        [navi popToViewController:povc animated:NO];
+    }else{
+        [navi popViewControllerAnimated:NO];
+    }
+    
+    [navi pushViewController:pushvc animated:animation];
+    
+}
+
+
 - (void)pushTo:(BaseViewController *)vc
      animation:(BOOL)animation
 {
@@ -120,6 +180,86 @@
     [navi pushViewController:vc animated:animation];
 }
 
+#pragma mark - key
+
+- (BOOL)needObserveKeyBorad
+{
+    return NO;
+}
+
+- (void)addGlobalTapToReturnKeyborad
+{
+    if (_tapToRetrunKeyboard) return;
+    UITapGestureRecognizer *tapGestureRecognizer =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(keyboardHide:)];
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer: tapGestureRecognizer];
+}
+
+- (void)keyboardHide:(UITapGestureRecognizer *)sender
+{
+    [self.view endEditing:YES];
+}
+
+- (void)addOrRemoveKeyBoardObserver:(BOOL)add
+{
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:UIKeyboardWillShowNotification
+     object:nil];
+    
+    [[NSNotificationCenter defaultCenter]
+     removeObserver:self
+     name:UIKeyboardWillHideNotification
+     object:nil];
+    
+    if (!add) return;
+    
+    [self addGlobalTapToReturnKeyborad];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(keyboardWillShow:)
+     name:UIKeyboardWillShowNotification
+     object:nil];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(keyboardWillHide:)
+     name:UIKeyboardWillHideNotification
+     object:nil];
+}
+
+- (void)keyboardWillShow:(NSNotification *)sender
+{
+    NSDictionary*info = [sender userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    NSTimeInterval animationTime = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [self handleKeyBoardWillShow:animationTime keyBoardHeight:kbSize.height];
+    //在这里调整UI位置
+}
+
+- (void)keyboardWillHide:(NSNotification *)sender
+{
+    NSDictionary*info = [sender userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    NSTimeInterval animationTime = [info[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [self handleKeyBoardWillHide:animationTime
+                  keyBoardHeight:kbSize.height];
+}
+
+- (void)handleKeyBoardWillShow:(NSTimeInterval)anmationTime
+                keyBoardHeight:(CGFloat)height
+{
+    
+}
+
+- (void)handleKeyBoardWillHide:(NSTimeInterval)anmationTime
+                keyBoardHeight:(CGFloat)height
+{
+    
+}
 
 
 @end

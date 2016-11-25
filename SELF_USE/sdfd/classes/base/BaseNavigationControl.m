@@ -28,7 +28,7 @@
 - (void)configerNavigationBar
 {
     UIColor *barColor = [UIColor orangeColor];
-    barColor = [barColor colorWithAlphaComponent:0.9];
+    barColor = [barColor colorWithAlphaComponent:0.2];
     UIImage *barImage = [barColor pureColorImage];
     [self.navigationBar setBackgroundImage:barImage
                              forBarMetrics:UIBarMetricsDefault];
