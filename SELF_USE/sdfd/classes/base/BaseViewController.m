@@ -25,9 +25,7 @@
     [super viewDidLoad];
     [self setDefaultNavigationBack:YES];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    if ([self.view.backgroundColor isEqual:[UIColor clearColor]]){
-        self.view.backgroundColor = [UIColor whiteColor];
-    }
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -92,10 +90,10 @@
     }
     
     UIImage *backImage = [UIImage imageNamed:@"cm-navi-back-n"];
-    UIFont *titleFont = [UIFont systemFontOfSize:18];
+    UIFont *titleFont = [UIFont systemFontOfSize:16];
     UIButton *backBtn = [UIButton newInstanceWithTitle:title
                                                   font:titleFont
-                                      normalTitleColor:[UIColor whiteColor]
+                                      normalTitleColor:[UIColor blackColor]
                                    horizontalAlignment:UIControlContentHorizontalAlignmentLeft
                                            normalImage:backImage];
     
@@ -165,8 +163,8 @@ pushAnimation:(BOOL)animation
         [navi popViewControllerAnimated:NO];
     }
     
+    pushvc.hidesBottomBarWhenPushed = YES;
     [navi pushViewController:pushvc animated:animation];
-    
 }
 
 
@@ -177,6 +175,7 @@ pushAnimation:(BOOL)animation
     
     UINavigationController *navi = self.navigationController;
     if (![navi isKindOfClass:[UINavigationController class]]) return;
+    vc.hidesBottomBarWhenPushed = YES;
     [navi pushViewController:vc animated:animation];
 }
 

@@ -21,12 +21,15 @@
     [super viewDidLoad];
     
     for (UIButton *sender in _bttons) {
-        
         [sender layoutButtonWithEdgeInsetsStyle:sender.tag
                                 imageTitlespace:10];
-        
     }
     
+}
+
+- (NSString *)title
+{
+    return @"测试button";
 }
 
 

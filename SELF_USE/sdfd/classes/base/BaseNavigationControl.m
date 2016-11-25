@@ -27,15 +27,15 @@
 
 - (void)configerNavigationBar
 {
-    UIColor *barColor = [UIColor orangeColor];
-    barColor = [barColor colorWithAlphaComponent:0.2];
+    UIColor *barColor = [UIColor whiteColor];
+    barColor = [barColor colorWithAlphaComponent:0.99];
     UIImage *barImage = [barColor pureColorImage];
     [self.navigationBar setBackgroundImage:barImage
                              forBarMetrics:UIBarMetricsDefault];
     
-    UIColor *titleColor = [UIColor whiteColor];
+    UIColor *titleColor = [UIColor blackColor];
     NSDictionary *titleAttributes = @{
-                                      NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
+                                      NSFontAttributeName:[UIFont systemFontOfSize:16],
                                       NSForegroundColorAttributeName:titleColor
                                       };
     self.navigationBar.translucent = YES;
