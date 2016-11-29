@@ -94,7 +94,7 @@ getResponseSerializerByType:(HTTPManagerResponseSerializerType)responseSerialize
 
 - (NSInteger)GET:(NSString *)URLString
       parameters:(id)parameters
-   comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
+   comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
 {
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"GET"
                                                         URLString:URLString
@@ -116,7 +116,7 @@ getResponseSerializerByType:(HTTPManagerResponseSerializerType)responseSerialize
 - (NSInteger)GET:(NSString *)URLString
       parameters:(id)parameters
     downProgress:(void (^)(NSProgress *downloadProgress))downloadProgress
-   comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
+   comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
 {
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"GET"
                                                         URLString:URLString
@@ -138,7 +138,7 @@ getResponseSerializerByType:(HTTPManagerResponseSerializerType)responseSerialize
 
 - (NSInteger)POST:(NSString *)URLString
        parameters:(id)parameters
-    comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
+    comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
 {
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"POST"
                                                         URLString:URLString
@@ -159,7 +159,7 @@ getResponseSerializerByType:(HTTPManagerResponseSerializerType)responseSerialize
 - (NSInteger)POST:(NSString *)URLString
        parameters:(id)parameters
      downProgress:(void (^)(NSProgress *downloadProgress))downloadProgress
-    comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
+    comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
 {
     NSURLSessionDataTask *dataTask = [self dataTaskWithHTTPMethod:@"POST"
                                                         URLString:URLString
@@ -182,7 +182,7 @@ getResponseSerializerByType:(HTTPManagerResponseSerializerType)responseSerialize
                  parameters:(id)parameters
   constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block
              uploadProgress:(void (^)(NSProgress *uploadProgress))uploadProgress
-              comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
+              comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
 {
     NSError *serializationError = nil;
     NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:&serializationError];
@@ -215,7 +215,7 @@ getResponseSerializerByType:(HTTPManagerResponseSerializerType)responseSerialize
                                       parameters:(id)parameters
                                   uploadProgress:(void (^)(NSProgress *uploadProgress))uploadProgress
                                 downloadProgress:(void (^)(NSProgress *downloadProgress))downloadProgress
-                                   comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
+                                   comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock
 
 {
     NSError *serializationError = nil;

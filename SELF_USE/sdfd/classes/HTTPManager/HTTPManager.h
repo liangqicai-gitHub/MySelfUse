@@ -42,33 +42,33 @@ typedef NS_ENUM(NSInteger,HTTPManagerResponseSerializerType)
 
 - (NSInteger)GET:(NSString *)URLString
       parameters:(id)parameters
-   comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
+   comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
 
 
 - (NSInteger)GET:(NSString *)URLString
       parameters:(id)parameters
     downProgress:(void (^)(NSProgress *downloadProgress))downloadProgress
-   comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
+   comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
 
 
 #pragma mark - post
 
 - (NSInteger)POST:(NSString *)URLString
        parameters:(id)parameters
-    comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
+    comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
 
 
 - (NSInteger)POST:(NSString *)URLString
        parameters:(id)parameters
      downProgress:(void (^)(NSProgress *downloadProgress))downloadProgress
-    comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
+    comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
 
 
 - (NSInteger)          POST:(NSString *)URLString
                   parameters:(id)parameters
    constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block
               uploadProgress:(void (^)(NSProgress *uploadProgress))uploadProgress
-               comlpectBlock:(void(^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
+               comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
 
 
 
