@@ -27,7 +27,6 @@
     return YES;
 }
 
-
 - (void)configerRoot
 {
     if (!_window){
@@ -39,8 +38,6 @@
     RootControl *root = [RootControl defaultRoot];
     _window.rootViewController = root;
 }
-
-
 
 - (void)setUpBaiDuMap
 {
@@ -55,6 +52,13 @@
         LQCDLog(@"百度地图授权失败");
     }
 }
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier
+  completionHandler:(void (^)())completionHandler
+{
+    NSLog(@"haha");
+}
+
 
 
 @end

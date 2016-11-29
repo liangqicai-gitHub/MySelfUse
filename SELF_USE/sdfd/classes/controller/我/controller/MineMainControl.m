@@ -15,6 +15,8 @@
 #import "LQCPhotoBrowseModel.h"
 #import <SDWebImage/SDWebImageManager.h>
 #import "TestForCollectionView.h"
+#import "APLViewController.h"
+
 
 @interface MineMainControl ()
 
@@ -33,6 +35,11 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
+    APLViewController *vc = [[APLViewController alloc] init];
+    
+    [self pushTo:vc animation:YES];
+    
+    
 //    [self testCollectionView];
 //    [self testPhotoBrose];
 //    [self testFootPrint];
@@ -41,6 +48,8 @@
 //    [self testIOS8CellSelfCalculate];
 //    [self testAVPlayer];
 }
+
+
 
 //测试iOS8 cell高度子计算
 - (void)testIOS8CellSelfCalculate

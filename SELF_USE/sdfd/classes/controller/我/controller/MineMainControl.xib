@@ -35,7 +35,7 @@
                 <constraint firstItem="jlK-b8-ips" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fAI-Oz-cRf"/>
                 <constraint firstItem="jlK-b8-ips" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hfy-aT-TXm"/>
             </constraints>
-            <point key="canvasLocation" x="195" y="130"/>
+            <point key="canvasLocation" x="-85" y="79"/>
         </view>
     </objects>
 </document>
