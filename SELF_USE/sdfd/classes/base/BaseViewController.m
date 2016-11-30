@@ -31,7 +31,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+        
     //控制navigation
     [self.navigationController
      setNavigationBarHidden:[self navigationBarHidden]

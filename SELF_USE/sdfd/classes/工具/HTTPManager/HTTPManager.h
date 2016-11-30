@@ -71,9 +71,7 @@ typedef NS_ENUM(NSInteger,HTTPManagerResponseSerializerType)
                comlpectBlock:(void (^)(NSURLSessionDataTask *task,id responseObject,NSError *error))comlpectBlock;
 
 
-
-
-// cancel
+#pragma mark - cancel
 - (void)cancelTaskByTaskIdentifier:(NSInteger)taskIdentifier;
 
 - (void)cancelAllTask;

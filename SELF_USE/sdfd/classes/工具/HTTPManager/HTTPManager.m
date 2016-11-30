@@ -8,16 +8,8 @@
 
 #import "HTTPManager.h"
 
-@interface HTTPManager ()
-
-
-
-@end
-
-
 
 @implementation HTTPManager
-
 
 #pragma mark - init
 

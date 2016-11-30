@@ -27,6 +27,13 @@
     
 }
 
+
+- (BOOL)navigationBarHidden
+{
+    return YES;
+}
+
+
 - (NSString *)title
 {
     return @"测试button";

@@ -50,6 +50,7 @@
 		DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */; };
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
+		DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */; };
 		DF8287DD1DE691F3002C384C /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8287DC1DE691F3002C384C /* common.xcassets */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
 		DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */; };
@@ -59,7 +60,6 @@
 		DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED851CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib */; };
 		DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED8A1CFD856000D3FE0C /* GCDTest.m */; };
 		DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8FBC221D66E78D00E5BDC6 /* UIImage+convenient.m */; };
-		DFA257B91DEBCF89002F983D /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA257B81DEBCF89002F983D /* HTTPManager.m */; };
 		DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7ACFD1CF5B9FF00BFDB62 /* BaseViewController.m */; };
 		DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0F5BE1D0D3787006EEFD0 /* UIScrollView+Refresh.m */; };
 		DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0F5C71D0D3F23006EEFD0 /* LQCFreshView.m */; };
@@ -196,6 +196,8 @@
 		DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapClusterTest.xib; sourceTree = "<group>"; };
 		DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PullToRefresh.xcassets; sourceTree = "<group>"; };
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		DF75F8B61DED6C2A00B53A4E /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
+		DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
 		DF8287DC1DE691F3002C384C /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
 		DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMainControl.m; sourceTree = "<group>"; };
@@ -210,8 +212,6 @@
 		DF85ED8A1CFD856000D3FE0C /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		DF8FBC211D66E78D00E5BDC6 /* UIImage+convenient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+convenient.h"; sourceTree = "<group>"; };
 		DF8FBC221D66E78D00E5BDC6 /* UIImage+convenient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+convenient.m"; sourceTree = "<group>"; };
-		DFA257B71DEBCF89002F983D /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
-		DFA257B81DEBCF89002F983D /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
 		DFA7ACCE1CF5B1EE00BFDB62 /* sdfd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sdfd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA7ACFC1CF5B9FF00BFDB62 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DFA7ACFD1CF5B9FF00BFDB62 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -455,6 +455,7 @@
 		DF4437F41DEBD5D40085FB79 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				DF75F8B51DED6C2A00B53A4E /* HTTPManager */,
 				DF4437F51DEBD5E40085FB79 /* 滚动banner */,
 			);
 			path = "工具";
@@ -547,6 +548,15 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		DF75F8B51DED6C2A00B53A4E /* HTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF75F8B61DED6C2A00B53A4E /* HTTPManager.h */,
+				DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */,
+			);
+			path = HTTPManager;
+			sourceTree = "<group>";
+		};
 		DF85ED6B1CFD5C7A00D3FE0C /* 发现 */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,15 +620,6 @@
 			path = "测试GCD";
 			sourceTree = "<group>";
 		};
-		DFA257B61DEBCF68002F983D /* HTTPManager */ = {
-			isa = PBXGroup;
-			children = (
-				DFA257B71DEBCF89002F983D /* HTTPManager.h */,
-				DFA257B81DEBCF89002F983D /* HTTPManager.m */,
-			);
-			path = HTTPManager;
-			sourceTree = "<group>";
-		};
 		DFA7ACC51CF5B1EE00BFDB62 = {
 			isa = PBXGroup;
 			children = (
@@ -654,7 +655,6 @@
 			isa = PBXGroup;
 			children = (
 				DF4437F41DEBD5D40085FB79 /* 工具 */,
-				DFA257B61DEBCF68002F983D /* HTTPManager */,
 				DFB118641D02C829005BD91F /* 同步的AF */,
 				DF85ED881CFD854100D3FE0C /* 测试GCD */,
 				DFA7ACFB1CF5B9DF00BFDB62 /* base */,
@@ -1099,12 +1099,12 @@
 				DFC506681DE7D6BA00DD7555 /* UIButton+Factory.m in Sources */,
 				DF4793B91DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationView.m in Sources */,
 				DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */,
+				DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */,
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
-				DFA257B91DEBCF89002F983D /* HTTPManager.m in Sources */,
 				DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */,
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
