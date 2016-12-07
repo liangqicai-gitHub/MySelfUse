@@ -42,15 +42,20 @@
 
 - (IBAction)A:(UIButton *)sender
 {
-//    [self popToRootanimation:NO];
-
-    [self popTo:nil
-       thenPush:[[testNavigationB alloc] init]
-  pushAnimation:YES];
+    NSMutableArray *arrM = [NSMutableArray array];
     
-//    NSLog(@"self.navigation %@",self.navigationController);
+    NSArray <UIViewController *>*controllers = self.navigationController.viewControllers;
+    [controllers enumerateObjectsUsingBlock:^(UIViewController * _Nonnull obj,
+                                              NSUInteger idx,
+                                              BOOL * _Nonnull stop) {
+        if (idx != controllers.count - 1){
+            [arrM addObject:obj];
+        }
+    }];
     
-//    [self pushTo:[[testNavigationB alloc] init] animation:YES];
+    [arrM addObject:[[BaseViewController alloc] init]];
+    
+    [self.navigationController setViewControllers:arrM animated:YES];
 }
 
 

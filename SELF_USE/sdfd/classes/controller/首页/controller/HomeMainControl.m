@@ -25,10 +25,19 @@
 
 - (IBAction)testButtonLayout:(UIButton *)sender
 {
-    
-    [self pushTo:[[testButtonVC alloc] init] animation:YES];
+    testButtonVC *vc = [[testButtonVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self pushTo:vc animation:YES];
 }
 
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    NSLog(@"home self.frame %@",NSStringFromCGRect(self.view.frame));
+    NSLog(@"home self.nav.frame %@",NSStringFromCGRect(self.navigationController.view.frame));
+}
 
 
 @end

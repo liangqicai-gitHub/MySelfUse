@@ -35,7 +35,7 @@
         [_window makeKeyAndVisible];
     }
     
-    RootControl *root = [RootControl defaultRoot];
+    RootControl *root = [RootControl rootControl];
     _window.rootViewController = root;
 }
 

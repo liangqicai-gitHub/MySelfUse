@@ -26,10 +26,18 @@
                         <action selector="testButtonLayout:" destination="-1" eventType="touchUpInside" id="soT-M9-Umh"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-HG-DDv">
+                    <rect key="frame" x="16" y="646" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="3aa-HG-DDv" secondAttribute="bottom" id="2a9-QO-Qav"/>
                 <constraint firstItem="RiP-6k-eHv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dny-yl-mtO"/>
+                <constraint firstItem="3aa-HG-DDv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="WkB-tY-62C"/>
                 <constraint firstItem="RiP-6k-eHv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="aTZ-wd-663"/>
             </constraints>
             <point key="canvasLocation" x="141" y="148"/>

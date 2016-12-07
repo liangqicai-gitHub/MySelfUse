@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RootTabbar">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-CT-fhq" userLabel="首页">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-0T-ESm">
+                            <rect key="frame" x="48" y="-2.5" width="45" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="375-2h-QKE"/>
+                                <constraint firstAttribute="width" constant="45" id="eMk-vf-jUQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="首页" image="root_tabar_01_nn">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="root_tabar_01_ss">
+                                <color key="titleColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="uZy-b7-kb5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="K9J-0T-ESm" firstAttribute="centerX" secondItem="EhE-CT-fhq" secondAttribute="centerX" id="AG7-nO-CDN"/>
+                        <constraint firstItem="K9J-0T-ESm" firstAttribute="centerY" secondItem="EhE-CT-fhq" secondAttribute="centerY" id="LPQ-py-b5E"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wN-Oo-dpJ">
+                    <rect key="frame" x="140" y="0.0" width="140" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqS-HX-XNf">
+                            <rect key="frame" x="48" y="-2.5" width="45" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="MHj-0m-0W4"/>
+                                <constraint firstAttribute="width" constant="45" id="iur-sa-1EG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="发现" image="root_tabar_02_nn">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="root_tabar_02_ss">
+                                <color key="titleColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="lEk-Lw-Qyz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mqS-HX-XNf" firstAttribute="centerX" secondItem="9wN-Oo-dpJ" secondAttribute="centerX" id="JDL-BQ-TLf"/>
+                        <constraint firstItem="mqS-HX-XNf" firstAttribute="centerY" secondItem="9wN-Oo-dpJ" secondAttribute="centerY" id="del-K3-ri5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-ek-LQP">
+                    <rect key="frame" x="280" y="0.0" width="140" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-fs-xfT">
+                            <rect key="frame" x="48" y="-2.5" width="45" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="4ql-Im-m0z"/>
+                                <constraint firstAttribute="width" constant="45" id="a2u-Hy-uMi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="我" image="root_tabar_03_nn">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="root_tabar_03_ss">
+                                <color key="titleColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="LGf-Kn-3O8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ghd-fs-xfT" firstAttribute="centerX" secondItem="7fi-ek-LQP" secondAttribute="centerX" id="Rkg-1i-RAM"/>
+                        <constraint firstItem="Ghd-fs-xfT" firstAttribute="centerY" secondItem="7fi-ek-LQP" secondAttribute="centerY" id="TWH-A4-J8v"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7fi-ek-LQP" firstAttribute="width" secondItem="EhE-CT-fhq" secondAttribute="width" id="0sj-oR-31b"/>
+                <constraint firstAttribute="bottom" secondItem="9wN-Oo-dpJ" secondAttribute="bottom" id="3QE-IH-1hv"/>
+                <constraint firstItem="7fi-ek-LQP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Ot-f4-unt"/>
+                <constraint firstAttribute="trailing" secondItem="7fi-ek-LQP" secondAttribute="trailing" id="Bvd-JQ-Rjb"/>
+                <constraint firstItem="9wN-Oo-dpJ" firstAttribute="width" secondItem="EhE-CT-fhq" secondAttribute="width" id="HD0-gV-gd5"/>
+                <constraint firstItem="EhE-CT-fhq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LUu-gD-zUH"/>
+                <constraint firstAttribute="bottom" secondItem="7fi-ek-LQP" secondAttribute="bottom" id="NHl-4l-sT5"/>
+                <constraint firstAttribute="bottom" secondItem="EhE-CT-fhq" secondAttribute="bottom" id="ZZd-az-pDX"/>
+                <constraint firstItem="9wN-Oo-dpJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d2B-gT-47T"/>
+                <constraint firstItem="9wN-Oo-dpJ" firstAttribute="leading" secondItem="EhE-CT-fhq" secondAttribute="trailing" id="dK8-ut-Dt3"/>
+                <constraint firstItem="7fi-ek-LQP" firstAttribute="leading" secondItem="9wN-Oo-dpJ" secondAttribute="trailing" id="fLV-qt-oti"/>
+                <constraint firstItem="EhE-CT-fhq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pQ9-v9-aIM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="btns" destination="K9J-0T-ESm" id="czN-WU-MX1"/>
+                <outletCollection property="btns" destination="mqS-HX-XNf" id="15k-g3-Jmc"/>
+                <outletCollection property="btns" destination="Ghd-fs-xfT" id="M9o-aH-FjK"/>
+            </connections>
+            <point key="canvasLocation" x="-293" y="-209"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="root_tabar_01_nn" width="24" height="24"/>
+        <image name="root_tabar_01_ss" width="24" height="24"/>
+        <image name="root_tabar_02_nn" width="24" height="24"/>
+        <image name="root_tabar_02_ss" width="24" height="24"/>
+        <image name="root_tabar_03_nn" width="24" height="24"/>
+        <image name="root_tabar_03_ss" width="24" height="24"/>
+    </resources>
+</document>

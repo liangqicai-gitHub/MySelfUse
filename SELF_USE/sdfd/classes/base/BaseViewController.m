@@ -17,6 +17,31 @@
 
 @implementation BaseViewController
 
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self){
+        self.hidesBottomBarWhenPushed = YES;
+    }
+    return self;
+}
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self){
+        self.hidesBottomBarWhenPushed = YES;
+    }
+    return self;
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self){
+        self.hidesBottomBarWhenPushed = YES;
+    }
+    return self;
+}
+
 
 #pragma mark - life cycle
 
@@ -164,7 +189,6 @@ pushAnimation:(BOOL)animation
         [navi popViewControllerAnimated:NO];
     }
     
-    pushvc.hidesBottomBarWhenPushed = YES;
     [navi pushViewController:pushvc animated:animation];
 }
 
@@ -176,11 +200,10 @@ pushAnimation:(BOOL)animation
     
     UINavigationController *navi = self.navigationController;
     if (![navi isKindOfClass:[UINavigationController class]]) return;
-    vc.hidesBottomBarWhenPushed = YES;
     [navi pushViewController:vc animated:animation];
 }
 
-#pragma mark - key
+#pragma mark - keyboard
 
 - (BOOL)needObserveKeyBorad
 {

@@ -8,15 +8,19 @@
 
 #import "RootControl.h"
 #import "RootTabbar.h"
-#import "RootTabbarItem.h"
 #import "BaseNavigationControl.h"
 #import "BaseViewController.h"
-
 #import "HomeMainControl.h"
 #import "DiscoverMainViewControl.h"
 #import "MineMainControl.h"
 
-@interface RootControl ()<RootTabbarDelegate>
+
+
+@interface RootControl ()
+<
+RootTabbarDelegate,
+UINavigationControllerDelegate
+>
 {
     RootTabbar *_rootTabbar;
 }
@@ -27,116 +31,106 @@
 
 @implementation RootControl
 
-+ (RootControl *)defaultRoot
+
++ (RootControl *)rootControl
 {
-    NSMutableArray *items = [NSMutableArray array];
-    NSMutableArray *controllers = [NSMutableArray array];
-    NSArray *titles = @[@"首页",@"发现",@"我"];
-    NSArray *class = @[@"HomeMainControl",@"DiscoverMainViewControl",@"MineMainControl"];
-    for (int_fast8_t i = 0; i < 3; i++) {
-        NSString *title = titles[i];
-        UIColor *nc = [UIColor lightGrayColor];
-        UIColor *sc = [UIColor orangeColor];
-        UIImage *ima_n = [UIImage imageNamed:Str_F(@"root_tabar_0%zd_nn",i + 1)];
-        UIImage *ima_s = [UIImage imageNamed:Str_F(@"root_tabar_0%zd_ss",i + 1)];
-        RootTabbarItem *item = [RootTabbarItem itemWithTitle:title NormalTextColor:nc selectedTextColor:sc normalImage:ima_n selectedImage:ima_s];
-        [items addObject:item];
-        
-        NSString *className = class[i];
-        BaseViewController *vc = [[NSClassFromString(className) alloc] init];;
-        BaseNavigationControl *nv = [[BaseNavigationControl alloc] initWithRootViewController:vc];
-        [controllers addObject:nv];
-    }
+    RootControl *instance = [[RootControl alloc] init];
     
-    
-    return [self rootControlWithItems:items controllers:controllers];
+    return instance;
 }
 
 
-
-+ (RootControl *)rootControlWithItems:(NSArray *)items controllers:(NSArray *)controllers;
+- (instancetype)init
 {
-    RootControl *root = [[RootControl alloc] init];
-    if (![NSArray isEmpty:items]){
-        for (int i = 0; i < items.count; i++) {
-            RootTabbarItem *item = items[i];
-            UIViewController *controller = controllers[i];
-            [root addItem:item controller:controller];
-        }
-    }
-    return root;
-    
-}
-
-
-- (id)init
-{
-    if (self = [super init]){
-        _rootTabbar = [RootTabbar rootTabbarWithFrame:CGRectMake(0, 0, DeviceWidth, 49.0f)];
-        [self.tabBar addSubview:_rootTabbar];
-        _rootTabbar.delegate = self;
+    self = [super init];
+    if (self){
+        [self initVars];
     }
     return self;
 }
 
 
-- (void)addItem:(RootTabbarItem *)barItem controller:(UIViewController *)controller
+- (void)initVars
 {
-    [self addChildViewController:controller];
-    [_rootTabbar addItem:barItem];
-}
-
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+    NSArray *class =
+    @[@"HomeMainControl",@"DiscoverMainViewControl",@"MineMainControl"];
     
-    UITabBar *bar = self.tabBar;
-    if (!bar) return;
-    
-    //从这里可以看出来，其实这个东西，是可以改的,我只不过为了好看，不改成70
-    CGRect correctF = bar.frame;
-//    correctF.size.height = 70;
-//    correctF.origin.y = self.view.frame.size.height - 70.0f;
-    [bar setFrame:correctF];
-    
-    CGRect rightfream = bar.bounds;
-    [_rootTabbar setFrame:rightfream];
-    _rootTabbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    
-    for (UIView *subView in bar.subviews) {
-        if (![subView isKindOfClass:[RootTabbar class]]) [subView removeFromSuperview];
+    NSMutableArray *viewControllers = [NSMutableArray array];
+    for (NSString *className in class) {
+        BaseViewController *vc = [[NSClassFromString(className) alloc] init];;
+        BaseNavigationControl *nv = [[BaseNavigationControl alloc]
+                                     initWithRootViewController:vc];
+        [viewControllers addObject:nv];
+        [self addChildViewController:nv];
+        nv.delegate = self;
     }
-
-}
-
-
-- (void)setSelectedIndex:(NSUInteger)selectedIndex
-{
-    [super setSelectedIndex:selectedIndex];
     
-    if (_rootTabbar) [_rootTabbar setSelectedIndex:selectedIndex];
+    _selectedIndex = -1;
+    
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self initViews];
+    self.view.backgroundColor = [UIColor redColor];
+    [self setSelectedIndex:0];
+}
+
+
+- (void)initViews
+{
+    _rootTabbar = [RootTabbar newInstanceWityDelegate:self];
+    [self.view addSubview:_rootTabbar];
+    [_rootTabbar mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.right.left.bottom.mas_equalTo(0);
+        make.height.mas_equalTo([RootTabbar expectedHeight]);
+    }];
+}
+
+
+#pragma mark - setter
+- (void)setSelectedIndex:(NSInteger)selectedIndex
+{
+    if (_selectedIndex == selectedIndex) return;
+    _selectedIndex = selectedIndex;
+    
+    UINavigationController *childVC = self.childViewControllers[_selectedIndex];
+    if (!childVC.view.superview){
+        [self.view addSubview:childVC.view];
+    }
+    [self.view bringSubviewToFront:childVC.view];
+    
+    CGFloat height = DeviceHeight;
+    if (![NSArray isArray:childVC.viewControllers equalOrLongerThan:2]){
+        height = DeviceHeight - [RootTabbar expectedHeight];
+    }
+    
+    [childVC.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.mas_offset(0);
+        make.height.mas_equalTo(height);
+    }];
+}
 
 
 #pragma mark - rootTabarDelegate
 
-- (void)rootTabbarView:(RootTabbar *)tabbar didSelectIndex:(NSInteger)index
+- (void)rootTabbar:(RootTabbar *)tabbar didClickedIndex:(NSInteger)index
 {
     [self setSelectedIndex:index];
 }
 
 
+#pragma mark - StatusBarStyle
+
 - (UIViewController *)childViewControllerForStatusBarStyle
 {
-    if ([NSArray isEmpty:self.viewControllers]){
+    if ([NSArray isEmpty:self.childViewControllers]){
         return nil;
     }else{
-       return [self.viewControllers safeObjAtIndex:self.selectedIndex];
+       return [self.childViewControllers safeObjAtIndex:self.selectedIndex];
     }
 }
-
 
 
 #pragma mark - 横屏控制
@@ -154,6 +148,60 @@
     return UIInterfaceOrientationPortrait;
 }
 
+#pragma mark navVC代理
+- (void)navigationController:(UINavigationController *)navigationController
+      willShowViewController:(UIViewController *)viewController
+                    animated:(BOOL)animated{
+    UIViewController *root = navigationController.viewControllers.firstObject;
+    if (viewController != root) {
 
+        [navigationController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.right.mas_offset(0);
+            make.height.mas_equalTo(DeviceHeight);
+        }];
+        [navigationController.view setNeedsLayout];
+        [navigationController.view layoutIfNeeded];
+        
+        [_rootTabbar removeFromSuperview];
+
+        [root.view addSubview:_rootTabbar];
+        [_rootTabbar mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.right.left.bottom.mas_equalTo(0);
+            make.height.mas_equalTo([RootTabbar expectedHeight]);
+        }];
+        
+        [_rootTabbar setNeedsLayout];
+        [_rootTabbar layoutIfNeeded];
+    }
+}
+
+
+-(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    UIViewController *root = navigationController.viewControllers[0];
+    if (viewController == root) {
+
+        [navigationController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.right.mas_offset(0);
+            make.height.mas_equalTo(DeviceHeight - [RootTabbar expectedHeight]);
+        }];
+        
+        [navigationController.view setNeedsLayout];
+        [navigationController.view layoutIfNeeded];
+        
+        [_rootTabbar removeFromSuperview];
+
+        [self.view addSubview:_rootTabbar];
+
+        [_rootTabbar mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.right.left.bottom.mas_equalTo(0);
+            make.height.mas_equalTo([RootTabbar expectedHeight]);
+        }];
+        
+        [self.view bringSubviewToFront:_rootTabbar];
+        
+        [_rootTabbar setNeedsLayout];
+        [_rootTabbar layoutIfNeeded];
+    }
+}
 
 @end
