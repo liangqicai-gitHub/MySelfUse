@@ -7,6 +7,7 @@
 //
 
 #import "RootTabbar.h"
+#import "RootBarItem.h"
 
 
 @interface RootTabbar ()
@@ -14,7 +15,7 @@
     UIButton *_selectedBtn;
 }
 
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btns;
+@property (strong, nonatomic) IBOutletCollection(RootBarItem) NSArray *btns;
 
 @property (nonatomic,weak) id <RootTabbarDelegate> delegate;
 
@@ -34,19 +35,18 @@
     return instance;
 }
 
+
 + (CGFloat)expectedHeight
 {
     return 49.0f;
 }
 
 
-- (void)layoutSubviews
-{    
-    NSLog(@"layoutSubviews");
-    [super layoutSubviews];
-    for (UIButton *btn in _btns){
-        [btn layoutButtonWithEdgeInsetsStyle:ButtonEdgeInsetsStyleImageTop
-                             imageTitlespace:3];
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    for (RootBarItem *item in _btns) {
+        item.selected = NO;
     }
 }
 

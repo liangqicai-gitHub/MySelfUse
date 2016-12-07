@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootBarItem">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Common_rightArrow"/>
+                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="Common_rightArrow"/>
+                <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
+                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                    <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="string" keyPath="title" value="sds"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="EyT-98-olM"/>
+                <outlet property="limageView" destination="shU-ST-tck" id="sfU-a3-ckw"/>
+                <outlet property="llabel" destination="rsw-dg-0ic" id="eda-2q-gKe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="shU-ST-tck">
+                    <rect key="frame" x="18" y="5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="2r9-Dp-IE0"/>
+                        <constraint firstAttribute="height" constant="24" id="Rxw-UZ-ylN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsw-dg-0ic">
+                    <rect key="frame" x="30" y="32" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="shU-ST-tck" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MIt-fn-Z6G"/>
+                <constraint firstItem="shU-ST-tck" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-8" id="ebA-cU-nbm"/>
+                <constraint firstItem="rsw-dg-0ic" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kO9-Ne-i5I"/>
+                <constraint firstItem="rsw-dg-0ic" firstAttribute="top" secondItem="shU-ST-tck" secondAttribute="bottom" constant="3" id="ydz-qv-UCW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-360" y="-817.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Common_rightArrow" width="7" height="12"/>
+    </resources>
+</document>

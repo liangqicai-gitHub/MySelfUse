@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11542"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,86 +18,92 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-CT-fhq" userLabel="首页">
                     <rect key="frame" x="0.0" y="0.0" width="140" height="44"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-0T-ESm">
-                            <rect key="frame" x="48" y="-2.5" width="45" height="49"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-QO-IHQ" customClass="RootBarItem">
+                            <rect key="frame" x="40" y="0.0" width="60" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="49" id="375-2h-QKE"/>
-                                <constraint firstAttribute="width" constant="45" id="eMk-vf-jUQ"/>
+                                <constraint firstAttribute="width" constant="60" id="Lqf-tY-YLR"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <state key="normal" title="首页" image="root_tabar_01_nn">
-                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected" image="root_tabar_01_ss">
-                                <color key="titleColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="btnsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="uZy-b7-kb5"/>
-                            </connections>
-                        </button>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="首页"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="root_tabar_01_ss"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="root_tabar_01_nn"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                    <color key="value" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="K9J-0T-ESm" firstAttribute="centerX" secondItem="EhE-CT-fhq" secondAttribute="centerX" id="AG7-nO-CDN"/>
-                        <constraint firstItem="K9J-0T-ESm" firstAttribute="centerY" secondItem="EhE-CT-fhq" secondAttribute="centerY" id="LPQ-py-b5E"/>
+                        <constraint firstItem="J6a-QO-IHQ" firstAttribute="top" secondItem="EhE-CT-fhq" secondAttribute="top" id="l7D-HT-YMk"/>
+                        <constraint firstItem="J6a-QO-IHQ" firstAttribute="centerX" secondItem="EhE-CT-fhq" secondAttribute="centerX" id="nLb-It-77h"/>
+                        <constraint firstAttribute="bottom" secondItem="J6a-QO-IHQ" secondAttribute="bottom" id="z0d-mq-204"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9wN-Oo-dpJ">
                     <rect key="frame" x="140" y="0.0" width="140" height="44"/>
                     <subviews>
-                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqS-HX-XNf">
-                            <rect key="frame" x="48" y="-2.5" width="45" height="49"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bR6-YM-6LG" customClass="RootBarItem">
+                            <rect key="frame" x="40" y="0.0" width="60" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="49" id="MHj-0m-0W4"/>
-                                <constraint firstAttribute="width" constant="45" id="iur-sa-1EG"/>
+                                <constraint firstAttribute="width" constant="60" id="Toy-hM-SmG"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <state key="normal" title="发现" image="root_tabar_02_nn">
-                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected" image="root_tabar_02_ss">
-                                <color key="titleColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="btnsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="lEk-Lw-Qyz"/>
-                            </connections>
-                        </button>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="root_tabar_02_ss"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="root_tabar_02_nn"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="发现"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                    <color key="value" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="mqS-HX-XNf" firstAttribute="centerX" secondItem="9wN-Oo-dpJ" secondAttribute="centerX" id="JDL-BQ-TLf"/>
-                        <constraint firstItem="mqS-HX-XNf" firstAttribute="centerY" secondItem="9wN-Oo-dpJ" secondAttribute="centerY" id="del-K3-ri5"/>
+                        <constraint firstAttribute="bottom" secondItem="bR6-YM-6LG" secondAttribute="bottom" id="8v8-uY-ORy"/>
+                        <constraint firstItem="bR6-YM-6LG" firstAttribute="top" secondItem="9wN-Oo-dpJ" secondAttribute="top" id="Co4-ve-9P6"/>
+                        <constraint firstItem="bR6-YM-6LG" firstAttribute="centerX" secondItem="9wN-Oo-dpJ" secondAttribute="centerX" id="Sz7-Hd-JPx"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-ek-LQP">
                     <rect key="frame" x="280" y="0.0" width="140" height="44"/>
                     <subviews>
-                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-fs-xfT">
-                            <rect key="frame" x="48" y="-2.5" width="45" height="49"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sez-C9-ZMg" customClass="RootBarItem">
+                            <rect key="frame" x="40" y="0.0" width="60" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="49" id="4ql-Im-m0z"/>
-                                <constraint firstAttribute="width" constant="45" id="a2u-Hy-uMi"/>
+                                <constraint firstAttribute="width" constant="60" id="JCZ-C8-iAD"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <state key="normal" title="我" image="root_tabar_03_nn">
-                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected" image="root_tabar_03_ss">
-                                <color key="titleColor" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="btnsClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="LGf-Kn-3O8"/>
-                            </connections>
-                        </button>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="root_tabar_03_ss"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="root_tabar_03_nn"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="我"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                    <color key="value" red="0.98595482109999999" green="0.7700440288" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.94509803920000002" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="Ghd-fs-xfT" firstAttribute="centerX" secondItem="7fi-ek-LQP" secondAttribute="centerX" id="Rkg-1i-RAM"/>
-                        <constraint firstItem="Ghd-fs-xfT" firstAttribute="centerY" secondItem="7fi-ek-LQP" secondAttribute="centerY" id="TWH-A4-J8v"/>
+                        <constraint firstItem="sez-C9-ZMg" firstAttribute="centerX" secondItem="7fi-ek-LQP" secondAttribute="centerX" id="0Cy-nb-nyc"/>
+                        <constraint firstAttribute="bottom" secondItem="sez-C9-ZMg" secondAttribute="bottom" id="heg-Aa-eRh"/>
+                        <constraint firstItem="sez-C9-ZMg" firstAttribute="top" secondItem="7fi-ek-LQP" secondAttribute="top" id="ygs-Ox-Qvg"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="7fi-ek-LQP" firstAttribute="width" secondItem="EhE-CT-fhq" secondAttribute="width" id="0sj-oR-31b"/>
                 <constraint firstAttribute="bottom" secondItem="9wN-Oo-dpJ" secondAttribute="bottom" id="3QE-IH-1hv"/>
@@ -115,9 +121,9 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outletCollection property="btns" destination="K9J-0T-ESm" id="czN-WU-MX1"/>
-                <outletCollection property="btns" destination="mqS-HX-XNf" id="15k-g3-Jmc"/>
-                <outletCollection property="btns" destination="Ghd-fs-xfT" id="M9o-aH-FjK"/>
+                <outletCollection property="btns" destination="sez-C9-ZMg" id="GLo-jx-HoH"/>
+                <outletCollection property="btns" destination="bR6-YM-6LG" id="gib-ma-1EN"/>
+                <outletCollection property="btns" destination="J6a-QO-IHQ" id="BXV-aO-MYr"/>
             </connections>
             <point key="canvasLocation" x="-293" y="-209"/>
         </view>

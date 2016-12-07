@@ -45,6 +45,8 @@
 		DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793D71DC04C83001CD592 /* BMKClusterQuadtree.m */; };
 		DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793DE1DC04D33001CD592 /* BaiduMapClusterTest.m */; };
 		DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */; };
+		DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DF562A9C1DF7BAE300153F97 /* RootBarItem.m */; };
+		DF562A9F1DF7BAF400153F97 /* RootBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF562A9E1DF7BAF400153F97 /* RootBarItem.xib */; };
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */; };
@@ -188,6 +190,9 @@
 		DF4793DD1DC04D33001CD592 /* BaiduMapClusterTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapClusterTest.h; sourceTree = "<group>"; };
 		DF4793DE1DC04D33001CD592 /* BaiduMapClusterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapClusterTest.m; sourceTree = "<group>"; };
 		DF4793DF1DC04D33001CD592 /* BaiduMapClusterTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiduMapClusterTest.xib; sourceTree = "<group>"; };
+		DF562A9B1DF7BAE300153F97 /* RootBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootBarItem.h; sourceTree = "<group>"; };
+		DF562A9C1DF7BAE300153F97 /* RootBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootBarItem.m; sourceTree = "<group>"; };
+		DF562A9E1DF7BAF400153F97 /* RootBarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootBarItem.xib; sourceTree = "<group>"; };
 		DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PullToRefresh.xcassets; sourceTree = "<group>"; };
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		DF75F8B61DED6C2A00B53A4E /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
@@ -402,6 +407,9 @@
 				DFA185421DF550F100D80BFB /* RootTabbar.h */,
 				DFA185431DF550F100D80BFB /* RootTabbar.m */,
 				DFA185451DF5510700D80BFB /* RootTabbar.xib */,
+				DF562A9B1DF7BAE300153F97 /* RootBarItem.h */,
+				DF562A9C1DF7BAE300153F97 /* RootBarItem.m */,
+				DF562A9E1DF7BAF400153F97 /* RootBarItem.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -953,6 +961,7 @@
 				DF4437FA1DEBD5ED0085FB79 /* RKImageBrowser.xib in Resources */,
 				DF0AFB691DD07E8000AB88CE /* TestForCollectionView.xib in Resources */,
 				DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */,
+				DF562A9F1DF7BAF400153F97 /* RootBarItem.xib in Resources */,
 				DF85ED821CFD5F2A00D3FE0C /* MineMainControl.xib in Resources */,
 				DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */,
 				DFA185461DF5510700D80BFB /* RootTabbar.xib in Resources */,
@@ -1074,6 +1083,7 @@
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
+				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
 				DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */,
 				DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
 				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,

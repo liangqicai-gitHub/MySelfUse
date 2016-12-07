@@ -22,6 +22,7 @@
 
 + (RootTabbar *)newInstanceWityDelegate:(id <RootTabbarDelegate>)delegate;
 
+
 + (CGFloat )expectedHeight;
 
 /*
