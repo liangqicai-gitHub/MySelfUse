@@ -20,11 +20,20 @@
 
 #pragma mark - init
 
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self){
+    }
+    return self;
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self){
-        [self initialization:NO];
+        [self initialization];
     }
     return self;
 }
@@ -33,12 +42,12 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self){
-        [self initialization:YES];
+        [self initialization];
     }
     return self;
 }
 
-- (void)initialization:(BOOL)decoderInit
+- (void)initialization
 {
     NSString *className = NSStringFromClass([self class]);
     NSArray *arr = [[NSBundle mainBundle] loadNibNamed:className
@@ -53,11 +62,6 @@
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
     
-    if (decoderInit){
-        _xibView_contentView.backgroundColor = self.backgroundColor;
-    }else{
-        self.backgroundColor = _xibView_contentView.backgroundColor;
-    }
 }
 
 #pragma mark - overwrite
