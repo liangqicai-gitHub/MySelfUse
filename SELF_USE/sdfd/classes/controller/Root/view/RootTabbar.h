@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @class RootTabbar;
 @protocol RootTabbarDelegate <NSObject>
+
 
 @optional
 - (void)rootTabbar:(RootTabbar *)tabar
@@ -18,16 +20,15 @@
 @end
 
 
-@interface RootTabbar : UIView
+@interface RootTabbar : XIBView<RootTabbarDelegate>
 
-+ (RootTabbar *)newInstanceWityDelegate:(id <RootTabbarDelegate>)delegate;
-
+@property (nonatomic,weak) id <RootTabbarDelegate>delegate;
 
 + (CGFloat )expectedHeight;
 
-/*
- 该方法会触发代理
- */
 - (void)selectItemAtIndex:(NSInteger)index;
 
 @end
+
+
+

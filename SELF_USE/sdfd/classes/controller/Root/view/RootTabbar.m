@@ -10,31 +10,28 @@
 #import "RootBarItem.h"
 
 
-@interface RootTabbar ()
+@interface RootTabbar ()<RootBarItemDelegate>
 {
-    UIButton *_selectedBtn;
+    RootBarItem *_selectedItem;
 }
 
-@property (strong, nonatomic) IBOutletCollection(RootBarItem) NSArray *btns;
+@property (strong, nonatomic) IBOutletCollection(RootBarItem) NSArray *items;
 
-@property (nonatomic,weak) id <RootTabbarDelegate> delegate;
 
 @end
 
 
 @implementation RootTabbar
 
-+ (RootTabbar *)newInstanceWityDelegate:(id<RootTabbarDelegate>)delegate
-{
-    RootTabbar *instance = [[NSBundle mainBundle]
-                            loadNibNamed:@"RootTabbar"
-                            owner:nil options:nil][0];
-    
-    instance.delegate = delegate;
-    
-    return instance;
-}
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self){
+        [self drawTopLine:0 right:0];
+    }
+    return self;
+}
 
 + (CGFloat)expectedHeight
 {
@@ -42,42 +39,36 @@
 }
 
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    for (RootBarItem *item in _btns) {
-        item.selected = NO;
-    }
-}
-
-
-- (IBAction)btnsClick:(UIButton *)sender
-{
-    if (_selectedBtn == sender) return;
-    
-    _selectedBtn.selected = NO;
-    _selectedBtn = sender;
-    _selectedBtn.selected = YES;
-    
-    if ([_delegate respondsToSelector:@selector(rootTabbar:didClickedIndex:)]){
-        [_delegate rootTabbar:self didClickedIndex:_selectedBtn.tag];
-    }
-}
-
-
 - (void)selectItemAtIndex:(NSInteger)index
 {
-    id sender = nil;
-    for (UIButton *btn in _btns) {
-        if (btn.tag == index){
-            sender = btn;
+    RootBarItem *sender = nil;
+    for (RootBarItem *item in _items) {
+        if (item.tag == index){
+            sender = item;
             break;
         }
     }
     
     if (sender){
-        [sender btnsClick:sender];
+        [self didClickedInrootBarItem:sender];
     }
 }
+
+#pragma mark - RootBarItemDelegate
+
+- (void)didClickedInrootBarItem:(RootBarItem *)item
+{
+    if (_selectedItem == item) return;
+    
+    _selectedItem.selected = NO;
+    _selectedItem = item;
+    _selectedItem.selected = YES;
+    
+    if ([_delegate respondsToSelector:@selector(rootTabbar:didClickedIndex:)]){
+        [_delegate rootTabbar:self didClickedIndex:_selectedItem.tag];
+    }
+}
+
+
 
 @end

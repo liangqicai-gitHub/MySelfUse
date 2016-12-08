@@ -84,6 +84,8 @@
 		DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */; };
 		DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */; };
 		DFC506681DE7D6BA00DD7555 /* UIButton+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC506671DE7D6BA00DD7555 /* UIButton+Factory.m */; };
+		DFCE96EF1DF94072001E66CD /* XIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE96EE1DF94072001E66CD /* XIBView.m */; };
+		DFCE96F31DF96768001E66CD /* UIView+SeparateLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCE96F21DF96768001E66CD /* UIView+SeparateLine.m */; };
 		DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */; };
 		DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */; };
 		DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE354FF1DAA1AA90023432B /* TodayViewController.m */; };
@@ -256,6 +258,10 @@
 		DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8VariableCell.xib; sourceTree = "<group>"; };
 		DFC506661DE7D6BA00DD7555 /* UIButton+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Factory.h"; sourceTree = "<group>"; };
 		DFC506671DE7D6BA00DD7555 /* UIButton+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Factory.m"; sourceTree = "<group>"; };
+		DFCE96ED1DF94072001E66CD /* XIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBView.h; sourceTree = "<group>"; };
+		DFCE96EE1DF94072001E66CD /* XIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBView.m; sourceTree = "<group>"; };
+		DFCE96F11DF96768001E66CD /* UIView+SeparateLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SeparateLine.h"; sourceTree = "<group>"; };
+		DFCE96F21DF96768001E66CD /* UIView+SeparateLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SeparateLine.m"; sourceTree = "<group>"; };
 		DFD434381DCDE8F20049464E /* LQCPhotoBrowseConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseConfigure.h; sourceTree = "<group>"; };
 		DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseConfigure.m; sourceTree = "<group>"; };
 		DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = mytodayWidge.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,6 +464,7 @@
 		DF4437F41DEBD5D40085FB79 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				DFCE96EC1DF94052001E66CD /* View */,
 				DF75F8B51DED6C2A00B53A4E /* HTTPManager */,
 				DF4437F51DEBD5E40085FB79 /* 滚动banner */,
 			);
@@ -670,6 +677,7 @@
 		DFA7ACF81CF5B94D00BFDB62 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
+				DFCE96F01DF9675F001E66CD /* UIView */,
 				DFE7510C1DE6B5E100BAB23F /* UIButtom */,
 				DFB474EB1DC89F730024F77B /* UIlabel */,
 				DFB5CA611CF6EC4400A4AF48 /* NSString+Usual.h */,
@@ -813,6 +821,24 @@
 				DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DFCE96EC1DF94052001E66CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFCE96ED1DF94072001E66CD /* XIBView.h */,
+				DFCE96EE1DF94072001E66CD /* XIBView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFCE96F01DF9675F001E66CD /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DFCE96F11DF96768001E66CD /* UIView+SeparateLine.h */,
+				DFCE96F21DF96768001E66CD /* UIView+SeparateLine.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		DFE354FD1DAA1AA90023432B /* mytodayWidge */ = {
@@ -1099,6 +1125,7 @@
 				DFB474EE1DC89F8C0024F77B /* UILabel+Convenient.m in Sources */,
 				DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */,
 				DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */,
+				DFCE96EF1DF94072001E66CD /* XIBView.m in Sources */,
 				DFA185441DF550F100D80BFB /* RootTabbar.m in Sources */,
 				DF0AFB6D1DD0814E00AB88CE /* YearCell.m in Sources */,
 				DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */,
@@ -1110,6 +1137,7 @@
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
+				DFCE96F31DF96768001E66CD /* UIView+SeparateLine.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
 				DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */,
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,

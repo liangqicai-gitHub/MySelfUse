@@ -16,6 +16,9 @@
 #define LQCDLog(...)
 #endif
 
+//分割线
+#define System_Cell_Divider_Height  (1.0f / [UIScreen mainScreen].scale)
+
 //设备的高度
 #define DeviceWidth  [UIScreen mainScreen].bounds.size.width
 #define DeviceHeight [UIScreen mainScreen].bounds.size.height
@@ -35,6 +38,8 @@
 #import "NSArray+Usual.h"
 #import "UIButton+EdgeInsets.h"
 #import "UIButton+Factory.h"
+#import "XIBView.h"
+#import "UIView+SeparateLine.h"
 
 //百度地图
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件

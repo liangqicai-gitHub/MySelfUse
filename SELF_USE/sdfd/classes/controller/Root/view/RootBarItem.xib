@@ -10,19 +10,7 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootBarItem">
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Common_rightArrow"/>
-                <userDefinedRuntimeAttribute type="image" keyPath="normalImage" value="Common_rightArrow"/>
-                <userDefinedRuntimeAttribute type="color" keyPath="normalTitleColor">
-                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
-                    <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="string" keyPath="title" value="sds"/>
-            </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="contentView" destination="iN0-l3-epB" id="EyT-98-olM"/>
                 <outlet property="limageView" destination="shU-ST-tck" id="sfU-a3-ckw"/>
                 <outlet property="llabel" destination="rsw-dg-0ic" id="eda-2q-gKe"/>
             </connections>
@@ -45,11 +33,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xj-je-mdl">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="49"/>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="n86-1C-0c3"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="9Xj-je-mdl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DNr-hF-qbX"/>
+                <constraint firstAttribute="trailing" secondItem="9Xj-je-mdl" secondAttribute="trailing" id="Hhm-8y-W82"/>
                 <constraint firstItem="shU-ST-tck" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MIt-fn-Z6G"/>
                 <constraint firstItem="shU-ST-tck" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-8" id="ebA-cU-nbm"/>
+                <constraint firstItem="9Xj-je-mdl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fPT-oS-vhM"/>
+                <constraint firstAttribute="bottom" secondItem="9Xj-je-mdl" secondAttribute="bottom" id="hiS-3x-N8X"/>
                 <constraint firstItem="rsw-dg-0ic" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kO9-Ne-i5I"/>
                 <constraint firstItem="rsw-dg-0ic" firstAttribute="top" secondItem="shU-ST-tck" secondAttribute="bottom" constant="3" id="ydz-qv-UCW"/>
             </constraints>
@@ -59,7 +57,4 @@
             <point key="canvasLocation" x="-360" y="-817.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="Common_rightArrow" width="7" height="12"/>
-    </resources>
 </document>

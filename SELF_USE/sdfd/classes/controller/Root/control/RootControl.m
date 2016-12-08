@@ -73,14 +73,16 @@ UINavigationControllerDelegate
 {
     [super viewDidLoad];
     [self initViews];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self setSelectedIndex:0];
 }
 
 
 - (void)initViews
 {
-    _rootTabbar = [RootTabbar newInstanceWityDelegate:self];
+    _rootTabbar = [[RootTabbar alloc] init];
+    _rootTabbar.delegate = self;
+    _rootTabbar.backgroundColor = [RGB(250, 250, 250) colorWithAlphaComponent:0.9];
     [self.view addSubview:_rootTabbar];
     [_rootTabbar mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.right.left.bottom.mas_equalTo(0);
@@ -110,6 +112,8 @@ UINavigationControllerDelegate
         make.top.left.right.mas_offset(0);
         make.height.mas_equalTo(height);
     }];
+    
+    [_rootTabbar selectItemAtIndex:_selectedIndex];
 }
 
 
