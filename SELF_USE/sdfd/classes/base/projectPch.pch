@@ -40,6 +40,7 @@
 #import "UIButton+Factory.h"
 #import "XIBView.h"
 #import "UIView+SeparateLine.h"
+#import "UILabel+Convenient.h"
 
 //百度地图
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件

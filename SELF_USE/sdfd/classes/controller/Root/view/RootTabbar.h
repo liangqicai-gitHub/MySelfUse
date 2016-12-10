@@ -20,7 +20,11 @@
 @end
 
 
-@interface RootTabbar : XIBView<RootTabbarDelegate>
+@interface RootTabbar : UIView
+
++ (RootTabbar *)instanceWithDelegate:(id <RootTabbarDelegate>)delegate;
+
+- (instancetype)initWithDelegate:(id <RootTabbarDelegate>)delegate;
 
 @property (nonatomic,weak) id <RootTabbarDelegate>delegate;
 

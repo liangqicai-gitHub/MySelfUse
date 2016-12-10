@@ -11,8 +11,8 @@
 
 @interface RootBarItem ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *limageView;
-@property (weak, nonatomic) IBOutlet UILabel *llabel;
+@property (strong, nonatomic) IBOutlet UIImageView *limageView;
+@property (strong, nonatomic) IBOutlet UILabel *llabel;
 
 @end
 
@@ -20,15 +20,80 @@
 @implementation RootBarItem
 
 
-- (void)awakeFromNib
++ (RootBarItem *)instanceWithSelectedImage:(UIImage *)selectedImage
+                               normalImage:(UIImage *)normalImage
+                                     title:(NSString *)title
+                          normalTitleColor:(UIColor *)normalTitleColor
+                        selectedTitleColor:(UIColor *)selectedTitleColor
 {
-    [super awakeFromNib];
-    self.selected = NO;
+    RootBarItem *item = [[RootBarItem alloc]
+                         initWithSelectedImage:selectedImage
+                         normalImage:normalImage title:title
+                         normalTitleColor:normalTitleColor
+                         selectedTitleColor:selectedTitleColor];
+    
+    return item;
 }
+
+- (instancetype)initWithSelectedImage:(UIImage *)selectedImage
+                          normalImage:(UIImage *)normalImage
+                                title:(NSString *)title
+                     normalTitleColor:(UIColor *)normalTitleColor
+                   selectedTitleColor:(UIColor *)selectedTitleColor
+{
+    self = [self init];
+    if (self){
+        _selectedImage = selectedImage;
+        _normalImage = normalImage;
+        _title = title;
+        _normalTitleColor = normalTitleColor;
+        _selectedTitleColor = selectedTitleColor;
+    }
+    [self setSelected:NO];
+    return self;
+}
+
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self){
+        [self initViews];
+    }
+    return self;
+}
+
+
+- (void)initViews
+{
+    _limageView = [[UIImageView alloc] init];
+    [self addSubview:_limageView];
+    
+    [_limageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(-8);
+        make.size.mas_equalTo(CGSizeMake(24, 24));
+        make.centerX.mas_equalTo(0);
+    }];
+    
+    
+    _llabel = [UILabel labelWithTextColor:[UIColor lightGrayColor]
+                                     font:10
+                              lineNumbers:1
+                            textAlignment:NSTextAlignmentCenter];
+    [self addSubview:_llabel];
+    [_llabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(_limageView.mas_bottom).offset(3);
+        make.centerX.mas_equalTo(0);
+    }];
+}
+
+
+
+#pragma mark - setter
 
 - (void)setSelected:(BOOL)selected
 {
-    _selected = selected;
+    [super setSelected:selected];
         
     UIColor *textColor = _normalTitleColor;
     UIImage *image = _normalImage;
@@ -41,12 +106,10 @@
     _limageView.image = image;
 }
 
-- (IBAction)btnClick:(UIButton *)sender
-{
-    if ([_delegate respondsToSelector:@selector(didClickedInrootBarItem:)]){
-        [_delegate didClickedInrootBarItem:self];
-    }
-}
+
+
+
+
 
 
 @end

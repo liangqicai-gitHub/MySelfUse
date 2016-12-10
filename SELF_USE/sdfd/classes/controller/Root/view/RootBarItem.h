@@ -8,24 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
 
-@class RootBarItem;
-@protocol RootBarItemDelegate <NSObject>
+@interface RootBarItem : UIControl
 
-- (void)didClickedInrootBarItem:(RootBarItem *)item;
+@property (strong, nonatomic) UIImage *selectedImage;
+@property (strong, nonatomic) UIImage *normalImage;
+@property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) UIColor *normalTitleColor;
+@property (strong, nonatomic) UIColor *selectedTitleColor;
 
-@end
 
-@interface RootBarItem : XIBView
+- (instancetype)initWithSelectedImage:(UIImage *)selectedImage
+                          normalImage:(UIImage *)normalImage
+                                title:(NSString *)title
+                     normalTitleColor:(UIColor *)normalTitleColor
+                   selectedTitleColor:(UIColor *)selectedTitleColor;
 
-@property (assign, nonatomic) IBOutlet id <RootBarItemDelegate>delegate;
 
-@property (assign, nonatomic) IBInspectable BOOL selected;
-@property (strong, nonatomic) IBInspectable UIImage *selectedImage;
-@property (strong, nonatomic) IBInspectable UIImage *normalImage;
-@property (strong, nonatomic) IBInspectable NSString *title;
-@property (strong, nonatomic) IBInspectable UIColor *normalTitleColor;
-@property (strong, nonatomic) IBInspectable UIColor *selectedTitleColor;
++ (RootBarItem *)instanceWithSelectedImage:(UIImage *)selectedImage
+                               normalImage:(UIImage *)normalImage
+                                     title:(NSString *)title
+                          normalTitleColor:(UIColor *)normalTitleColor
+                        selectedTitleColor:(UIColor *)selectedTitleColor;
+
 
 @end

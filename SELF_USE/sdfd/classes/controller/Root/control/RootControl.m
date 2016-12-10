@@ -82,7 +82,7 @@ UINavigationControllerDelegate
 {
     _rootTabbar = [[RootTabbar alloc] init];
     _rootTabbar.delegate = self;
-    _rootTabbar.backgroundColor = [RGB(250, 250, 250) colorWithAlphaComponent:0.9];
+    _rootTabbar.backgroundColor = RGB(250, 250, 250);
     [self.view addSubview:_rootTabbar];
     [_rootTabbar mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.right.left.bottom.mas_equalTo(0);
