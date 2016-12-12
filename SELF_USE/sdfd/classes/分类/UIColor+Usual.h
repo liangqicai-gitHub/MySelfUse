@@ -24,7 +24,6 @@
 
 + (UIColor *)r_int:(NSInteger )r g_int:(NSInteger )g b_int:(NSInteger )b a_f:(CGFloat)a;
 
-
 - (UIImage *)pureColorImage;
 
 @end

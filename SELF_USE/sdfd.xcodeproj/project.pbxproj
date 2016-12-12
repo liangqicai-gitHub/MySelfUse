@@ -94,7 +94,6 @@
 		DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE751161DE6C0D700BAB23F /* testButtonVC.xib */; };
 		DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */; };
 		DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */; };
-		DFED5D031D08131E0081F4AD /* UILabel+SelfAdaption.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED5D021D08131E0081F4AD /* UILabel+SelfAdaption.m */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
 		F18915BE02ABEED0D008D105 /* libPods-sdfd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */; };
 /* End PBXBuildFile section */
@@ -274,8 +273,6 @@
 		DFED53941DA9DE4E001D558A /* OpenURLTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenURLTestVC.h; sourceTree = "<group>"; };
 		DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenURLTestVC.m; sourceTree = "<group>"; };
 		DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenURLTestVC.xib; sourceTree = "<group>"; };
-		DFED5D011D08131E0081F4AD /* UILabel+SelfAdaption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SelfAdaption.h"; sourceTree = "<group>"; };
-		DFED5D021D08131E0081F4AD /* UILabel+SelfAdaption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SelfAdaption.m"; sourceTree = "<group>"; };
 		DFF52FF71D01977300BAC9F3 /* NSAttributedString+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Usual.h"; sourceTree = "<group>"; };
 		DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Usual.m"; sourceTree = "<group>"; };
 		E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -682,10 +679,8 @@
 				DFB5CA651CF6F1A400A4AF48 /* UIColor+Usual.m */,
 				DFB5CA671CF6FACE00A4AF48 /* NSObject+Usual.h */,
 				DFB5CA681CF6FACE00A4AF48 /* NSObject+Usual.m */,
-				DFB5CA6A1CF6FB8400A4AF48 /* NSArray+Usual.h */,
 				DFB5CA6B1CF6FB8400A4AF48 /* NSArray+Usual.m */,
-				DFED5D011D08131E0081F4AD /* UILabel+SelfAdaption.h */,
-				DFED5D021D08131E0081F4AD /* UILabel+SelfAdaption.m */,
+				DFB5CA6A1CF6FB8400A4AF48 /* NSArray+Usual.h */,
 				DFB0F5BD1D0D3787006EEFD0 /* UIScrollView+Refresh.h */,
 				DFB0F5BE1D0D3787006EEFD0 /* UIScrollView+Refresh.m */,
 				DFB0F5C61D0D3F23006EEFD0 /* LQCFreshView.h */,
@@ -1091,7 +1086,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFED5D031D08131E0081F4AD /* UILabel+SelfAdaption.m in Sources */,
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,

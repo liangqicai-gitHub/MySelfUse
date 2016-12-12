@@ -13,7 +13,7 @@
 
 - (CGFloat)expectHeight:(CGFloat)labelWidth
 {
-    CGRect stringMSize = [self boundingRectWithSize:(CGSize){269,8000}
+    CGRect stringMSize = [self boundingRectWithSize:(CGSize){269,CGFLOAT_MAX}
                                             options:(NSStringDrawingTruncatesLastVisibleLine |
                                                      NSStringDrawingUsesLineFragmentOrigin |
                                                      NSStringDrawingUsesFontLeading)

@@ -101,7 +101,6 @@
         }];
         lastView = container;
         
-        
         [container addSubview:obj];
         [obj mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.mas_equalTo(CGPointZero);

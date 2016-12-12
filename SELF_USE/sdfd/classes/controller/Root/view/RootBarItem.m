@@ -11,8 +11,8 @@
 
 @interface RootBarItem ()
 
-@property (strong, nonatomic) IBOutlet UIImageView *limageView;
-@property (strong, nonatomic) IBOutlet UILabel *llabel;
+@property (strong, nonatomic) UIImageView *limageView;
+@property (strong, nonatomic) UILabel *llabel;
 
 @end
 
@@ -105,11 +105,6 @@
     _llabel.text = _title;
     _limageView.image = image;
 }
-
-
-
-
-
 
 
 @end
