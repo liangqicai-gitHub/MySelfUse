@@ -11,8 +11,6 @@
 @interface BaseViewController : UIViewController
 
 
-
-
 #pragma mark - navigation
 
 - (BOOL)navigationBarHidden;
@@ -32,8 +30,6 @@ pushAnimation:(BOOL)animation;
 
 - (void)pushTo:(BaseViewController *)vc
      animation:(BOOL)animation;
-
-
 
 
 #pragma mark - keyboard

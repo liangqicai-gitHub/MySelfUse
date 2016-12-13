@@ -13,15 +13,14 @@
 
 @interface NSString (Usual)
 
-
 //判断是不是空串
 + (BOOL)isEmptyString:(NSString *)string;
 
 //document目录
 + (NSString *)documentsDirectory;
 
-+ (NSString *)mainBundelResourcePath:(NSString *)resourceName;
 
++ (NSString *)mainBundelResourcePath:(NSString *)resourceName;
 
 //去掉空格
 - (NSString *)trimString;

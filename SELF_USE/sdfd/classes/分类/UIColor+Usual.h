@@ -10,11 +10,8 @@
 
 #define RGB(r,g,b)     [UIColor r_int:r g_int:g b_int:b a_f:1.0f]
 #define RGBA(r,g,b,a)  [UIColor r_int:r g_int:g b_int:b a_f:a]
-
 #define HexRGB(RGB)    [UIColor colorWithHexRGB:RGB]
 #define HexRGBA(RGBA)  [UIColor colorWithHexRGBA:RGBA]
-
-
 
 @interface UIColor (Usual)
 

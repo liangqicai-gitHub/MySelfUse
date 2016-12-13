@@ -34,8 +34,6 @@
                     highlightImage:(UIImage *)highlightImage;
 
 
-
-
 + (UIButton *)newInstanceWithTitle:(NSString *)title
                               font:(UIFont *)font
                   normalTitleColor:(UIColor *)normalTitleColor
