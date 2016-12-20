@@ -16,6 +16,7 @@
 #import <SDWebImage/SDWebImageManager.h>
 #import "TestForCollectionView.h"
 #import "APLViewController.h"
+#import "SocketClient.h"
 
 
 @interface MineMainControl ()
@@ -35,9 +36,13 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    APLViewController *vc = [[APLViewController alloc] init];
     
-    [self pushTo:vc animation:YES];
+    SocketClient *aa = [[SocketClient alloc] init];
+    [self pushTo:aa animation:YES];
+    
+//    APLViewController *vc = [[APLViewController alloc] init];
+//    
+//    [self pushTo:vc animation:YES];
     
     
 //    [self testCollectionView];

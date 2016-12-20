@@ -159,12 +159,9 @@ UINavigationControllerDelegate
     UIViewController *root = navigationController.viewControllers.firstObject;
     if (viewController != root) {
 
-        [navigationController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.right.mas_offset(0);
+        [navigationController.view mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(DeviceHeight);
         }];
-        [navigationController.view setNeedsLayout];
-        [navigationController.view layoutIfNeeded];
         
         [_rootTabbar removeFromSuperview];
 
@@ -174,8 +171,8 @@ UINavigationControllerDelegate
             make.height.mas_equalTo([RootTabbar expectedHeight]);
         }];
         
-        [_rootTabbar setNeedsLayout];
-        [_rootTabbar layoutIfNeeded];
+        [self.view setNeedsLayout];
+        [self.view layoutIfNeeded];
     }
 }
 
@@ -184,27 +181,20 @@ UINavigationControllerDelegate
     UIViewController *root = navigationController.viewControllers[0];
     if (viewController == root) {
 
-        [navigationController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.right.mas_offset(0);
+        [navigationController.view mas_updateConstraints:^(MASConstraintMaker *make) {
             make.height.mas_equalTo(DeviceHeight - [RootTabbar expectedHeight]);
         }];
         
-        [navigationController.view setNeedsLayout];
-        [navigationController.view layoutIfNeeded];
-        
         [_rootTabbar removeFromSuperview];
-
         [self.view addSubview:_rootTabbar];
-
         [_rootTabbar mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.right.left.bottom.mas_equalTo(0);
             make.height.mas_equalTo([RootTabbar expectedHeight]);
         }];
-        
         [self.view bringSubviewToFront:_rootTabbar];
         
-        [_rootTabbar setNeedsLayout];
-        [_rootTabbar layoutIfNeeded];
+        [self.view setNeedsLayout];
+        [self.view layoutIfNeeded];
     }
 }
 

@@ -84,6 +84,8 @@
 		DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */; };
 		DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */; };
 		DFC506681DE7D6BA00DD7555 /* UIButton+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC506671DE7D6BA00DD7555 /* UIButton+Factory.m */; };
+		DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD25AAD1E07EDE7003DDD0C /* SocketClient.m */; };
+		DFD25AB01E07EDE7003DDD0C /* SocketClient.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */; };
 		DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */; };
 		DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */; };
 		DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE354FF1DAA1AA90023432B /* TodayViewController.m */; };
@@ -257,6 +259,9 @@
 		DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8VariableCell.xib; sourceTree = "<group>"; };
 		DFC506661DE7D6BA00DD7555 /* UIButton+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Factory.h"; sourceTree = "<group>"; };
 		DFC506671DE7D6BA00DD7555 /* UIButton+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Factory.m"; sourceTree = "<group>"; };
+		DFD25AAC1E07EDE7003DDD0C /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
+		DFD25AAD1E07EDE7003DDD0C /* SocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketClient.m; sourceTree = "<group>"; };
+		DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocketClient.xib; sourceTree = "<group>"; };
 		DFD434381DCDE8F20049464E /* LQCPhotoBrowseConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseConfigure.h; sourceTree = "<group>"; };
 		DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseConfigure.m; sourceTree = "<group>"; };
 		DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = mytodayWidge.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -694,6 +699,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFD25AAB1E07EDCC003DDD0C /* SocketClient */,
 				DF0BE1FC1DEC0B6300A32A6A /* 后台下载 */,
 				DFE751131DE6C05200BAB23F /* 测试按钮 */,
 				DF0AFB641DD07E6000AB88CE /* 小测试 */,
@@ -820,6 +826,16 @@
 				DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DFD25AAB1E07EDCC003DDD0C /* SocketClient */ = {
+			isa = PBXGroup;
+			children = (
+				DFD25AAC1E07EDE7003DDD0C /* SocketClient.h */,
+				DFD25AAD1E07EDE7003DDD0C /* SocketClient.m */,
+				DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */,
+			);
+			path = SocketClient;
 			sourceTree = "<group>";
 		};
 		DFE354FD1DAA1AA90023432B /* mytodayWidge */ = {
@@ -960,6 +976,7 @@
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
 				DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */,
 				DFB474F31DC8A2620024F77B /* FootprintTestVC.xib in Resources */,
+				DFD25AB01E07EDE7003DDD0C /* SocketClient.xib in Resources */,
 				DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */,
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
@@ -1078,6 +1095,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */,
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,

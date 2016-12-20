@@ -34,7 +34,7 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    
+    NSLog(@"ddddddd---%f",DeviceHeight);
     NSLog(@"home self.frame %@",NSStringFromCGRect(self.view.frame));
     NSLog(@"home self.nav.frame %@",NSStringFromCGRect(self.navigationController.view.frame));
 }

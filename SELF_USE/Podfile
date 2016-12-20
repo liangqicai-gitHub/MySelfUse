@@ -1,25 +1,16 @@
 platform :ios, '7.0'
 
 target 'sdfd' do
-
+pod 'AFNetworking'      # http
+pod 'CocoaAsyncSocket'  # Socket
 pod 'MJExtension'
-
 pod 'SDWebImage'
-
-pod 'AFNetworking'
-
 pod 'Masonry'
-
 pod 'MJRefresh'
-
 pod 'YYKit'
-
-pod 'BaiduMapKit' #百度地图SDK
-
+pod 'BaiduMapKit'
 end
 
 target 'mytodayWidge' do
-
 pod 'AFNetworking'
-
 end
