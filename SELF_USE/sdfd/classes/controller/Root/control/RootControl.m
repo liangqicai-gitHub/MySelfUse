@@ -177,7 +177,10 @@ UINavigationControllerDelegate
 }
 
 
--(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+-(void)navigationController:(UINavigationController *)navigationController
+      didShowViewController:(UIViewController *)viewController
+                   animated:(BOOL)animated
+{
     UIViewController *root = navigationController.viewControllers[0];
     if (viewController == root) {
 

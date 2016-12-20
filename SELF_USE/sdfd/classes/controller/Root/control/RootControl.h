@@ -19,9 +19,7 @@
  */
 + (RootControl *)rootControl;
 
-
 @property (nonatomic,assign) NSInteger selectedIndex;
-
 
 
 @end
