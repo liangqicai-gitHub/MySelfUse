@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-
+//用什么方式串行化httprequest的入参
 typedef NS_ENUM(NSInteger,HTTPManagerRequestSerializerType)
 {
     HTTPManagerRequestSerializerType_HTTPDefault,
@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger,HTTPManagerRequestSerializerType)
     HTTPManagerRequestSerializerType_PropertyList
 };
 
+//用什么方式解析拿到的原始二进制
 typedef NS_ENUM(NSInteger,HTTPManagerResponseSerializerType)
 {
     HTTPManagerResonSerializerType_Data,
