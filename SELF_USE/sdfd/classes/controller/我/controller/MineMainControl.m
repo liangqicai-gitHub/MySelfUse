@@ -17,6 +17,8 @@
 #import "TestForCollectionView.h"
 #import "APLViewController.h"
 #import "SocketClient.h"
+#import "HTTPManager.h"
+
 
 
 @interface MineMainControl ()
@@ -37,21 +39,6 @@
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
     
-    SocketClient *aa = [[SocketClient alloc] init];
-    [self pushTo:aa animation:YES];
-    
-//    APLViewController *vc = [[APLViewController alloc] init];
-//    
-//    [self pushTo:vc animation:YES];
-    
-    
-//    [self testCollectionView];
-//    [self testPhotoBrose];
-//    [self testFootPrint];
-//    [self testHis];
-//    [self testBaiDuMapClusterFunction];
-//    [self testIOS8CellSelfCalculate];
-//    [self testAVPlayer];
 }
 
 

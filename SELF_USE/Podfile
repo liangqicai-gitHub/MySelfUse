@@ -1,6 +1,9 @@
-platform :ios, '7.0'
+platform :ios, ‘8.0’
+
+
 
 target 'sdfd' do
+use_frameworks!
 pod 'AFNetworking'      # http
 pod 'CocoaAsyncSocket'  # Socket
 pod 'MJExtension'
@@ -9,6 +12,7 @@ pod 'Masonry'
 pod 'MJRefresh'
 pod 'YYKit'
 pod 'BaiduMapKit'
+pod 'JHChart'
 end
 
 target 'mytodayWidge' do

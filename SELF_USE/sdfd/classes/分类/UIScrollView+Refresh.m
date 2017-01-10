@@ -8,7 +8,7 @@
 
 #import "UIScrollView+Refresh.h"
 #import "LQCFreshView.h"
-#import <MJRefresh.h>
+#import "MJRefresh.h"
 
 @implementation UIScrollView (Refresh)
 

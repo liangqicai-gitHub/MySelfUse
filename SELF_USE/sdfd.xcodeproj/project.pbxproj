@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580FDC1471A15A4886CF0DFB /* Pods_sdfd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */; };
 		69D56EF086B6BB07F7DCC0E1 /* libPods-mytodayWidge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */; };
 		DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB661DD07E8000AB88CE /* TestForCollectionView.m */; };
 		DF0AFB691DD07E8000AB88CE /* TestForCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB671DD07E8000AB88CE /* TestForCollectionView.xib */; };
@@ -97,7 +98,6 @@
 		DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */; };
 		DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
-		F18915BE02ABEED0D008D105 /* libPods-sdfd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +128,8 @@
 		3F06D23A08A3A93E89D89AEA /* Pods-mytodayWidge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.release.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.release.xcconfig"; sourceTree = "<group>"; };
 		50521BE7CC82AE295AE7F64D /* Pods-sdfd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.debug.xcconfig"; sourceTree = "<group>"; };
 		7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mytodayWidge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sdfd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47AFF679C745063B96491B8 /* Pods-sdfd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.release.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.release.xcconfig"; sourceTree = "<group>"; };
+		D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sdfd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0AFB651DD07E8000AB88CE /* TestForCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestForCollectionView.h; sourceTree = "<group>"; };
 		DF0AFB661DD07E8000AB88CE /* TestForCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestForCollectionView.m; sourceTree = "<group>"; };
 		DF0AFB671DD07E8000AB88CE /* TestForCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestForCollectionView.xib; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18915BE02ABEED0D008D105 /* libPods-sdfd.a in Frameworks */,
+				580FDC1471A15A4886CF0DFB /* Pods_sdfd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,9 +318,9 @@
 		A2314579EA92A85AF7121E2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98CCF12C6F3DBB9CCB452813 /* libPods-sdfd.a */,
 				DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */,
 				7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */,
+				D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

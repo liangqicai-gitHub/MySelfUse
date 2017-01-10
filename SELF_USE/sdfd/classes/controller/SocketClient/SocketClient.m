@@ -7,7 +7,7 @@
 //
 
 #import "SocketClient.h"
-#import <GCDAsyncSocket.h>
+#import "GCDAsyncSocket.h"
 
 @interface SocketClient ()<GCDAsyncSocketDelegate>
 {
