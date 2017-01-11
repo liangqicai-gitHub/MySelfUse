@@ -120,8 +120,33 @@
 {
     KTRFootPrintPhotosAnnotationView *annotationView = [[KTRFootPrintPhotosAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:_cellId];
     
+    UIView *popView = [[UIView alloc] init];
+    popView.backgroundColor = [UIColor redColor];
+    popView.frame = CGRectMake(0, 0, 100, 100);
+    
+//    pView = [[BMKActionPaopaoView alloc]initWithCustomView:newPopView];
+    
+    annotationView.paopaoView = [[BMKActionPaopaoView alloc]initWithCustomView:popView];
+//    ((BMKPinAnnotationView*)annotationView).ti
+    
     return annotationView;
 }
+
+- (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view{
+    
+//    if (_isNavState) {
+//        [_navManager mapView:mapView didSelectAnnotationView:view];
+//        return;
+//    }
+//    
+//    
+//    if ([view isKindOfClass:[KTRKplayNearByView class]]) {
+//        annotationView = (KTRKplayNearByView *)view;
+//        annotationView.style = SelectedStyle;
+//        [self annotationViewSelect];
+//    }
+}
+
 
 /**
  *地图初始化完毕时会调用此接口

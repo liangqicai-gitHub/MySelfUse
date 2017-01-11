@@ -7,7 +7,7 @@
 //
 
 
-@interface KTRFootPrintPhotosAnnotationView : BMKAnnotationView
+@interface KTRFootPrintPhotosAnnotationView : BMKPinAnnotationView
 
 
 

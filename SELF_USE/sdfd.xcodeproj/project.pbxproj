@@ -61,6 +61,8 @@
 		DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8FBC221D66E78D00E5BDC6 /* UIImage+convenient.m */; };
 		DFA185441DF550F100D80BFB /* RootTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA185431DF550F100D80BFB /* RootTabbar.m */; };
 		DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7ACFD1CF5B9FF00BFDB62 /* BaseViewController.m */; };
+		DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8DF431E24B52500C57761 /* ChartVC.m */; };
+		DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8DF461E24BB3400C57761 /* PeiChartView.m */; };
 		DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0F5BE1D0D3787006EEFD0 /* UIScrollView+Refresh.m */; };
 		DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0F5C71D0D3F23006EEFD0 /* LQCFreshView.m */; };
 		DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB0F5C91D0D3F3A006EEFD0 /* LQCFreshView.xib */; };
@@ -216,6 +218,10 @@
 		DFA7ACCE1CF5B1EE00BFDB62 /* sdfd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sdfd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA7ACFC1CF5B9FF00BFDB62 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DFA7ACFD1CF5B9FF00BFDB62 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DFA8DF421E24B52500C57761 /* ChartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartVC.h; sourceTree = "<group>"; };
+		DFA8DF431E24B52500C57761 /* ChartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartVC.m; sourceTree = "<group>"; };
+		DFA8DF451E24BB3400C57761 /* PeiChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeiChartView.h; sourceTree = "<group>"; };
+		DFA8DF461E24BB3400C57761 /* PeiChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeiChartView.m; sourceTree = "<group>"; };
 		DFB0F5BD1D0D3787006EEFD0 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		DFB0F5BE1D0D3787006EEFD0 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		DFB0F5C61D0D3F23006EEFD0 /* LQCFreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCFreshView.h; sourceTree = "<group>"; };
@@ -699,6 +705,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFA8DF411E24B4EF00C57761 /* 饼图 */,
 				DFD25AAB1E07EDCC003DDD0C /* SocketClient */,
 				DF0BE1FC1DEC0B6300A32A6A /* 后台下载 */,
 				DFE751131DE6C05200BAB23F /* 测试按钮 */,
@@ -736,6 +743,17 @@
 				DFB5CA601CF6E13C00A4AF48 /* projectPch.pch */,
 			);
 			path = base;
+			sourceTree = "<group>";
+		};
+		DFA8DF411E24B4EF00C57761 /* 饼图 */ = {
+			isa = PBXGroup;
+			children = (
+				DFA8DF421E24B52500C57761 /* ChartVC.h */,
+				DFA8DF431E24B52500C57761 /* ChartVC.m */,
+				DFA8DF451E24BB3400C57761 /* PeiChartView.h */,
+				DFA8DF461E24BB3400C57761 /* PeiChartView.m */,
+			);
+			path = "饼图";
 			sourceTree = "<group>";
 		};
 		DFB118641D02C829005BD91F /* 同步的AF */ = {
@@ -1104,6 +1122,7 @@
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
+				DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
 				DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */,
@@ -1144,6 +1163,7 @@
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DFB474F21DC8A2620024F77B /* FootprintTestVC.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
+				DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,

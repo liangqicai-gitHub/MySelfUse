@@ -18,6 +18,7 @@
 #import "APLViewController.h"
 #import "SocketClient.h"
 #import "HTTPManager.h"
+#import "ChartVC.h"
 
 
 
@@ -38,7 +39,14 @@
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender
 {
-    
+    BaiduMapClusterTest *vc = [[BaiduMapClusterTest alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)chart:(UIButton *)sender
+{
+    ChartVC *vc = [[ChartVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
