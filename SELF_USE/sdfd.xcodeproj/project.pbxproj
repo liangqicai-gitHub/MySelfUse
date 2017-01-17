@@ -31,6 +31,7 @@
 		DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3091DC4882400DEDE68 /* PlayerView.m */; };
 		DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2ED30D1DC49BF300DEDE68 /* test.mp4 */; };
 		DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */; };
+		DF33DB831E2CCC2E00A55997 /* A.sh in Resources */ = {isa = PBXBuildFile; fileRef = DF33DB821E2CCC2E00A55997 /* A.sh */; };
 		DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4437F71DEBD5ED0085FB79 /* RKImageBrowser.m */; };
 		DF4437FA1DEBD5ED0085FB79 /* RKImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */; };
 		DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4793811DC047D2001CD592 /* 点聚合.xcassets */; };
@@ -167,6 +168,7 @@
 		DF2ED30D1DC49BF300DEDE68 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		DF2ED30F1DC4B05E00DEDE68 /* LandscapePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapePlayerController.h; sourceTree = "<group>"; };
 		DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapePlayerController.m; sourceTree = "<group>"; };
+		DF33DB821E2CCC2E00A55997 /* A.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = A.sh; sourceTree = "<group>"; };
 		DF4437F61DEBD5ED0085FB79 /* RKImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKImageBrowser.h; sourceTree = "<group>"; };
 		DF4437F71DEBD5ED0085FB79 /* RKImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKImageBrowser.m; sourceTree = "<group>"; };
 		DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKImageBrowser.xib; sourceTree = "<group>"; };
@@ -655,6 +657,7 @@
 		DFA7ACD01CF5B1EE00BFDB62 /* sdfd */ = {
 			isa = PBXGroup;
 			children = (
+				DF33DB821E2CCC2E00A55997 /* A.sh */,
 				DF2D19B01CFC330C0032083A /* Resources */,
 				DF2D198F1CFBEBAA0032083A /* SupportFiles */,
 				DF2D19861CFBEAC80032083A /* APPDelegate */,
@@ -915,6 +918,7 @@
 				141A8DF5F036AFF83995BF8A /* [CP] Embed Pods Frameworks */,
 				043B8344881AB4C6B335C4C3 /* [CP] Copy Pods Resources */,
 				DFE3550B1DAA1AA90023432B /* Embed App Extensions */,
+				DF3B12A01E2C7AF1004ABB79 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1015,6 +1019,7 @@
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
 				DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */,
+				DF33DB831E2CCC2E00A55997 /* A.sh in Resources */,
 				DF0AFB6E1DD0814E00AB88CE /* YearCell.xib in Resources */,
 				DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */,
 			);
@@ -1104,6 +1109,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3B12A01E2C7AF1004ABB79 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/sdfd/A.sh";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -314,7 +314,6 @@
                                                      BOOL * _Nonnull stop)
      {
          [self.layer addSublayer:obj];
-         [self.layer addSublayer:obj];
          CABasicAnimation *ani = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
          ani.fromValue = @(0.0f);
          ani.toValue = @(1.0f);
