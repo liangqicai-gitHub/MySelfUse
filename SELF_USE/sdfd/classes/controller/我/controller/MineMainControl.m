@@ -19,6 +19,7 @@
 #import "SocketClient.h"
 #import "HTTPManager.h"
 #import "ChartVC.h"
+#import "RSAController.h"
 
 
 
@@ -35,6 +36,16 @@
 {
     return @"我";
 }
+
+
+
+- (IBAction)RSA:(UIButton *)sender
+{
+    RSAController *vc = [[RSAController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 
 - (IBAction)toTestKeyBorad:(UIButton *)sender

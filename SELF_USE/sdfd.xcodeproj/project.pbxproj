@@ -86,6 +86,13 @@
 		DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE71791DB0E5D100AF9A79 /* iOS8FixedCell.xib */; };
 		DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */; };
 		DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */; };
+		DFC4559D1E34B6B1003E7E80 /* RSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4559B1E34B6B1003E7E80 /* RSAController.m */; };
+		DFC4559E1E34B6B1003E7E80 /* RSAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC4559C1E34B6B1003E7E80 /* RSAController.xib */; };
+		DFC455A81E34B6FA003E7E80 /* CPPRI.p12 in Resources */ = {isa = PBXBuildFile; fileRef = DFC455A01E34B6FA003E7E80 /* CPPRI.p12 */; };
+		DFC455A91E34B6FA003E7E80 /* CPPUB.cer in Resources */ = {isa = PBXBuildFile; fileRef = DFC455A11E34B6FA003E7E80 /* CPPUB.cer */; };
+		DFC455AA1E34B6FA003E7E80 /* NSData+KKRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC455A31E34B6FA003E7E80 /* NSData+KKRSA.m */; };
+		DFC455AB1E34B6FA003E7E80 /* NSData+KKSignVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC455A51E34B6FA003E7E80 /* NSData+KKSignVerify.m */; };
+		DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC455A71E34B6FA003E7E80 /* SecKeyTools.m */; };
 		DFC506681DE7D6BA00DD7555 /* UIButton+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC506671DE7D6BA00DD7555 /* UIButton+Factory.m */; };
 		DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD25AAD1E07EDE7003DDD0C /* SocketClient.m */; };
 		DFD25AB01E07EDE7003DDD0C /* SocketClient.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */; };
@@ -263,6 +270,17 @@
 		DFBE717C1DB0EBFC00AF9A79 /* iOS8VariableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS8VariableCell.h; sourceTree = "<group>"; };
 		DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS8VariableCell.m; sourceTree = "<group>"; };
 		DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8VariableCell.xib; sourceTree = "<group>"; };
+		DFC4559A1E34B6B1003E7E80 /* RSAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAController.h; sourceTree = "<group>"; };
+		DFC4559B1E34B6B1003E7E80 /* RSAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAController.m; sourceTree = "<group>"; };
+		DFC4559C1E34B6B1003E7E80 /* RSAController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSAController.xib; sourceTree = "<group>"; };
+		DFC455A01E34B6FA003E7E80 /* CPPRI.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CPPRI.p12; sourceTree = "<group>"; };
+		DFC455A11E34B6FA003E7E80 /* CPPUB.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = CPPUB.cer; sourceTree = "<group>"; };
+		DFC455A21E34B6FA003E7E80 /* NSData+KKRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KKRSA.h"; sourceTree = "<group>"; };
+		DFC455A31E34B6FA003E7E80 /* NSData+KKRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KKRSA.m"; sourceTree = "<group>"; };
+		DFC455A41E34B6FA003E7E80 /* NSData+KKSignVerify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KKSignVerify.h"; sourceTree = "<group>"; };
+		DFC455A51E34B6FA003E7E80 /* NSData+KKSignVerify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KKSignVerify.m"; sourceTree = "<group>"; };
+		DFC455A61E34B6FA003E7E80 /* SecKeyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecKeyTools.h; sourceTree = "<group>"; };
+		DFC455A71E34B6FA003E7E80 /* SecKeyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecKeyTools.m; sourceTree = "<group>"; };
 		DFC506661DE7D6BA00DD7555 /* UIButton+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Factory.h"; sourceTree = "<group>"; };
 		DFC506671DE7D6BA00DD7555 /* UIButton+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Factory.m"; sourceTree = "<group>"; };
 		DFD25AAC1E07EDE7003DDD0C /* SocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketClient.h; sourceTree = "<group>"; };
@@ -705,6 +723,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFC455991E34B679003E7E80 /* RAS */,
 				DFA8DF411E24B4EF00C57761 /* 饼图 */,
 				DFD25AAB1E07EDCC003DDD0C /* SocketClient */,
 				DF0BE1FC1DEC0B6300A32A6A /* 后台下载 */,
@@ -844,6 +863,32 @@
 				DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DFC455991E34B679003E7E80 /* RAS */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4559F1E34B6EF003E7E80 /* Tools */,
+				DFC4559A1E34B6B1003E7E80 /* RSAController.h */,
+				DFC4559B1E34B6B1003E7E80 /* RSAController.m */,
+				DFC4559C1E34B6B1003E7E80 /* RSAController.xib */,
+			);
+			path = RAS;
+			sourceTree = "<group>";
+		};
+		DFC4559F1E34B6EF003E7E80 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DFC455A01E34B6FA003E7E80 /* CPPRI.p12 */,
+				DFC455A11E34B6FA003E7E80 /* CPPUB.cer */,
+				DFC455A21E34B6FA003E7E80 /* NSData+KKRSA.h */,
+				DFC455A31E34B6FA003E7E80 /* NSData+KKRSA.m */,
+				DFC455A41E34B6FA003E7E80 /* NSData+KKSignVerify.h */,
+				DFC455A51E34B6FA003E7E80 /* NSData+KKSignVerify.m */,
+				DFC455A61E34B6FA003E7E80 /* SecKeyTools.h */,
+				DFC455A71E34B6FA003E7E80 /* SecKeyTools.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		DFD25AAB1E07EDCC003DDD0C /* SocketClient */ = {
@@ -999,6 +1044,7 @@
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
 				DFB474EA1DC89F490024F77B /* FootPrintCell.xcassets in Resources */,
+				DFC4559E1E34B6B1003E7E80 /* RSAController.xib in Resources */,
 				DF2D199F1CFC04730032083A /* LaunchScreen.storyboard in Resources */,
 				DF4437FA1DEBD5ED0085FB79 /* RKImageBrowser.xib in Resources */,
 				DF0AFB691DD07E8000AB88CE /* TestForCollectionView.xib in Resources */,
@@ -1014,7 +1060,9 @@
 				DF0BE2061DEC0C9100A32A6A /* APLViewController.xib in Resources */,
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
+				DFC455A81E34B6FA003E7E80 /* CPPRI.p12 in Resources */,
 				DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */,
+				DFC455A91E34B6FA003E7E80 /* CPPUB.cer in Resources */,
 				DF0AFB6E1DD0814E00AB88CE /* YearCell.xib in Resources */,
 				DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */,
 			);
@@ -1122,12 +1170,15 @@
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
+				DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */,
 				DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
 				DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */,
 				DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
+				DFC455AA1E34B6FA003E7E80 /* NSData+KKRSA.m in Sources */,
 				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,
+				DFC455AB1E34B6FA003E7E80 /* NSData+KKSignVerify.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
 				DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */,
@@ -1149,6 +1200,7 @@
 				DFBE71741DB0E45B00AF9A79 /* iOS8CellSelfCalculate.m in Sources */,
 				DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */,
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
+				DFC4559D1E34B6B1003E7E80 /* RSAController.m in Sources */,
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
