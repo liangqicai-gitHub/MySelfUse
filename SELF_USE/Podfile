@@ -1,7 +1,5 @@
 platform :ios, ‘8.0’
 
-
-
 target 'sdfd' do
 use_frameworks!
 pod 'AFNetworking'      # http
@@ -16,5 +14,6 @@ pod 'JHChart'
 end
 
 target 'mytodayWidge' do
+use_frameworks!
 pod 'AFNetworking'
 end

@@ -20,6 +20,7 @@
 #import "HTTPManager.h"
 #import "ChartVC.h"
 #import "RSAController.h"
+#import "StepViewController.h"
 
 
 
@@ -126,6 +127,15 @@
     TestForCollectionView *vc = [[TestForCollectionView alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+- (IBAction)step:(UIButton *)sender
+{
+    StepViewController *vc = [[StepViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 @end

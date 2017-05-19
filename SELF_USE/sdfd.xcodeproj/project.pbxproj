@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		580FDC1471A15A4886CF0DFB /* Pods_sdfd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */; };
-		69D56EF086B6BB07F7DCC0E1 /* libPods-mytodayWidge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */; };
+		B46A1F99611DE483A8F3937B /* Pods_mytodayWidge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6533A9539FD50708CD46DA /* Pods_mytodayWidge.framework */; };
 		DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB661DD07E8000AB88CE /* TestForCollectionView.m */; };
 		DF0AFB691DD07E8000AB88CE /* TestForCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB671DD07E8000AB88CE /* TestForCollectionView.xib */; };
 		DF0AFB6D1DD0814E00AB88CE /* YearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0AFB6B1DD0814E00AB88CE /* YearCell.m */; };
@@ -17,6 +17,12 @@
 		DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB711DD0852000AB88CE /* dayCell.xib */; };
 		DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0BE2031DEC0C9100A32A6A /* APLViewController.m */; };
 		DF0BE2061DEC0C9100A32A6A /* APLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */; };
+		DF1A8F101ECD913C007BA10E /* AppleStepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */; };
+		DF1A8F131ECD91B8007BA10E /* StepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F121ECD91B8007BA10E /* StepCounter.m */; };
+		DF1A8F161ECDA4E5007BA10E /* RDStepService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F151ECDA4E5007BA10E /* RDStepService.m */; };
+		DF1A8F191ECDA6C0007BA10E /* RDStepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F181ECDA6C0007BA10E /* RDStepCounter.m */; };
+		DF1A8F1E1ECDA756007BA10E /* StepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F1C1ECDA755007BA10E /* StepViewController.m */; };
+		DF1A8F1F1ECDA756007BA10E /* StepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1A8F1D1ECDA756007BA10E /* StepViewController.xib */; };
 		DF1DE5DB1DE82C2900DB9C64 /* testNavigationB.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */; };
 		DF1DE5DC1DE82C2900DB9C64 /* testNavigationB.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */; };
 		DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23E9AC1DCD8554002613D1 /* LQCPhotoBrowseModel.m */; };
@@ -101,6 +107,7 @@
 		DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE354FF1DAA1AA90023432B /* TodayViewController.m */; };
 		DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE355011DAA1AA90023432B /* MainInterface.storyboard */; };
 		DFE355071DAA1AA90023432B /* mytodayWidge.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */; };
 		DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE751111DE6BE0C00BAB23F /* UIButton+EdgeInsets.m */; };
 		DFE751171DE6C0D700BAB23F /* testButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE751151DE6C0D700BAB23F /* testButtonVC.m */; };
 		DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE751161DE6C0D700BAB23F /* testButtonVC.xib */; };
@@ -136,7 +143,7 @@
 /* Begin PBXFileReference section */
 		3F06D23A08A3A93E89D89AEA /* Pods-mytodayWidge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.release.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.release.xcconfig"; sourceTree = "<group>"; };
 		50521BE7CC82AE295AE7F64D /* Pods-sdfd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.debug.xcconfig"; sourceTree = "<group>"; };
-		7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mytodayWidge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6533A9539FD50708CD46DA /* Pods_mytodayWidge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mytodayWidge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47AFF679C745063B96491B8 /* Pods-sdfd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdfd.release.xcconfig"; path = "Pods/Target Support Files/Pods-sdfd/Pods-sdfd.release.xcconfig"; sourceTree = "<group>"; };
 		D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sdfd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0AFB651DD07E8000AB88CE /* TestForCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestForCollectionView.h; sourceTree = "<group>"; };
@@ -151,6 +158,17 @@
 		DF0BE2021DEC0C9100A32A6A /* APLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLViewController.h; sourceTree = "<group>"; };
 		DF0BE2031DEC0C9100A32A6A /* APLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLViewController.m; sourceTree = "<group>"; };
 		DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APLViewController.xib; sourceTree = "<group>"; };
+		DF1A8F0E1ECD913C007BA10E /* AppleStepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStepCounter.h; sourceTree = "<group>"; };
+		DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleStepCounter.m; sourceTree = "<group>"; };
+		DF1A8F111ECD91B8007BA10E /* StepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCounter.h; sourceTree = "<group>"; };
+		DF1A8F121ECD91B8007BA10E /* StepCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepCounter.m; sourceTree = "<group>"; };
+		DF1A8F141ECDA4E5007BA10E /* RDStepService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStepService.h; sourceTree = "<group>"; };
+		DF1A8F151ECDA4E5007BA10E /* RDStepService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStepService.m; sourceTree = "<group>"; };
+		DF1A8F171ECDA6C0007BA10E /* RDStepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStepCounter.h; sourceTree = "<group>"; };
+		DF1A8F181ECDA6C0007BA10E /* RDStepCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStepCounter.m; sourceTree = "<group>"; };
+		DF1A8F1B1ECDA755007BA10E /* StepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepViewController.h; sourceTree = "<group>"; };
+		DF1A8F1C1ECDA755007BA10E /* StepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepViewController.m; sourceTree = "<group>"; };
+		DF1A8F1D1ECDA756007BA10E /* StepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepViewController.xib; sourceTree = "<group>"; };
 		DF1DE5D81DE82C2900DB9C64 /* testNavigationB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testNavigationB.h; sourceTree = "<group>"; };
 		DF1DE5D91DE82C2900DB9C64 /* testNavigationB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testNavigationB.m; sourceTree = "<group>"; };
 		DF1DE5DA1DE82C2900DB9C64 /* testNavigationB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testNavigationB.xib; sourceTree = "<group>"; };
@@ -294,6 +312,8 @@
 		DFE354FF1DAA1AA90023432B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		DFE355021DAA1AA90023432B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DFE355041DAA1AA90023432B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE5914C1ECE91BF004363C3 /* NSDate+RDLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RDLogic.h"; sourceTree = "<group>"; };
+		DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RDLogic.m"; sourceTree = "<group>"; };
 		DFE751101DE6BE0C00BAB23F /* UIButton+EdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EdgeInsets.h"; sourceTree = "<group>"; };
 		DFE751111DE6BE0C00BAB23F /* UIButton+EdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EdgeInsets.m"; sourceTree = "<group>"; };
 		DFE751141DE6C0D700BAB23F /* testButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testButtonVC.h; sourceTree = "<group>"; };
@@ -321,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */,
-				69D56EF086B6BB07F7DCC0E1 /* libPods-mytodayWidge.a in Frameworks */,
+				B46A1F99611DE483A8F3937B /* Pods_mytodayWidge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,8 +363,8 @@
 			isa = PBXGroup;
 			children = (
 				DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */,
-				7FD4F50E53CBDA488A0151BA /* libPods-mytodayWidge.a */,
 				D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */,
+				9F6533A9539FD50708CD46DA /* Pods_mytodayWidge.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -373,6 +393,33 @@
 				DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */,
 			);
 			path = "后台下载";
+			sourceTree = "<group>";
+		};
+		DF1A8F0D1ECD9110007BA10E /* 计步器 */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5914C1ECE91BF004363C3 /* NSDate+RDLogic.h */,
+				DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */,
+				DF1A8F141ECDA4E5007BA10E /* RDStepService.h */,
+				DF1A8F151ECDA4E5007BA10E /* RDStepService.m */,
+				DF1A8F111ECD91B8007BA10E /* StepCounter.h */,
+				DF1A8F121ECD91B8007BA10E /* StepCounter.m */,
+				DF1A8F0E1ECD913C007BA10E /* AppleStepCounter.h */,
+				DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */,
+				DF1A8F171ECDA6C0007BA10E /* RDStepCounter.h */,
+				DF1A8F181ECDA6C0007BA10E /* RDStepCounter.m */,
+			);
+			path = "计步器";
+			sourceTree = "<group>";
+		};
+		DF1A8F1A1ECDA73D007BA10E /* 计步器 */ = {
+			isa = PBXGroup;
+			children = (
+				DF1A8F1B1ECDA755007BA10E /* StepViewController.h */,
+				DF1A8F1C1ECDA755007BA10E /* StepViewController.m */,
+				DF1A8F1D1ECDA756007BA10E /* StepViewController.xib */,
+			);
+			path = "计步器";
 			sourceTree = "<group>";
 		};
 		DF2D19861CFBEAC80032083A /* APPDelegate */ = {
@@ -684,6 +731,7 @@
 		DFA7ACF61CF5B8F000BFDB62 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				DF1A8F0D1ECD9110007BA10E /* 计步器 */,
 				DF4437F41DEBD5D40085FB79 /* 工具 */,
 				DFB118641D02C829005BD91F /* 同步的AF */,
 				DF85ED881CFD854100D3FE0C /* 测试GCD */,
@@ -723,6 +771,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF1A8F1A1ECDA73D007BA10E /* 计步器 */,
 				DFC455991E34B679003E7E80 /* RAS */,
 				DFA8DF411E24B4EF00C57761 /* 饼图 */,
 				DFD25AAB1E07EDCC003DDD0C /* SocketClient */,
@@ -1036,6 +1085,7 @@
 			files = (
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
 				DF4793B81DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
+				DF1A8F1F1ECDA756007BA10E /* StepViewController.xib in Resources */,
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
 				DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */,
 				DFB474F31DC8A2620024F77B /* FootprintTestVC.xib in Resources */,
@@ -1121,7 +1171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9CA51DE43B85110FBC5F0E98 /* [CP] Check Pods Manifest.lock */ = {
@@ -1136,7 +1186,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9F6198669BD288FC19F1852B /* [CP] Copy Pods Resources */ = {
@@ -1183,11 +1233,15 @@
 				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
 				DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */,
 				DF4793C01DC04AB8001CD592 /* KTRFootPrintPhotosModel.m in Sources */,
+				DF1A8F1E1ECDA756007BA10E /* StepViewController.m in Sources */,
+				DF1A8F191ECDA6C0007BA10E /* RDStepCounter.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFB474E81DC89F0F0024F77B /* KTRFootprintBottomView.m in Sources */,
+				DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */,
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
 				DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
+				DF1A8F101ECD913C007BA10E /* AppleStepCounter.m in Sources */,
 				DFB474EE1DC89F8C0024F77B /* UILabel+Convenient.m in Sources */,
 				DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */,
 				DFBCAC491DCB169300E7601A /* LQCPhotoBrowseCell.m in Sources */,
@@ -1210,6 +1264,8 @@
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
 				DFE751171DE6C0D700BAB23F /* testButtonVC.m in Sources */,
+				DF1A8F131ECD91B8007BA10E /* StepCounter.m in Sources */,
+				DF1A8F161ECDA4E5007BA10E /* RDStepService.m in Sources */,
 				DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */,
 				DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,

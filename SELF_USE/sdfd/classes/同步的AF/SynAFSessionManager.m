@@ -7,7 +7,7 @@
 //
 
 #import "SynAFSessionManager.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 
 @implementation SynAFSessionManager
 
