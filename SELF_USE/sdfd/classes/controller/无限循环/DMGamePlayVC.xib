@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DMGamePlayVC">
+            <connections>
+                <outlet property="imageH" destination="bEN-DZ-fPg" id="8kC-WD-Kde"/>
+                <outlet property="top" destination="acR-3y-avV" id="gL8-iL-xVJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="HFS-Yx-Gfm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gp-bg" translatesAutoresizingMaskIntoConstraints="NO" id="xJH-82-z3Z">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbA-zU-dRr">
+                    <rect key="frame" x="20" y="15" width="67" height="40"/>
+                    <state key="normal" image="gp-btn-selfD"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVR-pK-x8B">
+                    <rect key="frame" x="97" y="15" width="67" height="40"/>
+                    <state key="normal" image="gp-btn-other"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODc-2Q-ino">
+                    <rect key="frame" x="580" y="15" width="67" height="40"/>
+                    <state key="normal" image="gp-btn-exit"/>
+                    <connections>
+                        <action selector="exit:" destination="-1" eventType="touchUpInside" id="Gwv-8H-iIe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPD-xA-11l">
+                    <rect key="frame" x="503" y="15" width="67" height="40"/>
+                    <state key="normal" image="gp-btn-smallest"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gp-bg-disk" translatesAutoresizingMaskIntoConstraints="NO" id="PJ9-hf-ZrA">
+                    <rect key="frame" x="213.5" y="34" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="bEN-DZ-fPg"/>
+                        <constraint firstAttribute="width" secondItem="PJ9-hf-ZrA" secondAttribute="height" multiplier="1:1" id="cTC-Zw-gHF"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq5-qX-k4j">
+                    <rect key="frame" x="278" y="79" width="111" height="132"/>
+                    <state key="normal" image="gp-btn-begin"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zq5-qX-k4j" firstAttribute="centerX" secondItem="PJ9-hf-ZrA" secondAttribute="centerX" id="0mJ-B2-hqv"/>
+                <constraint firstItem="ODc-2Q-ino" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="24Y-k8-jRg"/>
+                <constraint firstItem="xJH-82-z3Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3ys-xE-CZD"/>
+                <constraint firstAttribute="trailing" secondItem="ODc-2Q-ino" secondAttribute="trailing" constant="20" id="8FA-t3-1H4"/>
+                <constraint firstItem="xJH-82-z3Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hkd-7o-1zQ"/>
+                <constraint firstItem="ODc-2Q-ino" firstAttribute="top" secondItem="QPD-xA-11l" secondAttribute="top" id="OFe-Co-w7p"/>
+                <constraint firstItem="ODc-2Q-ino" firstAttribute="leading" secondItem="QPD-xA-11l" secondAttribute="trailing" constant="10" id="UjO-as-XaM"/>
+                <constraint firstItem="BVR-pK-x8B" firstAttribute="top" secondItem="gbA-zU-dRr" secondAttribute="top" id="WNw-iI-qOB"/>
+                <constraint firstItem="BVR-pK-x8B" firstAttribute="leading" secondItem="gbA-zU-dRr" secondAttribute="trailing" constant="10" id="YaN-aw-g4B"/>
+                <constraint firstItem="PJ9-hf-ZrA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="34" id="acR-3y-avV"/>
+                <constraint firstItem="QPD-xA-11l" firstAttribute="top" secondItem="BVR-pK-x8B" secondAttribute="top" id="bHN-E1-hn0"/>
+                <constraint firstItem="Zq5-qX-k4j" firstAttribute="centerY" secondItem="PJ9-hf-ZrA" secondAttribute="centerY" constant="-9" id="eoN-HG-Ajj"/>
+                <constraint firstAttribute="bottom" secondItem="xJH-82-z3Z" secondAttribute="bottom" id="kls-co-uwp"/>
+                <constraint firstItem="PJ9-hf-ZrA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="leu-Ae-E8t"/>
+                <constraint firstItem="gbA-zU-dRr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="qFh-0y-hgP"/>
+                <constraint firstAttribute="trailing" secondItem="xJH-82-z3Z" secondAttribute="trailing" id="uqx-Xj-nCf"/>
+            </constraints>
+            <point key="canvasLocation" x="109" y="9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gp-bg" width="667" height="375"/>
+        <image name="gp-bg-disk" width="239" height="239"/>
+        <image name="gp-btn-begin" width="111" height="132"/>
+        <image name="gp-btn-exit" width="67" height="40"/>
+        <image name="gp-btn-other" width="67" height="40"/>
+        <image name="gp-btn-selfD" width="67" height="40"/>
+        <image name="gp-btn-smallest" width="67" height="40"/>
+    </resources>
+</document>

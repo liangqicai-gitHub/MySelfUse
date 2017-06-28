@@ -17,6 +17,8 @@
 		DF0AFB731DD0852000AB88CE /* dayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0AFB711DD0852000AB88CE /* dayCell.xib */; };
 		DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0BE2031DEC0C9100A32A6A /* APLViewController.m */; };
 		DF0BE2061DEC0C9100A32A6A /* APLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */; };
+		DF0D65501EE6B05300026773 /* searchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D654E1EE6B05300026773 /* searchVC.m */; };
+		DF0D65511EE6B05300026773 /* searchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D654F1EE6B05300026773 /* searchVC.xib */; };
 		DF1A8F101ECD913C007BA10E /* AppleStepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */; };
 		DF1A8F131ECD91B8007BA10E /* StepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F121ECD91B8007BA10E /* StepCounter.m */; };
 		DF1A8F161ECDA4E5007BA10E /* RDStepService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F151ECDA4E5007BA10E /* RDStepService.m */; };
@@ -37,6 +39,11 @@
 		DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3091DC4882400DEDE68 /* PlayerView.m */; };
 		DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2ED30D1DC49BF300DEDE68 /* test.mp4 */; };
 		DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */; };
+		DF39049B1EE2A1AF00933F81 /* DMGPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */; };
+		DF39049C1EE2A1AF00933F81 /* DMGPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */; };
+		DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39049A1EE2A1AF00933F81 /* DMGPlayerView.m */; };
+		DF3904A11EE2A1BD00933F81 /* DMGamePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39049F1EE2A1BD00933F81 /* DMGamePlayVC.m */; };
+		DF3904A21EE2A1BD00933F81 /* DMGamePlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3904A01EE2A1BD00933F81 /* DMGamePlayVC.xib */; };
 		DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4437F71DEBD5ED0085FB79 /* RKImageBrowser.m */; };
 		DF4437FA1DEBD5ED0085FB79 /* RKImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */; };
 		DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4793811DC047D2001CD592 /* 点聚合.xcassets */; };
@@ -69,6 +76,8 @@
 		DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7ACFD1CF5B9FF00BFDB62 /* BaseViewController.m */; };
 		DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8DF431E24B52500C57761 /* ChartVC.m */; };
 		DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8DF461E24BB3400C57761 /* PeiChartView.m */; };
+		DFAB6BC01EF267E60059D17D /* MultiScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAB6BBF1EF267E60059D17D /* MultiScroller.m */; };
+		DFAB6BC31EF26DDC0059D17D /* mytableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAB6BC21EF26DDC0059D17D /* mytableView.m */; };
 		DFB0F5BF1D0D3787006EEFD0 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0F5BE1D0D3787006EEFD0 /* UIScrollView+Refresh.m */; };
 		DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0F5C71D0D3F23006EEFD0 /* LQCFreshView.m */; };
 		DFB0F5CA1D0D3F3A006EEFD0 /* LQCFreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB0F5C91D0D3F3A006EEFD0 /* LQCFreshView.xib */; };
@@ -103,6 +112,7 @@
 		DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD25AAD1E07EDE7003DDD0C /* SocketClient.m */; };
 		DFD25AB01E07EDE7003DDD0C /* SocketClient.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */; };
 		DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */; };
+		DFE16EC81ECEEF66008876CD /* RDRiceChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE16EC71ECEEF66008876CD /* RDRiceChatVC.m */; };
 		DFE354FC1DAA1AA90023432B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */; };
 		DFE355001DAA1AA90023432B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE354FF1DAA1AA90023432B /* TodayViewController.m */; };
 		DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE355011DAA1AA90023432B /* MainInterface.storyboard */; };
@@ -158,6 +168,9 @@
 		DF0BE2021DEC0C9100A32A6A /* APLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLViewController.h; sourceTree = "<group>"; };
 		DF0BE2031DEC0C9100A32A6A /* APLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLViewController.m; sourceTree = "<group>"; };
 		DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APLViewController.xib; sourceTree = "<group>"; };
+		DF0D654D1EE6B05300026773 /* searchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchVC.h; sourceTree = "<group>"; };
+		DF0D654E1EE6B05300026773 /* searchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchVC.m; sourceTree = "<group>"; };
+		DF0D654F1EE6B05300026773 /* searchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchVC.xib; sourceTree = "<group>"; };
 		DF1A8F0E1ECD913C007BA10E /* AppleStepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStepCounter.h; sourceTree = "<group>"; };
 		DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleStepCounter.m; sourceTree = "<group>"; };
 		DF1A8F111ECD91B8007BA10E /* StepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCounter.h; sourceTree = "<group>"; };
@@ -192,6 +205,14 @@
 		DF2ED30D1DC49BF300DEDE68 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		DF2ED30F1DC4B05E00DEDE68 /* LandscapePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapePlayerController.h; sourceTree = "<group>"; };
 		DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapePlayerController.m; sourceTree = "<group>"; };
+		DF3904961EE2A1AF00933F81 /* DMGPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGPlayerCell.h; sourceTree = "<group>"; };
+		DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGPlayerCell.m; sourceTree = "<group>"; };
+		DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMGPlayerCell.xib; sourceTree = "<group>"; };
+		DF3904991EE2A1AF00933F81 /* DMGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGPlayerView.h; sourceTree = "<group>"; };
+		DF39049A1EE2A1AF00933F81 /* DMGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGPlayerView.m; sourceTree = "<group>"; };
+		DF39049E1EE2A1BD00933F81 /* DMGamePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGamePlayVC.h; sourceTree = "<group>"; };
+		DF39049F1EE2A1BD00933F81 /* DMGamePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGamePlayVC.m; sourceTree = "<group>"; };
+		DF3904A01EE2A1BD00933F81 /* DMGamePlayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMGamePlayVC.xib; sourceTree = "<group>"; };
 		DF4437F61DEBD5ED0085FB79 /* RKImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKImageBrowser.h; sourceTree = "<group>"; };
 		DF4437F71DEBD5ED0085FB79 /* RKImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKImageBrowser.m; sourceTree = "<group>"; };
 		DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKImageBrowser.xib; sourceTree = "<group>"; };
@@ -247,6 +268,10 @@
 		DFA8DF431E24B52500C57761 /* ChartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartVC.m; sourceTree = "<group>"; };
 		DFA8DF451E24BB3400C57761 /* PeiChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeiChartView.h; sourceTree = "<group>"; };
 		DFA8DF461E24BB3400C57761 /* PeiChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeiChartView.m; sourceTree = "<group>"; };
+		DFAB6BBE1EF267E60059D17D /* MultiScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiScroller.h; sourceTree = "<group>"; };
+		DFAB6BBF1EF267E60059D17D /* MultiScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiScroller.m; sourceTree = "<group>"; };
+		DFAB6BC11EF26DDC0059D17D /* mytableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mytableView.h; sourceTree = "<group>"; };
+		DFAB6BC21EF26DDC0059D17D /* mytableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mytableView.m; sourceTree = "<group>"; };
 		DFB0F5BD1D0D3787006EEFD0 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		DFB0F5BE1D0D3787006EEFD0 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		DFB0F5C61D0D3F23006EEFD0 /* LQCFreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCFreshView.h; sourceTree = "<group>"; };
@@ -306,6 +331,8 @@
 		DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocketClient.xib; sourceTree = "<group>"; };
 		DFD434381DCDE8F20049464E /* LQCPhotoBrowseConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCPhotoBrowseConfigure.h; sourceTree = "<group>"; };
 		DFD434391DCDE8F20049464E /* LQCPhotoBrowseConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCPhotoBrowseConfigure.m; sourceTree = "<group>"; };
+		DFE16EC61ECEEF66008876CD /* RDRiceChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDRiceChatVC.h; sourceTree = "<group>"; };
+		DFE16EC71ECEEF66008876CD /* RDRiceChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDRiceChatVC.m; sourceTree = "<group>"; };
 		DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = mytodayWidge.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		DFE354FE1DAA1AA90023432B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -393,6 +420,16 @@
 				DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */,
 			);
 			path = "后台下载";
+			sourceTree = "<group>";
+		};
+		DF0D654C1EE6B03C00026773 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D654D1EE6B05300026773 /* searchVC.h */,
+				DF0D654E1EE6B05300026773 /* searchVC.m */,
+				DF0D654F1EE6B05300026773 /* searchVC.xib */,
+			);
+			path = "搜索";
 			sourceTree = "<group>";
 		};
 		DF1A8F0D1ECD9110007BA10E /* 计步器 */ = {
@@ -526,6 +563,21 @@
 				DF2ED3091DC4882400DEDE68 /* PlayerView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		DF3904951EE2A1A600933F81 /* 无限循环 */ = {
+			isa = PBXGroup;
+			children = (
+				DF3904961EE2A1AF00933F81 /* DMGPlayerCell.h */,
+				DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */,
+				DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */,
+				DF3904991EE2A1AF00933F81 /* DMGPlayerView.h */,
+				DF39049A1EE2A1AF00933F81 /* DMGPlayerView.m */,
+				DF39049E1EE2A1BD00933F81 /* DMGamePlayVC.h */,
+				DF39049F1EE2A1BD00933F81 /* DMGamePlayVC.m */,
+				DF3904A01EE2A1BD00933F81 /* DMGamePlayVC.xib */,
+			);
+			path = "无限循环";
 			sourceTree = "<group>";
 		};
 		DF4437F41DEBD5D40085FB79 /* 工具 */ = {
@@ -771,6 +823,10 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFAB6BBD1EF267B90059D17D /* multiScrlloer */,
+				DF0D654C1EE6B03C00026773 /* 搜索 */,
+				DF3904951EE2A1A600933F81 /* 无限循环 */,
+				DFE16EC51ECEEF45008876CD /* 米聊聊 */,
 				DF1A8F1A1ECDA73D007BA10E /* 计步器 */,
 				DFC455991E34B679003E7E80 /* RAS */,
 				DFA8DF411E24B4EF00C57761 /* 饼图 */,
@@ -822,6 +878,17 @@
 				DFA8DF461E24BB3400C57761 /* PeiChartView.m */,
 			);
 			path = "饼图";
+			sourceTree = "<group>";
+		};
+		DFAB6BBD1EF267B90059D17D /* multiScrlloer */ = {
+			isa = PBXGroup;
+			children = (
+				DFAB6BBE1EF267E60059D17D /* MultiScroller.h */,
+				DFAB6BBF1EF267E60059D17D /* MultiScroller.m */,
+				DFAB6BC11EF26DDC0059D17D /* mytableView.h */,
+				DFAB6BC21EF26DDC0059D17D /* mytableView.m */,
+			);
+			path = multiScrlloer;
 			sourceTree = "<group>";
 		};
 		DFB118641D02C829005BD91F /* 同步的AF */ = {
@@ -948,6 +1015,15 @@
 				DFD25AAE1E07EDE7003DDD0C /* SocketClient.xib */,
 			);
 			path = SocketClient;
+			sourceTree = "<group>";
+		};
+		DFE16EC51ECEEF45008876CD /* 米聊聊 */ = {
+			isa = PBXGroup;
+			children = (
+				DFE16EC61ECEEF66008876CD /* RDRiceChatVC.h */,
+				DFE16EC71ECEEF66008876CD /* RDRiceChatVC.m */,
+			);
+			path = "米聊聊";
 			sourceTree = "<group>";
 		};
 		DFE354FD1DAA1AA90023432B /* mytodayWidge */ = {
@@ -1083,8 +1159,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0D65511EE6B05300026773 /* searchVC.xib in Resources */,
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
 				DF4793B81DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
+				DF39049C1EE2A1AF00933F81 /* DMGPlayerCell.xib in Resources */,
+				DF3904A21EE2A1BD00933F81 /* DMGamePlayVC.xib in Resources */,
 				DF1A8F1F1ECDA756007BA10E /* StepViewController.xib in Resources */,
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
 				DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */,
@@ -1213,6 +1292,7 @@
 			files = (
 				DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */,
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
+				DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */,
 				DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
@@ -1222,6 +1302,7 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */,
 				DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */,
+				DFE16EC81ECEEF66008876CD /* RDRiceChatVC.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
 				DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */,
@@ -1232,7 +1313,9 @@
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
 				DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */,
+				DFAB6BC01EF267E60059D17D /* MultiScroller.m in Sources */,
 				DF4793C01DC04AB8001CD592 /* KTRFootPrintPhotosModel.m in Sources */,
+				DFAB6BC31EF26DDC0059D17D /* mytableView.m in Sources */,
 				DF1A8F1E1ECDA756007BA10E /* StepViewController.m in Sources */,
 				DF1A8F191ECDA6C0007BA10E /* RDStepCounter.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
@@ -1241,6 +1324,7 @@
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
 				DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
+				DF39049B1EE2A1AF00933F81 /* DMGPlayerCell.m in Sources */,
 				DF1A8F101ECD913C007BA10E /* AppleStepCounter.m in Sources */,
 				DFB474EE1DC89F8C0024F77B /* UILabel+Convenient.m in Sources */,
 				DF2ED3071DC486EE00DEDE68 /* PortraitPlayerController.m in Sources */,
@@ -1264,12 +1348,14 @@
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
 				DFE751171DE6C0D700BAB23F /* testButtonVC.m in Sources */,
+				DF0D65501EE6B05300026773 /* searchVC.m in Sources */,
 				DF1A8F131ECD91B8007BA10E /* StepCounter.m in Sources */,
 				DF1A8F161ECDA4E5007BA10E /* RDStepService.m in Sources */,
 				DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */,
 				DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DFB474F21DC8A2620024F77B /* FootprintTestVC.m in Sources */,
+				DF3904A11EE2A1BD00933F81 /* DMGamePlayVC.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
 				DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,

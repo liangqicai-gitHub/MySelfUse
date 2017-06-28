@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DMGPlayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="84" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gp-qu-z" translatesAutoresizingMaskIntoConstraints="NO" id="2VO-Bj-0wi" userLabel="圈">
+                        <rect key="frame" x="22" y="4" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="hYc-ba-XSW"/>
+                            <constraint firstAttribute="width" constant="40" id="vyQ-jV-me3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQN-WH-7xE">
+                        <rect key="frame" x="0.0" y="46" width="84" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-Mx-ilz" userLabel="头像">
+                        <rect key="frame" x="22" y="4" width="40" height="40"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hQN-WH-7xE" secondAttribute="bottom" constant="6" id="6jb-5Y-gzM"/>
+                <constraint firstAttribute="trailing" secondItem="hQN-WH-7xE" secondAttribute="trailing" id="AGk-IP-5jr"/>
+                <constraint firstItem="FRP-Mx-ilz" firstAttribute="trailing" secondItem="2VO-Bj-0wi" secondAttribute="trailing" id="FnQ-Vw-9p6"/>
+                <constraint firstItem="hQN-WH-7xE" firstAttribute="top" secondItem="2VO-Bj-0wi" secondAttribute="bottom" constant="2" id="HpQ-kM-wcY"/>
+                <constraint firstItem="hQN-WH-7xE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KQy-Zu-Z2w"/>
+                <constraint firstItem="2VO-Bj-0wi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PZy-J9-3Cz"/>
+                <constraint firstItem="FRP-Mx-ilz" firstAttribute="bottom" secondItem="2VO-Bj-0wi" secondAttribute="bottom" id="Trs-6l-nei"/>
+                <constraint firstItem="FRP-Mx-ilz" firstAttribute="top" secondItem="2VO-Bj-0wi" secondAttribute="top" id="n6Z-Av-zKH"/>
+                <constraint firstItem="FRP-Mx-ilz" firstAttribute="leading" secondItem="2VO-Bj-0wi" secondAttribute="leading" id="qod-iD-50g"/>
+            </constraints>
+            <size key="customSize" width="104" height="129"/>
+            <point key="canvasLocation" x="-188" y="108"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gp-qu-z" width="40" height="40"/>
+    </resources>
+</document>

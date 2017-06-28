@@ -21,6 +21,10 @@
 #import "ChartVC.h"
 #import "RSAController.h"
 #import "StepViewController.h"
+#import "RDRiceChatVC.h"
+#import "DMGamePlayVC.h"
+#import "searchVC.h"
+#import "MultiScroller.h"
 
 
 
@@ -136,6 +140,34 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
     
+}
+
+
+- (IBAction)click:(UIButton *)sender
+{
+    RDRiceChatVC *vc = [[RDRiceChatVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)ccc:(UIButton *)sender
+{
+    DMGamePlayVC *vc = [[DMGamePlayVC alloc] initWithNibName:@"DMGamePlayVC"
+                                                      bundle:nil];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (IBAction)search:(UIButton *)sender
+{
+    searchVC *vc = [[searchVC alloc] initWithNibName:@"searchVC"
+                                                      bundle:nil];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:NO];
+}
+
+- (IBAction)haha:(UIButton *)sender
+{
+    MultiScroller *vc = [[MultiScroller alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

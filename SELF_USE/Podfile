@@ -11,6 +11,10 @@ pod 'MJRefresh'
 pod 'YYKit'
 pod 'BaiduMapKit'
 pod 'JHChart'
+
+#   Debug模式下使用的一些辅助库,只在开发Target上面使用
+pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+
 end
 
 target 'mytodayWidge' do
