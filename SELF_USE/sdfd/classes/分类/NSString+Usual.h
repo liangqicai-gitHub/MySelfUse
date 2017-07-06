@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define Str_F(...) [NSString stringWithFormat:__VA_ARGS__]
-
+#define DocumetsRootPath [NSString documentsDirectory]
 
 @interface NSString (Usual)
 

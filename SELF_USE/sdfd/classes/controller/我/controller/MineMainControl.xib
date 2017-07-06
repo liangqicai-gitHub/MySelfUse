@@ -15,8 +15,8 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="661"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-b8-ips">
@@ -115,6 +115,19 @@
                         <action selector="haha:" destination="-1" eventType="touchUpInside" id="1oz-XT-nrB"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHR-tI-yHw">
+                    <rect key="frame" x="8" y="351" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="FAa-BO-CzT"/>
+                        <constraint firstAttribute="height" constant="30" id="kPl-QI-ApG"/>
+                    </constraints>
+                    <state key="normal" title="SQLCipher">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sql:" destination="-1" eventType="touchUpInside" id="Ynd-Fn-meC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,14 +142,16 @@
                 <constraint firstItem="Vcp-er-nxU" firstAttribute="leading" secondItem="jlK-b8-ips" secondAttribute="trailing" constant="20" id="J9e-7Y-Rn8"/>
                 <constraint firstItem="Ft1-jy-9bs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kcg-gE-atP"/>
                 <constraint firstItem="xhh-wm-Knp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LX0-FI-bcb"/>
+                <constraint firstItem="RHR-tI-yHw" firstAttribute="top" secondItem="xhh-wm-Knp" secondAttribute="bottom" constant="23" id="Rnt-ao-0Qz"/>
                 <constraint firstItem="Ft1-jy-9bs" firstAttribute="top" secondItem="ueX-gz-Aye" secondAttribute="bottom" constant="26" id="Ruz-F7-3Vv"/>
                 <constraint firstItem="ueX-gz-Aye" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="buO-6l-yx9"/>
                 <constraint firstItem="GB4-2K-P7D" firstAttribute="top" secondItem="Ft1-jy-9bs" secondAttribute="bottom" constant="25" id="d0L-2M-oqS"/>
                 <constraint firstItem="jlK-b8-ips" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fAI-Oz-cRf"/>
                 <constraint firstItem="jlK-b8-ips" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hfy-aT-TXm"/>
                 <constraint firstItem="CK5-Zc-QZP" firstAttribute="leading" secondItem="ueX-gz-Aye" secondAttribute="trailing" constant="36" id="wds-OX-aYg"/>
+                <constraint firstItem="RHR-tI-yHw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="x5j-yp-5WY"/>
             </constraints>
-            <point key="canvasLocation" x="-132" y="36"/>
+            <point key="canvasLocation" x="-82" y="16"/>
         </view>
     </objects>
 </document>

@@ -39,6 +39,7 @@
 		DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3091DC4882400DEDE68 /* PlayerView.m */; };
 		DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2ED30D1DC49BF300DEDE68 /* test.mp4 */; };
 		DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */; };
+		DF3285061F05F528002FCE35 /* Version.sql in Resources */ = {isa = PBXBuildFile; fileRef = DF3285051F05F528002FCE35 /* Version.sql */; };
 		DF39049B1EE2A1AF00933F81 /* DMGPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */; };
 		DF39049C1EE2A1AF00933F81 /* DMGPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */; };
 		DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39049A1EE2A1AF00933F81 /* DMGPlayerView.m */; };
@@ -46,6 +47,9 @@
 		DF3904A21EE2A1BD00933F81 /* DMGamePlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3904A01EE2A1BD00933F81 /* DMGamePlayVC.xib */; };
 		DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4437F71DEBD5ED0085FB79 /* RKImageBrowser.m */; };
 		DF4437FA1DEBD5ED0085FB79 /* RKImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */; };
+		DF4521B51F04B93000A73ED6 /* SqlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4521B31F04B93000A73ED6 /* SqlVC.m */; };
+		DF4521B61F04B93000A73ED6 /* SqlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4521B41F04B93000A73ED6 /* SqlVC.xib */; };
+		DF4521B91F04B9B200A73ED6 /* SqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4521B81F04B9B200A73ED6 /* SqlManager.m */; };
 		DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4793811DC047D2001CD592 /* 点聚合.xcassets */; };
 		DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793AF1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */; };
 		DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793B31DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m */; };
@@ -124,6 +128,9 @@
 		DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */; };
 		DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
+		DFF705931F04C93E00484F17 /* UserDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF705921F04C93E00484F17 /* UserDB.m */; };
+		DFF705961F04C95000484F17 /* CommonDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF705951F04C95000484F17 /* CommonDB.m */; };
+		DFF7AF991F03ABEA00673B76 /* SqliteDBStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +212,7 @@
 		DF2ED30D1DC49BF300DEDE68 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		DF2ED30F1DC4B05E00DEDE68 /* LandscapePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapePlayerController.h; sourceTree = "<group>"; };
 		DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapePlayerController.m; sourceTree = "<group>"; };
+		DF3285051F05F528002FCE35 /* Version.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version.sql; sourceTree = "<group>"; };
 		DF3904961EE2A1AF00933F81 /* DMGPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGPlayerCell.h; sourceTree = "<group>"; };
 		DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGPlayerCell.m; sourceTree = "<group>"; };
 		DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMGPlayerCell.xib; sourceTree = "<group>"; };
@@ -216,6 +224,11 @@
 		DF4437F61DEBD5ED0085FB79 /* RKImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKImageBrowser.h; sourceTree = "<group>"; };
 		DF4437F71DEBD5ED0085FB79 /* RKImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKImageBrowser.m; sourceTree = "<group>"; };
 		DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKImageBrowser.xib; sourceTree = "<group>"; };
+		DF4521B21F04B93000A73ED6 /* SqlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlVC.h; sourceTree = "<group>"; };
+		DF4521B31F04B93000A73ED6 /* SqlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlVC.m; sourceTree = "<group>"; };
+		DF4521B41F04B93000A73ED6 /* SqlVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SqlVC.xib; sourceTree = "<group>"; };
+		DF4521B71F04B9B200A73ED6 /* SqlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlManager.h; sourceTree = "<group>"; };
+		DF4521B81F04B9B200A73ED6 /* SqlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlManager.m; sourceTree = "<group>"; };
 		DF4793811DC047D2001CD592 /* 点聚合.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "点聚合.xcassets"; sourceTree = "<group>"; };
 		DF4793AE1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotationCalculator.h; sourceTree = "<group>"; };
 		DF4793AF1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotationCalculator.m; sourceTree = "<group>"; };
@@ -351,6 +364,12 @@
 		DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenURLTestVC.xib; sourceTree = "<group>"; };
 		DFF52FF71D01977300BAC9F3 /* NSAttributedString+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Usual.h"; sourceTree = "<group>"; };
 		DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Usual.m"; sourceTree = "<group>"; };
+		DFF705911F04C93E00484F17 /* UserDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDB.h; sourceTree = "<group>"; };
+		DFF705921F04C93E00484F17 /* UserDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDB.m; sourceTree = "<group>"; };
+		DFF705941F04C95000484F17 /* CommonDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDB.h; sourceTree = "<group>"; };
+		DFF705951F04C95000484F17 /* CommonDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDB.m; sourceTree = "<group>"; };
+		DFF7AF971F03ABEA00673B76 /* SqliteDBStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteDBStore.h; sourceTree = "<group>"; };
+		DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteDBStore.m; sourceTree = "<group>"; };
 		E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -565,6 +584,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		DF3285021F05F303002FCE35 /* Sqls */ = {
+			isa = PBXGroup;
+			children = (
+				DF3285051F05F528002FCE35 /* Version.sql */,
+			);
+			path = Sqls;
+			sourceTree = "<group>";
+		};
 		DF3904951EE2A1A600933F81 /* 无限循环 */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,6 +625,16 @@
 				DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */,
 			);
 			path = "滚动banner";
+			sourceTree = "<group>";
+		};
+		DF4521AE1F04B87100A73ED6 /* Sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				DF4521B21F04B93000A73ED6 /* SqlVC.h */,
+				DF4521B31F04B93000A73ED6 /* SqlVC.m */,
+				DF4521B41F04B93000A73ED6 /* SqlVC.xib */,
+			);
+			path = Sqlite;
 			sourceTree = "<group>";
 		};
 		DF4793981DC04A58001CD592 /* 点聚合 */ = {
@@ -783,6 +820,7 @@
 		DFA7ACF61CF5B8F000BFDB62 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				DFF7AF961F039BD400673B76 /* Sqlite */,
 				DF1A8F0D1ECD9110007BA10E /* 计步器 */,
 				DF4437F41DEBD5D40085FB79 /* 工具 */,
 				DFB118641D02C829005BD91F /* 同步的AF */,
@@ -823,6 +861,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DF4521AE1F04B87100A73ED6 /* Sqlite */,
 				DFAB6BBD1EF267B90059D17D /* multiScrlloer */,
 				DF0D654C1EE6B03C00026773 /* 搜索 */,
 				DF3904951EE2A1A600933F81 /* 无限循环 */,
@@ -1071,6 +1110,22 @@
 			path = "测试跳转系统设置";
 			sourceTree = "<group>";
 		};
+		DFF7AF961F039BD400673B76 /* Sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				DF3285021F05F303002FCE35 /* Sqls */,
+				DFF7AF971F03ABEA00673B76 /* SqliteDBStore.h */,
+				DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */,
+				DF4521B71F04B9B200A73ED6 /* SqlManager.h */,
+				DF4521B81F04B9B200A73ED6 /* SqlManager.m */,
+				DFF705911F04C93E00484F17 /* UserDB.h */,
+				DFF705921F04C93E00484F17 /* UserDB.m */,
+				DFF705941F04C95000484F17 /* CommonDB.h */,
+				DFF705951F04C95000484F17 /* CommonDB.m */,
+			);
+			path = Sqlite;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1161,6 +1216,7 @@
 			files = (
 				DF0D65511EE6B05300026773 /* searchVC.xib in Resources */,
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
+				DF3285061F05F528002FCE35 /* Version.sql in Resources */,
 				DF4793B81DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
 				DF39049C1EE2A1AF00933F81 /* DMGPlayerCell.xib in Resources */,
 				DF3904A21EE2A1BD00933F81 /* DMGamePlayVC.xib in Resources */,
@@ -1194,6 +1250,7 @@
 				DFC455A91E34B6FA003E7E80 /* CPPUB.cer in Resources */,
 				DF0AFB6E1DD0814E00AB88CE /* YearCell.xib in Resources */,
 				DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */,
+				DF4521B61F04B93000A73ED6 /* SqlVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1302,13 +1359,16 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */,
 				DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */,
+				DFF705961F04C95000484F17 /* CommonDB.m in Sources */,
 				DFE16EC81ECEEF66008876CD /* RDRiceChatVC.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
+				DF4521B51F04B93000A73ED6 /* SqlVC.m in Sources */,
 				DF0BE2051DEC0C9100A32A6A /* APLViewController.m in Sources */,
 				DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
 				DFC455AA1E34B6FA003E7E80 /* NSData+KKRSA.m in Sources */,
 				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,
+				DF4521B91F04B9B200A73ED6 /* SqlManager.m in Sources */,
 				DFC455AB1E34B6FA003E7E80 /* NSData+KKSignVerify.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
@@ -1359,6 +1419,8 @@
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
 				DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
+				DFF7AF991F03ABEA00673B76 /* SqliteDBStore.m in Sources */,
+				DFF705931F04C93E00484F17 /* UserDB.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,
 				DFBCAC421DCB002000E7601A /* LQCPhotoBrowseController.m in Sources */,

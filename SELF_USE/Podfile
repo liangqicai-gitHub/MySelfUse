@@ -1,4 +1,4 @@
-platform :ios, ‘8.0’
+platform :ios, '8.0'
 
 target 'sdfd' do
 use_frameworks!
@@ -11,6 +11,8 @@ pod 'MJRefresh'
 pod 'YYKit'
 pod 'BaiduMapKit'
 pod 'JHChart'
+pod 'FMDB/SQLCipher'             #数据库
+
 
 #   Debug模式下使用的一些辅助库,只在开发Target上面使用
 pod 'Reveal-iOS-SDK', :configurations => ['Debug']

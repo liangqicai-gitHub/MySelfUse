@@ -25,6 +25,7 @@
 #import "DMGamePlayVC.h"
 #import "searchVC.h"
 #import "MultiScroller.h"
+#import "SqlVC.h"
 
 
 
@@ -169,5 +170,16 @@
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (IBAction)sql:(UIButton *)sender
+{
+    SqlVC *vc = [[SqlVC alloc] initWithNibName:@"SqlVC"
+                                              bundle:nil];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:NO];
+}
+
+
+
 
 @end

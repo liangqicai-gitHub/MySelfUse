@@ -18,6 +18,8 @@ PODS:
   - CocoaAsyncSocket (7.5.1):
     - CocoaAsyncSocket/GCD (= 7.5.1)
   - CocoaAsyncSocket/GCD (7.5.1)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
   - JHChart (1.1.0)
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
@@ -26,6 +28,11 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
+  - SQLCipher/common (3.4.1)
+  - SQLCipher/standard (3.4.1):
+    - SQLCipher/common
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -34,6 +41,7 @@ DEPENDENCIES:
   - AFNetworking
   - BaiduMapKit
   - CocoaAsyncSocket
+  - FMDB/SQLCipher
   - JHChart
   - Masonry
   - MJExtension
@@ -46,14 +54,16 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BaiduMapKit: 9c748785aa3dddfc41dcb70c14b21ce32f680930
   CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   JHChart: b840376da2691ea366af88dec036576fdc4f4468
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 687c1c4563b68a1c84c8407e14fd0c05a09a39dd
+PODFILE CHECKSUM: 4989c7d92d92b6142e983fab11edb18559c5d9d1
 
 COCOAPODS: 1.2.1

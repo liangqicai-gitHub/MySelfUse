@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UserDB.h"
+#import "CommonDB.h"
 
 @interface SqlManager : NSObject
+
++ (SqlManager *)sharedInstance;
+
+- (void)switchOverToUser:(NSString *)userId;
+
+@property (nonatomic,readonly) UserDB *currentUserDB;
+
+@property (nonatomic,readonly) CommonDB *commonDB;
 
 @end

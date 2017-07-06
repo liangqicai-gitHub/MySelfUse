@@ -7,6 +7,8 @@
 //
 
 #import "SqlVC.h"
+#import "SqlManager.h"
+
 
 @interface SqlVC ()
 
@@ -14,24 +16,24 @@
 
 @implementation SqlVC
 
-- (void)viewDidLoad {
+#pragma mark - life Cycle
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self initVars];
+    [self initViews];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)initVars
+{
+    [[SqlManager sharedInstance] switchOverToUser:@"a"];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initViews
+{
+    
 }
-*/
 
 @end
