@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDisplayName</key>
 	<string>hrhr</string>
-	<key>NSMotionUsageDescription</key>
-	<string>么么哒</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -29,9 +27,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>允许后米公益可以在后台保持记录步数</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>允许后米公益可以在后台保持记录步数</string>
+	<key>NSMotionUsageDescription</key>
+	<string>允许后米公益可以访问你的健康记录</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
+		<string>location</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

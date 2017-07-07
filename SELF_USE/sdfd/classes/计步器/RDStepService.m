@@ -58,6 +58,7 @@
 - (void)initVars
 {
     BOOL useAppleStepCounter = [CMPedometer isStepCountingAvailable];
+    useAppleStepCounter = NO;
     if (useAppleStepCounter){
         _counter = [[AppleStepCounter alloc] init];
     }else{

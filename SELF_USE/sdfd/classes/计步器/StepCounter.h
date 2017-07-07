@@ -23,7 +23,6 @@ typedef void(^AuthorizationFailedBlock)();
 - (void)startUpdateWithHandler:(UpdateBlock)handler
                           fail:(AuthorizationFailedBlock)fail;
 
-
 - (void)stopUpdate;
 
 @end
