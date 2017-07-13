@@ -33,10 +33,13 @@
 
 - (void)initVars
 {
+    
+    
+    
     _locationManager = [CLLocationManager new];
     _motionManager = [[CMMotionManager alloc] init];
-    _motionManager.accelerometerUpdateInterval = 0.5;
-    _motionManager.deviceMotionUpdateInterval = 0.5;
+    _motionManager.accelerometerUpdateInterval = 1.0 / 60.0;
+    _motionManager.deviceMotionUpdateInterval = 1.0 / 60.0;
     _operationQueue = [NSOperationQueue new];
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     

@@ -122,6 +122,8 @@
 		DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE355011DAA1AA90023432B /* MainInterface.storyboard */; };
 		DFE355071DAA1AA90023432B /* mytodayWidge.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */; };
+		DFE5D7661F161A2E00F145DF /* HealthKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5D7651F161A2E00F145DF /* HealthKit.m */; };
+		DFE5D7691F16219400F145DF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE5D7681F16219400F145DF /* HealthKit.framework */; };
 		DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE751111DE6BE0C00BAB23F /* UIButton+EdgeInsets.m */; };
 		DFE751171DE6C0D700BAB23F /* testButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE751151DE6C0D700BAB23F /* testButtonVC.m */; };
 		DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE751161DE6C0D700BAB23F /* testButtonVC.xib */; };
@@ -354,6 +356,10 @@
 		DFE355041DAA1AA90023432B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFE5914C1ECE91BF004363C3 /* NSDate+RDLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RDLogic.h"; sourceTree = "<group>"; };
 		DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RDLogic.m"; sourceTree = "<group>"; };
+		DFE5D7641F161A2E00F145DF /* HealthKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKit.h; sourceTree = "<group>"; };
+		DFE5D7651F161A2E00F145DF /* HealthKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKit.m; sourceTree = "<group>"; };
+		DFE5D7671F16219400F145DF /* sdfd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sdfd.entitlements; sourceTree = "<group>"; };
+		DFE5D7681F16219400F145DF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		DFE751101DE6BE0C00BAB23F /* UIButton+EdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EdgeInsets.h"; sourceTree = "<group>"; };
 		DFE751111DE6BE0C00BAB23F /* UIButton+EdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EdgeInsets.m"; sourceTree = "<group>"; };
 		DFE751141DE6C0D700BAB23F /* testButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testButtonVC.h; sourceTree = "<group>"; };
@@ -379,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				580FDC1471A15A4886CF0DFB /* Pods_sdfd.framework in Frameworks */,
+				DFE5D7691F16219400F145DF /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +415,7 @@
 		A2314579EA92A85AF7121E2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFE5D7681F16219400F145DF /* HealthKit.framework */,
 				DFE354FB1DAA1AA90023432B /* NotificationCenter.framework */,
 				D0B681E1DB50331D4391EAD5 /* Pods_sdfd.framework */,
 				9F6533A9539FD50708CD46DA /* Pods_mytodayWidge.framework */,
@@ -464,6 +472,8 @@
 				DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */,
 				DF1A8F171ECDA6C0007BA10E /* RDStepCounter.h */,
 				DF1A8F181ECDA6C0007BA10E /* RDStepCounter.m */,
+				DFE5D7641F161A2E00F145DF /* HealthKit.h */,
+				DFE5D7651F161A2E00F145DF /* HealthKit.m */,
 			);
 			path = "计步器";
 			sourceTree = "<group>";
@@ -809,6 +819,7 @@
 		DFA7ACD01CF5B1EE00BFDB62 /* sdfd */ = {
 			isa = PBXGroup;
 			children = (
+				DFE5D7671F16219400F145DF /* sdfd.entitlements */,
 				DF2D19B01CFC330C0032083A /* Resources */,
 				DF2D198F1CFBEBAA0032083A /* SupportFiles */,
 				DF2D19861CFBEAC80032083A /* APPDelegate */,
@@ -1182,6 +1193,11 @@
 					DFA7ACCD1CF5B1EE00BFDB62 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = LNK6YB89GN;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					DFE354F91DAA1AA90023432B = {
 						CreatedOnToolsVersion = 8.0;
@@ -1355,6 +1371,7 @@
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
 				DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */,
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
+				DFE5D7661F161A2E00F145DF /* HealthKit.m in Sources */,
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */,
@@ -1558,6 +1575,7 @@
 			baseConfigurationReference = 50521BE7CC82AE295AE7F64D /* Pods-sdfd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sdfd/sdfd.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = LNK6YB89GN;
@@ -1575,6 +1593,7 @@
 			baseConfigurationReference = C47AFF679C745063B96491B8 /* Pods-sdfd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sdfd/sdfd.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = LNK6YB89GN;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/sdfd/classes/base/projectPch.pch";

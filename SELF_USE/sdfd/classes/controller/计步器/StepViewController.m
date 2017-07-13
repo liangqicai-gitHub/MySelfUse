@@ -8,6 +8,7 @@
 
 #import "StepViewController.h"
 #import "RDStepService.h"
+#import "HealthKit.h"
 
 @interface StepViewController ()
 {
@@ -20,13 +21,16 @@
 
 - (IBAction)click:(UIButton *)sender
 {
-    if (!_service){
-        _service = [[RDStepService alloc] init];
-    }
+//    if (!_service){
+//        _service = [[RDStepService alloc] init];
+//    }
     
-    [_service queryHistoryWithCompleteBlock:^(NSArray<RDOneDayStepM *> *historyArr) {
-        LQCDLog(@"%@",historyArr);
-    }];
+    
+    [[HealthKit alloc] init];
+    
+//    [_service queryHistoryWithCompleteBlock:^(NSArray<RDOneDayStepM *> *historyArr) {
+//        LQCDLog(@"%@",historyArr);
+//    }];
     
     
 //    [_service startWithHandler:^(BOOL authorizationFailed, RDOneDayStepM *todayStep) {
