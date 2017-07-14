@@ -76,6 +76,25 @@
 }
 
 
+/*
+ 本周第一天凌晨
+ */
+- (NSDate *)weekStartDate
+{
+    NSDate *now = [NSDate date];
+    NSInteger week = now.weekday - 1;
+    NSDate *sunday = [NSDate dateWithTimeIntervalSinceNow:week * -24 * 3600];
+    return sunday.startDate;
+}
+
+- (BOOL)earlyThanDate:(NSDate *)date
+{
+    NSTimeInterval selft = self.timeIntervalSince1970;
+    NSTimeInterval compt = date.timeIntervalSince1970;
+    return selft <= compt;
+}
+
+
 
 + (NSString *)dynamicTimeStringWithTimeInterval:(NSTimeInterval)createTime
 {

@@ -9,9 +9,7 @@
 #import "SqlManager.h"
 
 #define commonDBName  @"common.sqlite"
-#define commonDBEncryptKey  @"commonDBEncryptKey"
 #define userDBprefix  @"userDBprefix_"
-#define userDBEncryptKey  @"userDBEncryptKey"
 #define DBFolderName  @"DB"
 
 @implementation SqlManager
@@ -60,6 +58,7 @@
                                error:nil];
     }
     
+    LQCDLog(@"path  %@",commonDBPath);
     _commonDB = [[CommonDB alloc] initWithDBPath:commonDBPath
                                       encryptKey:nil];
 }

@@ -16,23 +16,27 @@
 @end
 
 
+
 @interface RDOneDayStepM : NSObject
 
 @property (nonatomic,strong) NSDate *date;
 @property (assign) NSInteger totalSteps;
-@property (nonatomic,strong) NSArray <RDHourStepM *> *hourSteps;
+@property (nonatomic,strong) NSMutableArray <RDHourStepM *> *hourSteps;
 
 @end
 
+
 typedef void(^HistoryBlock)(NSArray <RDOneDayStepM *> * historyArr);
-typedef void(^UpdateTodayBlock)(BOOL authorizationFailed,RDOneDayStepM *todayStep);
+typedef void(^UpdateTodayBlock)(BOOL authorizationFailed,RDOneDayStepM *todayStep,BOOL newDay);
 
 @interface RDStepService : NSObject
+
+@property (nonatomic,strong) NSDate *firstEffectiveDate;
 
 - (void)queryHistoryWithCompleteBlock:(HistoryBlock)completeBlock;
 
 - (void)startWithHandler:(UpdateTodayBlock)handler;
 
-- (void)end;
+- (void)stop;
 
 @end

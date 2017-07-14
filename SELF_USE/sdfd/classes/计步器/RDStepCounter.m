@@ -15,7 +15,6 @@
     CMMotionManager *_motionManager;
     CLLocationManager *_locationManager;
     NSOperationQueue *_operationQueue;
-    
 }
 
 @end
@@ -33,9 +32,6 @@
 
 - (void)initVars
 {
-    
-    
-    
     _locationManager = [CLLocationManager new];
     _motionManager = [[CMMotionManager alloc] init];
     _motionManager.accelerometerUpdateInterval = 1.0 / 60.0;
@@ -57,7 +53,7 @@
     [_motionManager startAccelerometerUpdates];
     [_motionManager startDeviceMotionUpdatesToQueue:_operationQueue
                                         withHandler:^(CMDeviceMotion *motion, NSError *error) {
-                                            LQCDLog(@" %@   %@",[NSOperationQueue currentQueue],[NSThread currentThread]);
+                                   
                                             
                                             
                                         }];

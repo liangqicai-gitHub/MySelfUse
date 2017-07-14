@@ -51,8 +51,6 @@
              handler(steps);
          }
      }];
-    
-    LQCDLog(@"end");
 }
 
 
@@ -66,10 +64,9 @@
                    NSError * _Nullable error) {
          
          if (!error && handler){
-             NSDate *start = pedometerData.startDate;
              NSDate *end = pedometerData.endDate;
-             NSInteger steps = pedometerData.numberOfSteps.integerValue;
-              handler(start,end,steps);
+             handler(end);
+             LQCDLog(@"updateted end %@",end);
          }
          
          if (error && error.code == CMErrorMotionActivityNotAuthorized && fail){

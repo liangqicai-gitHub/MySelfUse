@@ -66,6 +66,14 @@
 - (NSDate *)startDate;
 
 
+/*
+ 本周第一天凌晨
+ */
+- (NSDate *)weekStartDate;
+
+
+- (BOOL)earlyThanDate:(NSDate *)date;
+
 
 + (NSString *)dynamicTimeStringWithTimeInterval:(NSTimeInterval)createTime;
 

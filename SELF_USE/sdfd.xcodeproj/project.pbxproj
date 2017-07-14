@@ -39,7 +39,6 @@
 		DF2ED30A1DC4882400DEDE68 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3091DC4882400DEDE68 /* PlayerView.m */; };
 		DF2ED30E1DC49BF300DEDE68 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2ED30D1DC49BF300DEDE68 /* test.mp4 */; };
 		DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */; };
-		DF3285061F05F528002FCE35 /* Version.sql in Resources */ = {isa = PBXBuildFile; fileRef = DF3285051F05F528002FCE35 /* Version.sql */; };
 		DF39049B1EE2A1AF00933F81 /* DMGPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */; };
 		DF39049C1EE2A1AF00933F81 /* DMGPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */; };
 		DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39049A1EE2A1AF00933F81 /* DMGPlayerView.m */; };
@@ -68,6 +67,8 @@
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */; };
 		DF8287DD1DE691F3002C384C /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8287DC1DE691F3002C384C /* common.xcassets */; };
+		DF85BF901F18800B00B1E82D /* UserDB+TableXiaomiStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85BF8F1F18800B00B1E82D /* UserDB+TableXiaomiStep.m */; };
+		DF85BF931F1880F700B1E82D /* SqliteDBStore+TableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85BF921F1880F700B1E82D /* SqliteDBStore+TableVersion.m */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
 		DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */; };
 		DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7F1CFD5F2A00D3FE0C /* MineMainControl.m */; };
@@ -129,6 +130,10 @@
 		DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE751161DE6C0D700BAB23F /* testButtonVC.xib */; };
 		DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */; };
 		DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */; };
+		DFF16E171F175411003DE57F /* CommonDB+TableStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF16E161F175411003DE57F /* CommonDB+TableStep.m */; };
+		DFF16E191F176E8B003DE57F /* t_step.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E181F176E8B003DE57F /* t_step.sql */; };
+		DFF16E1B1F176EA8003DE57F /* t_version.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E1A1F176EA8003DE57F /* t_version.sql */; };
+		DFF16E1D1F177588003DE57F /* t_xiaomiStep.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
 		DFF705931F04C93E00484F17 /* UserDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF705921F04C93E00484F17 /* UserDB.m */; };
 		DFF705961F04C95000484F17 /* CommonDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF705951F04C95000484F17 /* CommonDB.m */; };
@@ -214,7 +219,6 @@
 		DF2ED30D1DC49BF300DEDE68 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		DF2ED30F1DC4B05E00DEDE68 /* LandscapePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapePlayerController.h; sourceTree = "<group>"; };
 		DF2ED3101DC4B05E00DEDE68 /* LandscapePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapePlayerController.m; sourceTree = "<group>"; };
-		DF3285051F05F528002FCE35 /* Version.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version.sql; sourceTree = "<group>"; };
 		DF3904961EE2A1AF00933F81 /* DMGPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGPlayerCell.h; sourceTree = "<group>"; };
 		DF3904971EE2A1AF00933F81 /* DMGPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGPlayerCell.m; sourceTree = "<group>"; };
 		DF3904981EE2A1AF00933F81 /* DMGPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMGPlayerCell.xib; sourceTree = "<group>"; };
@@ -261,6 +265,10 @@
 		DF75F8B61DED6C2A00B53A4E /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
 		DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
 		DF8287DC1DE691F3002C384C /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
+		DF85BF8E1F18800B00B1E82D /* UserDB+TableXiaomiStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDB+TableXiaomiStep.h"; sourceTree = "<group>"; };
+		DF85BF8F1F18800B00B1E82D /* UserDB+TableXiaomiStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserDB+TableXiaomiStep.m"; sourceTree = "<group>"; };
+		DF85BF911F1880F700B1E82D /* SqliteDBStore+TableVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+TableVersion.h"; sourceTree = "<group>"; };
+		DF85BF921F1880F700B1E82D /* SqliteDBStore+TableVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+TableVersion.m"; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
 		DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMainControl.m; sourceTree = "<group>"; };
 		DF85ED7B1CFD5EF200D3FE0C /* HomeMainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMainControl.h; sourceTree = "<group>"; };
@@ -368,6 +376,11 @@
 		DFED53941DA9DE4E001D558A /* OpenURLTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenURLTestVC.h; sourceTree = "<group>"; };
 		DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenURLTestVC.m; sourceTree = "<group>"; };
 		DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenURLTestVC.xib; sourceTree = "<group>"; };
+		DFF16E151F175411003DE57F /* CommonDB+TableStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CommonDB+TableStep.h"; sourceTree = "<group>"; };
+		DFF16E161F175411003DE57F /* CommonDB+TableStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CommonDB+TableStep.m"; sourceTree = "<group>"; };
+		DFF16E181F176E8B003DE57F /* t_step.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_step.sql; sourceTree = "<group>"; };
+		DFF16E1A1F176EA8003DE57F /* t_version.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_version.sql; sourceTree = "<group>"; };
+		DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_xiaomiStep.sql; sourceTree = "<group>"; };
 		DFF52FF71D01977300BAC9F3 /* NSAttributedString+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Usual.h"; sourceTree = "<group>"; };
 		DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Usual.m"; sourceTree = "<group>"; };
 		DFF705911F04C93E00484F17 /* UserDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDB.h; sourceTree = "<group>"; };
@@ -597,7 +610,9 @@
 		DF3285021F05F303002FCE35 /* Sqls */ = {
 			isa = PBXGroup;
 			children = (
-				DF3285051F05F528002FCE35 /* Version.sql */,
+				DFF16E1A1F176EA8003DE57F /* t_version.sql */,
+				DFF16E181F176E8B003DE57F /* t_step.sql */,
+				DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */,
 			);
 			path = Sqls;
 			sourceTree = "<group>";
@@ -1127,12 +1142,18 @@
 				DF3285021F05F303002FCE35 /* Sqls */,
 				DFF7AF971F03ABEA00673B76 /* SqliteDBStore.h */,
 				DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */,
+				DF85BF911F1880F700B1E82D /* SqliteDBStore+TableVersion.h */,
+				DF85BF921F1880F700B1E82D /* SqliteDBStore+TableVersion.m */,
 				DF4521B71F04B9B200A73ED6 /* SqlManager.h */,
 				DF4521B81F04B9B200A73ED6 /* SqlManager.m */,
 				DFF705911F04C93E00484F17 /* UserDB.h */,
 				DFF705921F04C93E00484F17 /* UserDB.m */,
+				DF85BF8E1F18800B00B1E82D /* UserDB+TableXiaomiStep.h */,
+				DF85BF8F1F18800B00B1E82D /* UserDB+TableXiaomiStep.m */,
 				DFF705941F04C95000484F17 /* CommonDB.h */,
 				DFF705951F04C95000484F17 /* CommonDB.m */,
+				DFF16E151F175411003DE57F /* CommonDB+TableStep.h */,
+				DFF16E161F175411003DE57F /* CommonDB+TableStep.m */,
 			);
 			path = Sqlite;
 			sourceTree = "<group>";
@@ -1232,9 +1253,9 @@
 			files = (
 				DF0D65511EE6B05300026773 /* searchVC.xib in Resources */,
 				DFBE71751DB0E45B00AF9A79 /* iOS8CellSelfCalculate.xib in Resources */,
-				DF3285061F05F528002FCE35 /* Version.sql in Resources */,
 				DF4793B81DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.xib in Resources */,
 				DF39049C1EE2A1AF00933F81 /* DMGPlayerCell.xib in Resources */,
+				DFF16E1B1F176EA8003DE57F /* t_version.sql in Resources */,
 				DF3904A21EE2A1BD00933F81 /* DMGamePlayVC.xib in Resources */,
 				DF1A8F1F1ECDA756007BA10E /* StepViewController.xib in Resources */,
 				DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */,
@@ -1244,6 +1265,7 @@
 				DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */,
 				DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */,
 				DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */,
+				DFF16E1D1F177588003DE57F /* t_xiaomiStep.sql in Resources */,
 				DFB474EA1DC89F490024F77B /* FootPrintCell.xcassets in Resources */,
 				DFC4559E1E34B6B1003E7E80 /* RSAController.xib in Resources */,
 				DF2D199F1CFC04730032083A /* LaunchScreen.storyboard in Resources */,
@@ -1257,6 +1279,7 @@
 				DF1DE5DC1DE82C2900DB9C64 /* testNavigationB.xib in Resources */,
 				DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */,
 				DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */,
+				DFF16E191F176E8B003DE57F /* t_step.sql in Resources */,
 				DF2D19B21CFC33520032083A /* RootTabbarItemsImage.xcassets in Resources */,
 				DF0BE2061DEC0C9100A32A6A /* APLViewController.xib in Resources */,
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
@@ -1364,6 +1387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */,
+				DF85BF931F1880F700B1E82D /* SqliteDBStore+TableVersion.m in Sources */,
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */,
 				DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */,
@@ -1395,6 +1419,7 @@
 				DFAB6BC31EF26DDC0059D17D /* mytableView.m in Sources */,
 				DF1A8F1E1ECDA756007BA10E /* StepViewController.m in Sources */,
 				DF1A8F191ECDA6C0007BA10E /* RDStepCounter.m in Sources */,
+				DFF16E171F175411003DE57F /* CommonDB+TableStep.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFB474E81DC89F0F0024F77B /* KTRFootprintBottomView.m in Sources */,
 				DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */,
@@ -1435,6 +1460,7 @@
 				DF3904A11EE2A1BD00933F81 /* DMGamePlayVC.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
 				DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */,
+				DF85BF901F18800B00B1E82D /* UserDB+TableXiaomiStep.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DFF7AF991F03ABEA00673B76 /* SqliteDBStore.m in Sources */,
 				DFF705931F04C93E00484F17 /* UserDB.m in Sources */,

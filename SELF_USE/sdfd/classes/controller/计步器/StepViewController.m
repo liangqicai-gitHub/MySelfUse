@@ -14,6 +14,7 @@
 {
     RDStepService *_service;
 }
+@property (weak, nonatomic) IBOutlet UILabel *aa;
 
 @end
 
@@ -21,16 +22,36 @@
 
 - (IBAction)click:(UIButton *)sender
 {
-//    if (!_service){
-//        _service = [[RDStepService alloc] init];
-//    }
+    if (!_service){
+        _service = [[RDStepService alloc] init];
+    }
     
     
-    [[HealthKit alloc] init];
     
-//    [_service queryHistoryWithCompleteBlock:^(NSArray<RDOneDayStepM *> *historyArr) {
-//        LQCDLog(@"%@",historyArr);
-//    }];
+    [_service startWithHandler:^(BOOL authorizationFailed,
+                                 RDOneDayStepM *todayStep,
+                                 BOOL newDay) {
+        
+        if (todayStep){
+            dispatch_main_async_safe((^{
+                
+                NSMutableString *rs = [[NSMutableString alloc] initWithFormat:@"%zd",todayStep.date.day];
+                [todayStep.hourSteps enumerateObjectsUsingBlock:^(RDHourStepM * _Nonnull obj,
+                                                                  NSUInteger idx,
+                                                                  BOOL * _Nonnull stop) {
+                    [rs appendString:obj.description];
+                }];
+                
+                _aa.text = rs;
+                
+            }));
+        }
+        
+        
+        
+    }];
+    
+   
     
     
 //    [_service startWithHandler:^(BOOL authorizationFailed, RDOneDayStepM *todayStep) {

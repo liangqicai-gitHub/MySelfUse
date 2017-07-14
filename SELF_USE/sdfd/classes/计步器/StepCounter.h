@@ -10,7 +10,7 @@
 
 typedef void(^QueryBlock)(NSInteger steps);
 
-typedef void(^UpdateBlock)(NSDate *lastUpdateTime, NSDate *endDate,NSInteger steps);
+typedef void(^UpdateBlock)(NSDate *endDate);
 
 typedef void(^AuthorizationFailedBlock)();
 

@@ -7,7 +7,26 @@
 //
 
 #import "CommonDB.h"
+#import "CommonDB+TableStep.h"
 
 @implementation CommonDB
+
+- (NSDictionary *)versionSqlDic
+{
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    
+    /*版本12800  创建计步表*/
+    [dic setObject:[self tableStep_creatTableStepSql]
+            forKey:@"12800"];
+    
+    /**/
+    
+    return dic;
+}
+
+
+
+
+
 
 @end

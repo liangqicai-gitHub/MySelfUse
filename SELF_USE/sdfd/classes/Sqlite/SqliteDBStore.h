@@ -14,23 +14,56 @@
 - (instancetype)initWithDBPath:(NSString *)DBPath
                     encryptKey:(NSString *)encryptKey;
 
+@property (nonatomic,readonly) FMDatabaseQueue *queue;
+
 - (void)close;
 
 
-/*维护一个版本*/
-/* 子类可以重写这个方法，在一个数据库被初始化的时候，内部调用该方法
-   子类无需主动调用。
- */
-- (BOOL)updateDBStoreAction;
+/*维护一个版本   子类重写这个方法*/
+/* @{   @"1":@"creat table" ,
+        @"2":@"creat table"  } */
+- (NSDictionary *)versionSqlDic;
 
 
-- (BOOL)updateToVersion:(NSInteger)version
-             inDatabase:(void(^)(FMDatabase *db))updateSql;
 
 
 /*Selecte*/
-- (NSArray *)selectedFormT:(NSString *)tableName
-                conditions:(NSDictionary *)conditions;
 
+// first or last item 因为按照顺序来，就需要按什么字段排序，所以需要一个列的名称。
+- (NSDictionary *)selectFirstItemInT:(NSString *)tableName
+                              column:(NSString *)column;
+
+- (NSDictionary *)selectLastItemInT:(NSString *)tableName
+                             column:(NSString *)column;
+
+- (NSArray <NSDictionary *>*)selectInT:(NSString *)tableName
+                                fields:(NSArray<NSString *> *)fields
+                             condition:(NSDictionary *)condition
+                           orderFields:(NSArray<NSString *> *)orderFields
+                              orderASC:(BOOL)orderASC
+                                 range:(NSRange)range;
+
+
+/*Insert*/
+
+- (BOOL)insertTable:(NSString *)tableName
+           valueDic:(NSDictionary *)valueDic;
+
+
+/*replace*/
+- (NSString *)replaceSql:(NSString *)tableName
+                valueDic:(NSDictionary *)valueDic;
+
+- (BOOL)replaceTable:(NSString *)tableName
+            valueDic:(NSDictionary *)valueDic;
+
+
+
+
+
+//子句
+- (NSString *)fieldsSql:(NSArray<NSString *> *)fields;
+
+- (NSString *)whereSql:(NSDictionary *)condtion;
 
 @end
