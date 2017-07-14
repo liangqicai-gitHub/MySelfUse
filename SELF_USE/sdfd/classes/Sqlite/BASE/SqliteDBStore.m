@@ -14,6 +14,18 @@
 #define FMDB_QUEUE_IN_DATABASE_END   }];
 
 
+#define FMDB_QUEUE_UPDATE_BOOL(allDic) __block BOOL ret = NO; \
+FMDB_QUEUE_IN_DATABASE_START \
+LQCDLog(@"sql =%@",sql); \
+ret = [db executeUpdate:sql withParameterDictionary:allDic]; \
+if ([db hadError]) { \
+    LQCDLog(@"Error: %@", [db lastErrorMessage]); \
+} \
+FMDB_QUEUE_IN_DATABASE_END \
+return ret;
+
+
+
 @implementation SqliteDBStore
 
 
@@ -141,8 +153,8 @@
     [sql appendFormat:@"FROM %@ ",tableName];
     
     //条件 (可能没有)
-    if (![NSArray isEmpty:fields]){
-        [sql appendFormat:@"WHERE %@",[self whereSql:condition]];
+    if (![condition isKindOfClass:[NSDictionary class]]){
+        [sql appendFormat:@"WHERE %@ ",[self whereSql:condition]];
     }
     
     //orderBY (可能没有)
@@ -157,7 +169,7 @@
     
     FMDB_QUEUE_IN_DATABASE_START
     
-    FMResultSet* rs = [db executeQuery:sql withParameterDictionary:condition];
+    FMResultSet* rs = [db executeQuery:sql withParameterDictionary:[self conditionKeyDic:condition]];
     if ([db hadError]) {
         LQCDLog(@"Error:%@",[db lastErrorMessage]);
     } else {
@@ -176,6 +188,90 @@
 
 
 
+
+
+
+
+#pragma mark - Insert
+
+- (NSString *)insertSql:(NSString *)tableName
+               valueDic:(NSDictionary *)valueDic
+{
+    NSArray* keys = [valueDic allKeys];
+    NSString *sql = Str_F(@"INSERT INTO [%@] ([%@]) VALUES (:%@)",
+                          tableName,
+                          [keys componentsJoinedByString:@"],["],
+                          [keys componentsJoinedByString:@",:"]
+                          );
+    return sql;
+}
+
+- (BOOL)insertTable:(NSString *)tableName
+           valueDic:(NSDictionary *)valueDic
+{
+    NSString *sql = [self insertSql:tableName valueDic:valueDic];
+    if ([NSString isEmptyString:sql]) return NO;
+
+    FMDB_QUEUE_UPDATE_BOOL(valueDic);
+
+}
+
+
+#pragma mark - update
+
+- (NSString *)updateTableSql:(NSString *)tableName
+                       value:(NSDictionary *)value
+                   condition:(NSDictionary *)condition
+{
+    NSMutableString *sql = [NSMutableString string];
+    [sql appendFormat:@"UPDATE [%@] ",tableName];
+    [sql appendFormat:@"SET %@ ",[self valueSql:value.allKeys]];
+    [sql appendFormat:@"WHERE %@",[self whereSql:condition]];
+    
+    return sql;
+}
+
+
+- (BOOL)updateTable:(NSString *)tableName
+              value:(NSDictionary *)value
+          condition:(NSDictionary *)condition
+{
+    NSString *sql = [self updateTableSql:tableName value:value condition:condition];
+    FMDB_QUEUE_UPDATE_BOOL([self combinationDicWithValue:value condition:condition]);
+}
+
+
+
+#pragma mark - replace
+
+- (NSString *)replaceSql:(NSString *)tableName
+                valueDic:(NSDictionary *)valueDic
+{
+    NSArray* valueKeys = [valueDic allKeys];
+    NSString *sql = Str_F(@"REPLACE INTO [%@] ([%@]) VALUES (:%@)",
+                          tableName,
+                          [valueKeys componentsJoinedByString:@"],["],
+                          [valueKeys componentsJoinedByString:@",:"]
+                          );
+    return sql;
+}
+
+
+- (BOOL)replaceTable:(NSString *)tableName
+            valueDic:(NSDictionary *)valueDic
+{
+    NSString *sql = [self replaceSql:tableName
+                            valueDic:valueDic];
+    if ([NSString isEmptyString:sql]) return NO;
+    
+    FMDB_QUEUE_UPDATE_BOOL(valueDic);
+}
+
+
+
+
+#pragma mark - ziju 
+
 - (NSString *)fieldsSql:(NSArray<NSString *> *)fields
 {
     if ([NSArray isEmpty:fields]) return @"*";
@@ -190,14 +286,14 @@
         return @"1=1";
     }
     
-    NSArray* keys = condtion.allKeys;
+    NSArray* keys = [self conditionKeyDic:condtion].allKeys;
     NSUInteger count = keys.count;
     
     NSMutableString *sql = [NSMutableString string];
     
     for (int i = 0 ; i < count ; i++) {
         [sql appendString:@"["];
-        [sql appendString:keys[i]];
+        [sql appendString:[keys[i] substringFromIndex:2]];
         [sql appendString:@"]=:"];
         [sql appendString:keys[i]];
         
@@ -209,101 +305,25 @@
     return sql;
 }
 
-
-
-
-
-#pragma mark - Insert
-
-- (NSString *)insertSql:(NSString *)tableName
-               valueDic:(NSDictionary *)valueDic
+- (NSString *)valueSql:(NSArray <NSString *> *)keys
 {
-    if ([NSString isEmptyString:tableName]){
-        return nil;
+    NSUInteger count = keys.count;
+    NSMutableString *sql = [NSMutableString string];
+    
+    for (int i = 0 ; i < count ; i++) {
+        [sql appendString:@"["];
+        [sql appendString:keys[i]];
+        [sql appendString:@"]=:"];
+        [sql appendString:keys[i]];
+        
+        if (count > i + 1 ) {
+            [sql appendString:@","];
+        }
     }
-    
-    if (![valueDic isKindOfClass:[NSDictionary class]]){
-        return nil;
-    }
-    
-    NSArray* keys = [valueDic allKeys];
-    
-    NSString *sql = Str_F(@"INSERT INTO [%@] ([%@]) VALUES (:%@)",
-                          tableName,
-                          [keys componentsJoinedByString:@"],["],
-                          [keys componentsJoinedByString:@",:"]
-                          );
-    return sql;
-}
-
-- (BOOL)insertTable:(NSString *)tableName
-           valueDic:(NSDictionary *)valueDic
-{
-    NSString *sql = [self insertSql:tableName valueDic:valueDic];
-    if ([NSString isEmptyString:sql]) return NO;
-    
-    __block BOOL ret = NO;
-    
-    FMDB_QUEUE_IN_DATABASE_START
-    
-    ret = [db executeUpdate:sql withParameterDictionary:valueDic];
-    if ([db hadError]) {
-        LQCDLog(@"Error: %@", [db lastErrorMessage]);
-    }
-    
-    FMDB_QUEUE_IN_DATABASE_END
-    
-    return ret;
-}
-
-
-#pragma mark - replace
-
-- (NSString *)replaceSql:(NSString *)tableName
-                valueDic:(NSDictionary *)valueDic
-{
-    if ([NSString isEmptyString:tableName]){
-        return nil;
-    }
-    
-    if (![valueDic isKindOfClass:[NSDictionary class]]){
-        return nil;
-    }
-    
-    NSArray* valueKeys = [valueDic allKeys];
-    NSString *sql = Str_F(@"REPLACE INTO [%@] ([%@]) VALUES (:%@)",
-                          tableName,
-                          [valueKeys componentsJoinedByString:@"],["],
-                          [valueKeys componentsJoinedByString:@",:"]
-                          );
-    
-
-    
     
     return sql;
 }
 
-
-- (BOOL)replaceTable:(NSString *)tableName
-            valueDic:(NSDictionary *)valueDic
-{
-    NSString *sql = [self replaceSql:tableName
-                            valueDic:valueDic];
-    if ([NSString isEmptyString:sql]) return NO;
-    
-    __block BOOL ret = NO;
-    
-    FMDB_QUEUE_IN_DATABASE_START
-    
-    ret = [db executeUpdate:sql withParameterDictionary:valueDic];
-    if ([db hadError]) {
-        LQCDLog(@"Error: %@", [db lastErrorMessage]);
-    }
-    
-    FMDB_QUEUE_IN_DATABASE_END
-    
-    return ret;
-}
 
 
 #pragma mark - privite
@@ -316,7 +336,7 @@
     
     NSMutableDictionary *rs = [NSMutableDictionary dictionary];
     for (NSObject *key in condition.allKeys) {
-        NSString *newKey = Str_F(@"condition_%@",[key description]);
+        NSString *newKey = Str_F(@"c_%@",[key description]);
         NSObject *value = [condition objectForKey:key];
         [rs setObject:value forKey:newKey];
     }
@@ -324,6 +344,19 @@
     return rs;
 }
 
+
+- (NSDictionary *)combinationDicWithValue:(NSDictionary *)v
+                                condition:(NSDictionary *)c
+{
+    if (![v isKindOfClass:[NSDictionary class]]){
+        return [self conditionKeyDic:c];
+    }
+    
+    NSMutableDictionary *rs = [NSMutableDictionary dictionaryWithDictionary:v];
+    NSDictionary *newc = [self conditionKeyDic:c];
+    [rs addEntriesFromDictionary:newc];
+    return rs;
+}
 
 
 @end

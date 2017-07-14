@@ -1116,10 +1116,10 @@
 		DFE634DF1F18A7AC0049FF30 /* CommonDB */ = {
 			isa = PBXGroup;
 			children = (
-				DFE634E01F18A7AC0049FF30 /* CommonDB+TableStep.h */,
-				DFE634E11F18A7AC0049FF30 /* CommonDB+TableStep.m */,
 				DFE634E21F18A7AC0049FF30 /* CommonDB.h */,
 				DFE634E31F18A7AC0049FF30 /* CommonDB.m */,
+				DFE634E01F18A7AC0049FF30 /* CommonDB+TableStep.h */,
+				DFE634E11F18A7AC0049FF30 /* CommonDB+TableStep.m */,
 			);
 			path = CommonDB;
 			sourceTree = "<group>";
@@ -1127,10 +1127,10 @@
 		DFE634E61F18A7AC0049FF30 /* UserDB */ = {
 			isa = PBXGroup;
 			children = (
-				DFE634E71F18A7AC0049FF30 /* UserDB+TableXiaomiStep.h */,
-				DFE634E81F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m */,
 				DFE634E91F18A7AC0049FF30 /* UserDB.h */,
 				DFE634EA1F18A7AC0049FF30 /* UserDB.m */,
+				DFE634E71F18A7AC0049FF30 /* UserDB+TableXiaomiStep.h */,
+				DFE634E81F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m */,
 			);
 			path = UserDB;
 			sourceTree = "<group>";

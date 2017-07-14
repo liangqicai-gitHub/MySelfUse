@@ -8,6 +8,8 @@
 
 #import "SqlVC.h"
 #import "SqlManager.h"
+#import "CommonDB+TableStep.h"
+#import "NSDate+RDLogic.h"
 
 
 @interface SqlVC ()
@@ -29,6 +31,23 @@
 - (void)initVars
 {
     [[SqlManager sharedInstance] switchOverToUser:@"a"];
+    
+    RDOneDayStepM *m = [[RDOneDayStepM alloc] init];
+    m.date = [NSDate date].startDate;
+    
+    [[SqlManager sharedInstance].commonDB insertOneDay:m];
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    for (NSInteger i = 0; i < 23; i++) {
+        RDHourStepM *hm = [[RDHourStepM alloc] init];
+        hm.hour = i;
+        hm.steps = 100 * i;
+        [arr addObject:hm];
+    }
+    m.hourSteps = arr;
+    
+    [[SqlManager sharedInstance].commonDB updateOneDay:m];
+    
 }
 
 - (void)initViews
