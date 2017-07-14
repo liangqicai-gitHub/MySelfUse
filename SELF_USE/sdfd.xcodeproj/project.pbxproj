@@ -48,7 +48,6 @@
 		DF4437FA1DEBD5ED0085FB79 /* RKImageBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4437F81DEBD5ED0085FB79 /* RKImageBrowser.xib */; };
 		DF4521B51F04B93000A73ED6 /* SqlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4521B31F04B93000A73ED6 /* SqlVC.m */; };
 		DF4521B61F04B93000A73ED6 /* SqlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4521B41F04B93000A73ED6 /* SqlVC.xib */; };
-		DF4521B91F04B9B200A73ED6 /* SqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4521B81F04B9B200A73ED6 /* SqlManager.m */; };
 		DF4793821DC047D2001CD592 /* 点聚合.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4793811DC047D2001CD592 /* 点聚合.xcassets */; };
 		DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793AF1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */; };
 		DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4793B31DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m */; };
@@ -67,8 +66,6 @@
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */; };
 		DF8287DD1DE691F3002C384C /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8287DC1DE691F3002C384C /* common.xcassets */; };
-		DF85BF901F18800B00B1E82D /* UserDB+TableXiaomiStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85BF8F1F18800B00B1E82D /* UserDB+TableXiaomiStep.m */; };
-		DF85BF931F1880F700B1E82D /* SqliteDBStore+TableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85BF921F1880F700B1E82D /* SqliteDBStore+TableVersion.m */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
 		DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */; };
 		DF85ED811CFD5F2A00D3FE0C /* MineMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7F1CFD5F2A00D3FE0C /* MineMainControl.m */; };
@@ -125,19 +122,22 @@
 		DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */; };
 		DFE5D7661F161A2E00F145DF /* HealthKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5D7651F161A2E00F145DF /* HealthKit.m */; };
 		DFE5D7691F16219400F145DF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE5D7681F16219400F145DF /* HealthKit.framework */; };
+		DFE634EB1F18A7AC0049FF30 /* CommonDB+TableStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE634E11F18A7AC0049FF30 /* CommonDB+TableStep.m */; };
+		DFE634EC1F18A7AC0049FF30 /* CommonDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE634E31F18A7AC0049FF30 /* CommonDB.m */; };
+		DFE634ED1F18A7AC0049FF30 /* SqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE634E51F18A7AC0049FF30 /* SqlManager.m */; };
+		DFE634EE1F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE634E81F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m */; };
+		DFE634EF1F18A7AC0049FF30 /* UserDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE634EA1F18A7AC0049FF30 /* UserDB.m */; };
+		DFE635031F18A8510049FF30 /* SqliteDBStore+TableVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE635001F18A8510049FF30 /* SqliteDBStore+TableVersion.m */; };
+		DFE635041F18A8510049FF30 /* SqliteDBStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE635021F18A8510049FF30 /* SqliteDBStore.m */; };
 		DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE751111DE6BE0C00BAB23F /* UIButton+EdgeInsets.m */; };
 		DFE751171DE6C0D700BAB23F /* testButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE751151DE6C0D700BAB23F /* testButtonVC.m */; };
 		DFE751181DE6C0D700BAB23F /* testButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE751161DE6C0D700BAB23F /* testButtonVC.xib */; };
 		DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */; };
 		DFED53981DA9DE4E001D558A /* OpenURLTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */; };
-		DFF16E171F175411003DE57F /* CommonDB+TableStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF16E161F175411003DE57F /* CommonDB+TableStep.m */; };
 		DFF16E191F176E8B003DE57F /* t_step.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E181F176E8B003DE57F /* t_step.sql */; };
 		DFF16E1B1F176EA8003DE57F /* t_version.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E1A1F176EA8003DE57F /* t_version.sql */; };
 		DFF16E1D1F177588003DE57F /* t_xiaomiStep.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
-		DFF705931F04C93E00484F17 /* UserDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF705921F04C93E00484F17 /* UserDB.m */; };
-		DFF705961F04C95000484F17 /* CommonDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF705951F04C95000484F17 /* CommonDB.m */; };
-		DFF7AF991F03ABEA00673B76 /* SqliteDBStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,8 +233,6 @@
 		DF4521B21F04B93000A73ED6 /* SqlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlVC.h; sourceTree = "<group>"; };
 		DF4521B31F04B93000A73ED6 /* SqlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlVC.m; sourceTree = "<group>"; };
 		DF4521B41F04B93000A73ED6 /* SqlVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SqlVC.xib; sourceTree = "<group>"; };
-		DF4521B71F04B9B200A73ED6 /* SqlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlManager.h; sourceTree = "<group>"; };
-		DF4521B81F04B9B200A73ED6 /* SqlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlManager.m; sourceTree = "<group>"; };
 		DF4793811DC047D2001CD592 /* 点聚合.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "点聚合.xcassets"; sourceTree = "<group>"; };
 		DF4793AE1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTRFootPrintPhotosAnnotationCalculator.h; sourceTree = "<group>"; };
 		DF4793AF1DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTRFootPrintPhotosAnnotationCalculator.m; sourceTree = "<group>"; };
@@ -265,10 +263,6 @@
 		DF75F8B61DED6C2A00B53A4E /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
 		DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
 		DF8287DC1DE691F3002C384C /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
-		DF85BF8E1F18800B00B1E82D /* UserDB+TableXiaomiStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDB+TableXiaomiStep.h"; sourceTree = "<group>"; };
-		DF85BF8F1F18800B00B1E82D /* UserDB+TableXiaomiStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserDB+TableXiaomiStep.m"; sourceTree = "<group>"; };
-		DF85BF911F1880F700B1E82D /* SqliteDBStore+TableVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+TableVersion.h"; sourceTree = "<group>"; };
-		DF85BF921F1880F700B1E82D /* SqliteDBStore+TableVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+TableVersion.m"; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
 		DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMainControl.m; sourceTree = "<group>"; };
 		DF85ED7B1CFD5EF200D3FE0C /* HomeMainControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMainControl.h; sourceTree = "<group>"; };
@@ -368,6 +362,20 @@
 		DFE5D7651F161A2E00F145DF /* HealthKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKit.m; sourceTree = "<group>"; };
 		DFE5D7671F16219400F145DF /* sdfd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sdfd.entitlements; sourceTree = "<group>"; };
 		DFE5D7681F16219400F145DF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		DFE634E01F18A7AC0049FF30 /* CommonDB+TableStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CommonDB+TableStep.h"; sourceTree = "<group>"; };
+		DFE634E11F18A7AC0049FF30 /* CommonDB+TableStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CommonDB+TableStep.m"; sourceTree = "<group>"; };
+		DFE634E21F18A7AC0049FF30 /* CommonDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDB.h; sourceTree = "<group>"; };
+		DFE634E31F18A7AC0049FF30 /* CommonDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDB.m; sourceTree = "<group>"; };
+		DFE634E41F18A7AC0049FF30 /* SqlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlManager.h; sourceTree = "<group>"; };
+		DFE634E51F18A7AC0049FF30 /* SqlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlManager.m; sourceTree = "<group>"; };
+		DFE634E71F18A7AC0049FF30 /* UserDB+TableXiaomiStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDB+TableXiaomiStep.h"; sourceTree = "<group>"; };
+		DFE634E81F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserDB+TableXiaomiStep.m"; sourceTree = "<group>"; };
+		DFE634E91F18A7AC0049FF30 /* UserDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDB.h; sourceTree = "<group>"; };
+		DFE634EA1F18A7AC0049FF30 /* UserDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDB.m; sourceTree = "<group>"; };
+		DFE634FF1F18A8510049FF30 /* SqliteDBStore+TableVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+TableVersion.h"; sourceTree = "<group>"; };
+		DFE635001F18A8510049FF30 /* SqliteDBStore+TableVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+TableVersion.m"; sourceTree = "<group>"; };
+		DFE635011F18A8510049FF30 /* SqliteDBStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteDBStore.h; sourceTree = "<group>"; };
+		DFE635021F18A8510049FF30 /* SqliteDBStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteDBStore.m; sourceTree = "<group>"; };
 		DFE751101DE6BE0C00BAB23F /* UIButton+EdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EdgeInsets.h"; sourceTree = "<group>"; };
 		DFE751111DE6BE0C00BAB23F /* UIButton+EdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EdgeInsets.m"; sourceTree = "<group>"; };
 		DFE751141DE6C0D700BAB23F /* testButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testButtonVC.h; sourceTree = "<group>"; };
@@ -376,19 +384,11 @@
 		DFED53941DA9DE4E001D558A /* OpenURLTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenURLTestVC.h; sourceTree = "<group>"; };
 		DFED53951DA9DE4E001D558A /* OpenURLTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenURLTestVC.m; sourceTree = "<group>"; };
 		DFED53961DA9DE4E001D558A /* OpenURLTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenURLTestVC.xib; sourceTree = "<group>"; };
-		DFF16E151F175411003DE57F /* CommonDB+TableStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CommonDB+TableStep.h"; sourceTree = "<group>"; };
-		DFF16E161F175411003DE57F /* CommonDB+TableStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CommonDB+TableStep.m"; sourceTree = "<group>"; };
 		DFF16E181F176E8B003DE57F /* t_step.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_step.sql; sourceTree = "<group>"; };
 		DFF16E1A1F176EA8003DE57F /* t_version.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_version.sql; sourceTree = "<group>"; };
 		DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_xiaomiStep.sql; sourceTree = "<group>"; };
 		DFF52FF71D01977300BAC9F3 /* NSAttributedString+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Usual.h"; sourceTree = "<group>"; };
 		DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Usual.m"; sourceTree = "<group>"; };
-		DFF705911F04C93E00484F17 /* UserDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDB.h; sourceTree = "<group>"; };
-		DFF705921F04C93E00484F17 /* UserDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDB.m; sourceTree = "<group>"; };
-		DFF705941F04C95000484F17 /* CommonDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDB.h; sourceTree = "<group>"; };
-		DFF705951F04C95000484F17 /* CommonDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDB.m; sourceTree = "<group>"; };
-		DFF7AF971F03ABEA00673B76 /* SqliteDBStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteDBStore.h; sourceTree = "<group>"; };
-		DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteDBStore.m; sourceTree = "<group>"; };
 		E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1102,6 +1102,50 @@
 			path = mytodayWidge;
 			sourceTree = "<group>";
 		};
+		DFE634DE1F18A7AC0049FF30 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DFE634E41F18A7AC0049FF30 /* SqlManager.h */,
+				DFE634E51F18A7AC0049FF30 /* SqlManager.m */,
+				DFE634DF1F18A7AC0049FF30 /* CommonDB */,
+				DFE634E61F18A7AC0049FF30 /* UserDB */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DFE634DF1F18A7AC0049FF30 /* CommonDB */ = {
+			isa = PBXGroup;
+			children = (
+				DFE634E01F18A7AC0049FF30 /* CommonDB+TableStep.h */,
+				DFE634E11F18A7AC0049FF30 /* CommonDB+TableStep.m */,
+				DFE634E21F18A7AC0049FF30 /* CommonDB.h */,
+				DFE634E31F18A7AC0049FF30 /* CommonDB.m */,
+			);
+			path = CommonDB;
+			sourceTree = "<group>";
+		};
+		DFE634E61F18A7AC0049FF30 /* UserDB */ = {
+			isa = PBXGroup;
+			children = (
+				DFE634E71F18A7AC0049FF30 /* UserDB+TableXiaomiStep.h */,
+				DFE634E81F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m */,
+				DFE634E91F18A7AC0049FF30 /* UserDB.h */,
+				DFE634EA1F18A7AC0049FF30 /* UserDB.m */,
+			);
+			path = UserDB;
+			sourceTree = "<group>";
+		};
+		DFE634FE1F18A8510049FF30 /* BASE */ = {
+			isa = PBXGroup;
+			children = (
+				DFE634FF1F18A8510049FF30 /* SqliteDBStore+TableVersion.h */,
+				DFE635001F18A8510049FF30 /* SqliteDBStore+TableVersion.m */,
+				DFE635011F18A8510049FF30 /* SqliteDBStore.h */,
+				DFE635021F18A8510049FF30 /* SqliteDBStore.m */,
+			);
+			path = BASE;
+			sourceTree = "<group>";
+		};
 		DFE7510C1DE6B5E100BAB23F /* UIButtom */ = {
 			isa = PBXGroup;
 			children = (
@@ -1140,20 +1184,8 @@
 			isa = PBXGroup;
 			children = (
 				DF3285021F05F303002FCE35 /* Sqls */,
-				DFF7AF971F03ABEA00673B76 /* SqliteDBStore.h */,
-				DFF7AF981F03ABEA00673B76 /* SqliteDBStore.m */,
-				DF85BF911F1880F700B1E82D /* SqliteDBStore+TableVersion.h */,
-				DF85BF921F1880F700B1E82D /* SqliteDBStore+TableVersion.m */,
-				DF4521B71F04B9B200A73ED6 /* SqlManager.h */,
-				DF4521B81F04B9B200A73ED6 /* SqlManager.m */,
-				DFF705911F04C93E00484F17 /* UserDB.h */,
-				DFF705921F04C93E00484F17 /* UserDB.m */,
-				DF85BF8E1F18800B00B1E82D /* UserDB+TableXiaomiStep.h */,
-				DF85BF8F1F18800B00B1E82D /* UserDB+TableXiaomiStep.m */,
-				DFF705941F04C95000484F17 /* CommonDB.h */,
-				DFF705951F04C95000484F17 /* CommonDB.m */,
-				DFF16E151F175411003DE57F /* CommonDB+TableStep.h */,
-				DFF16E161F175411003DE57F /* CommonDB+TableStep.m */,
+				DFE634FE1F18A8510049FF30 /* BASE */,
+				DFE634DE1F18A7AC0049FF30 /* Manager */,
 			);
 			path = Sqlite;
 			sourceTree = "<group>";
@@ -1387,10 +1419,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */,
-				DF85BF931F1880F700B1E82D /* SqliteDBStore+TableVersion.m in Sources */,
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */,
 				DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */,
+				DFE634EE1F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
 				DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */,
@@ -1400,7 +1432,6 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */,
 				DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */,
-				DFF705961F04C95000484F17 /* CommonDB.m in Sources */,
 				DFE16EC81ECEEF66008876CD /* RDRiceChatVC.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
@@ -1409,8 +1440,8 @@
 				DF4793B71DC04AB3001CD592 /* KTRFootPrintPhotosAnnotationContentView.m in Sources */,
 				DFC455AA1E34B6FA003E7E80 /* NSData+KKRSA.m in Sources */,
 				DF4793DB1DC04C83001CD592 /* BMKClusterQuadtree.m in Sources */,
-				DF4521B91F04B9B200A73ED6 /* SqlManager.m in Sources */,
 				DFC455AB1E34B6FA003E7E80 /* NSData+KKSignVerify.m in Sources */,
+				DFE634EB1F18A7AC0049FF30 /* CommonDB+TableStep.m in Sources */,
 				DFB0F5C81D0D3F23006EEFD0 /* LQCFreshView.m in Sources */,
 				DF0AFB721DD0852000AB88CE /* dayCell.m in Sources */,
 				DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */,
@@ -1419,12 +1450,12 @@
 				DFAB6BC31EF26DDC0059D17D /* mytableView.m in Sources */,
 				DF1A8F1E1ECDA756007BA10E /* StepViewController.m in Sources */,
 				DF1A8F191ECDA6C0007BA10E /* RDStepCounter.m in Sources */,
-				DFF16E171F175411003DE57F /* CommonDB+TableStep.m in Sources */,
 				DFB5CA661CF6F1A400A4AF48 /* UIColor+Usual.m in Sources */,
 				DFB474E81DC89F0F0024F77B /* KTRFootprintBottomView.m in Sources */,
 				DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */,
 				DFED53971DA9DE4E001D558A /* OpenURLTestVC.m in Sources */,
 				DF4793DA1DC04C83001CD592 /* BMKClusterManager.m in Sources */,
+				DFE635031F18A8510049FF30 /* SqliteDBStore+TableVersion.m in Sources */,
 				DF2D198C1CFBEAF40032083A /* AppDelegate.m in Sources */,
 				DF39049B1EE2A1AF00933F81 /* DMGPlayerCell.m in Sources */,
 				DF1A8F101ECD913C007BA10E /* AppleStepCounter.m in Sources */,
@@ -1446,24 +1477,25 @@
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
 				DFB656F61DFEB0C0004BCE36 /* UIView+SeparateLine.m in Sources */,
+				DFE634ED1F18A7AC0049FF30 /* SqlManager.m in Sources */,
 				DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */,
 				DF4793D91DC04C83001CD592 /* BMKClusterItem.m in Sources */,
 				DF4793E01DC04D33001CD592 /* BaiduMapClusterTest.m in Sources */,
+				DFE634EF1F18A7AC0049FF30 /* UserDB.m in Sources */,
 				DFE751171DE6C0D700BAB23F /* testButtonVC.m in Sources */,
 				DF0D65501EE6B05300026773 /* searchVC.m in Sources */,
+				DFE635041F18A8510049FF30 /* SqliteDBStore.m in Sources */,
 				DF1A8F131ECD91B8007BA10E /* StepCounter.m in Sources */,
 				DF1A8F161ECDA4E5007BA10E /* RDStepService.m in Sources */,
 				DFD4343A1DCDE8F20049464E /* LQCPhotoBrowseConfigure.m in Sources */,
 				DF0AFB681DD07E8000AB88CE /* TestForCollectionView.m in Sources */,
 				DF4793B01DC04AA8001CD592 /* KTRFootPrintPhotosAnnotationCalculator.m in Sources */,
 				DFB474F21DC8A2620024F77B /* FootprintTestVC.m in Sources */,
+				DFE634EC1F18A7AC0049FF30 /* CommonDB.m in Sources */,
 				DF3904A11EE2A1BD00933F81 /* DMGamePlayVC.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
 				DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */,
-				DF85BF901F18800B00B1E82D /* UserDB+TableXiaomiStep.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
-				DFF7AF991F03ABEA00673B76 /* SqliteDBStore.m in Sources */,
-				DFF705931F04C93E00484F17 /* UserDB.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,
 				DFB5CA6C1CF6FB8400A4AF48 /* NSArray+Usual.m in Sources */,
 				DFBCAC421DCB002000E7601A /* LQCPhotoBrowseController.m in Sources */,
