@@ -14,9 +14,9 @@
 /*12800 第一次创建该表*/
 - (NSString *)tableStep_creatTableStepSql;
 
-- (BOOL)insertOneDay:(RDOneDayStepM *)oneDaySetp;
-
-- (BOOL)updateOneDay:(RDOneDayStepM *)oneDaySetp;
+//- (BOOL)insertOneDay:(RDOneDayStepM *)oneDaySetp;
+//
+//- (BOOL)updateOneDay:(RDOneDayStepM *)oneDaySetp;
 
 //- (RDOneDayStepM *)selected
 

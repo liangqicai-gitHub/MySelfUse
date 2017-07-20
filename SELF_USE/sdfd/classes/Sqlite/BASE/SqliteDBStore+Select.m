@@ -151,6 +151,32 @@ LQCDLog(@"%s error:%@",__FUNCTION__,[db lastErrorMessage]); \
 }
 
 
+- (BOOL)existItemInTable:(NSString *)t
+               condition:(NSDictionary *)condition
+{
+    NSMutableString *sql = [[NSMutableString alloc] init];
+    [sql appendFormat:@"select * from %@ where ",t];
+    NSArray *allfields = [condition allKeys];
+    for (NSInteger i = 0; i < allfields.count; i++) {
+        NSString *field = allfields[i];
+        [sql appendFormat:@"%@ = :%@ ",field,field];
+        if (allfields.count > i + 1){
+            [sql appendFormat:@"and "];
+        }
+    }
+    
+    [sql appendFormat:@"LIMIT 1"];
+    
+    __block NSMutableArray *rs = [NSMutableArray array];
+    
+    [self.queue inDatabase:^(FMDatabase *db) {
+        FMResultSet *set = [db executeQuery:sql withParameterDictionary:condition];
+        SqliteDBStoreSelectRS(set, rs);
+    }];
+    
+    return ![NSArray isEmpty:rs];
+}
+
 
 
 @end

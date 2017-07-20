@@ -106,6 +106,7 @@
 		DFBE717B1DB0E5D100AF9A79 /* iOS8FixedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE71791DB0E5D100AF9A79 /* iOS8FixedCell.xib */; };
 		DFBE717F1DB0EBFC00AF9A79 /* iOS8VariableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */; };
 		DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */; };
+		DFC3C2141F20D043009B67A7 /* SqliteDBStore+delete.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC3C2131F20D043009B67A7 /* SqliteDBStore+delete.m */; };
 		DFC4559D1E34B6B1003E7E80 /* RSAController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4559B1E34B6B1003E7E80 /* RSAController.m */; };
 		DFC4559E1E34B6B1003E7E80 /* RSAController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC4559C1E34B6B1003E7E80 /* RSAController.xib */; };
 		DFC455A81E34B6FA003E7E80 /* CPPRI.p12 in Resources */ = {isa = PBXBuildFile; fileRef = DFC455A01E34B6FA003E7E80 /* CPPRI.p12 */; };
@@ -339,6 +340,8 @@
 		DFBE717C1DB0EBFC00AF9A79 /* iOS8VariableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS8VariableCell.h; sourceTree = "<group>"; };
 		DFBE717D1DB0EBFC00AF9A79 /* iOS8VariableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS8VariableCell.m; sourceTree = "<group>"; };
 		DFBE717E1DB0EBFC00AF9A79 /* iOS8VariableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iOS8VariableCell.xib; sourceTree = "<group>"; };
+		DFC3C2121F20D043009B67A7 /* SqliteDBStore+delete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+delete.h"; sourceTree = "<group>"; };
+		DFC3C2131F20D043009B67A7 /* SqliteDBStore+delete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+delete.m"; sourceTree = "<group>"; };
 		DFC4559A1E34B6B1003E7E80 /* RSAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAController.h; sourceTree = "<group>"; };
 		DFC4559B1E34B6B1003E7E80 /* RSAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAController.m; sourceTree = "<group>"; };
 		DFC4559C1E34B6B1003E7E80 /* RSAController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSAController.xib; sourceTree = "<group>"; };
@@ -1153,10 +1156,12 @@
 				DFE635021F18A8510049FF30 /* SqliteDBStore.m */,
 				DF9A27581F20501A006B2A7D /* SqliteDBStore+insert.h */,
 				DF9A27591F20501A006B2A7D /* SqliteDBStore+insert.m */,
-				DF18889E1F1F7BE800CBB605 /* SqliteDBStore+select.h */,
-				DF18889F1F1F7BE800CBB605 /* SqliteDBStore+select.m */,
+				DFC3C2121F20D043009B67A7 /* SqliteDBStore+delete.h */,
+				DFC3C2131F20D043009B67A7 /* SqliteDBStore+delete.m */,
 				DF9A275B1F2068DB006B2A7D /* SqliteDBStore+update.h */,
 				DF9A275C1F2068DB006B2A7D /* SqliteDBStore+update.m */,
+				DF18889E1F1F7BE800CBB605 /* SqliteDBStore+select.h */,
+				DF18889F1F1F7BE800CBB605 /* SqliteDBStore+select.m */,
 			);
 			path = BASE;
 			sourceTree = "<group>";
@@ -1512,6 +1517,7 @@
 				DFE634EC1F18A7AC0049FF30 /* CommonDB.m in Sources */,
 				DF3904A11EE2A1BD00933F81 /* DMGamePlayVC.m in Sources */,
 				DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */,
+				DFC3C2141F20D043009B67A7 /* SqliteDBStore+delete.m in Sources */,
 				DFA8DF471E24BB3400C57761 /* PeiChartView.m in Sources */,
 				DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */,
 				DF4793BF1DC04AB8001CD592 /* KTRFootPrintPhotosAnnotation.m in Sources */,

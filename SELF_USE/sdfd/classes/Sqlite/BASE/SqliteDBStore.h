@@ -16,6 +16,8 @@
 
 @property (nonatomic,readonly) FMDatabaseQueue *queue;
 
+
+
 - (void)close;
 
 
@@ -25,47 +27,6 @@
 - (NSDictionary *)versionSqlDic;
 
 
-/*Selecte*/
 
-// first or last item 因为按照顺序来，就需要按什么字段排序，所以需要一个列的名称。
-- (NSDictionary *)selectFirstItemInT:(NSString *)tableName
-                              column:(NSString *)column;
-
-- (NSDictionary *)selectLastItemInT:(NSString *)tableName
-                             column:(NSString *)column;
-
-- (NSArray <NSDictionary *>*)selectInT:(NSString *)tableName
-                                fields:(NSArray<NSString *> *)fields
-                             condition:(NSDictionary *)condition
-                           orderFields:(NSArray<NSString *> *)orderFields
-                              orderASC:(BOOL)orderASC
-                                 range:(NSRange)range;
-
-/*Insert*/
-- (BOOL)insertTable:(NSString *)tableName
-           valueDic:(NSDictionary *)valueDic;
-
-
-/*update*/
-- (BOOL)updateTable:(NSString *)tableName
-              value:(NSDictionary *)value
-          condition:(NSDictionary *)condition;
-
-
-/*replace*/
-- (NSString *)replaceSql:(NSString *)tableName
-                valueDic:(NSDictionary *)valueDic;
-
-- (BOOL)replaceTable:(NSString *)tableName
-            valueDic:(NSDictionary *)valueDic;
-
-
-
-//子句
-- (NSString *)fieldsSql:(NSArray<NSString *> *)fields;
-
-- (NSString *)whereSql:(NSDictionary *)condtion;
-
-- (NSString *)valueSql:(NSArray <NSString *> *)keys;
 
 @end

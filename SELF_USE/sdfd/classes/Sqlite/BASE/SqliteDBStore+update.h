@@ -10,6 +10,19 @@
 
 @interface SqliteDBStore (update)
 
-- (BOOL)updateTable:(NSString *)t value:(NSDictionary *)vd condtion:(NSDictionary *)cd;
+/* 
+ update table set pk = :pk, a = :a where pk = :c_pk b = :c_b
+ */
+
+
+/* vd 中请包含 ck字段 */
+- (BOOL)updateTable:(NSString *)t value:(NSDictionary *)vd conditionKey:(NSString *)ck;
+
+- (BOOL)updateTable:(NSString *)t value:(NSDictionary *)vd condition:(NSDictionary *)cd;
+
+/* vd 中请包含 pk字段 */
+- (BOOL)updateOrInsert:(NSString *)t value:(NSDictionary *)vd conditionKey:(NSString *)ck;
+
+- (BOOL)updateOrInsert:(NSString *)t value:(NSDictionary *)vd condtion:(NSDictionary *)cd;
 
 @end

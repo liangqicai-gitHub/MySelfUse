@@ -55,5 +55,7 @@
                                  condition:(NSDictionary *)condition;
 
 
+- (BOOL)existItemInTable:(NSString *)t
+               condition:(NSDictionary *)condition;
 
 @end
