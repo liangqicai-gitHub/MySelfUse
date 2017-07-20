@@ -19,6 +19,7 @@
 		DF0BE2061DEC0C9100A32A6A /* APLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0BE2041DEC0C9100A32A6A /* APLViewController.xib */; };
 		DF0D65501EE6B05300026773 /* searchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D654E1EE6B05300026773 /* searchVC.m */; };
 		DF0D65511EE6B05300026773 /* searchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D654F1EE6B05300026773 /* searchVC.xib */; };
+		DF1888A01F1F7BE800CBB605 /* SqliteDBStore+select.m in Sources */ = {isa = PBXBuildFile; fileRef = DF18889F1F1F7BE800CBB605 /* SqliteDBStore+select.m */; };
 		DF1A8F101ECD913C007BA10E /* AppleStepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */; };
 		DF1A8F131ECD91B8007BA10E /* StepCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F121ECD91B8007BA10E /* StepCounter.m */; };
 		DF1A8F161ECDA4E5007BA10E /* RDStepService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1A8F151ECDA4E5007BA10E /* RDStepService.m */; };
@@ -74,6 +75,8 @@
 		DF85ED871CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED851CFD5F7B00D3FE0C /* DiscoverMainViewControl.xib */; };
 		DF85ED8B1CFD856000D3FE0C /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED8A1CFD856000D3FE0C /* GCDTest.m */; };
 		DF8FBC231D66E78D00E5BDC6 /* UIImage+convenient.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8FBC221D66E78D00E5BDC6 /* UIImage+convenient.m */; };
+		DF9A275A1F20501A006B2A7D /* SqliteDBStore+insert.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A27591F20501A006B2A7D /* SqliteDBStore+insert.m */; };
+		DF9A275D1F2068DB006B2A7D /* SqliteDBStore+update.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A275C1F2068DB006B2A7D /* SqliteDBStore+update.m */; };
 		DFA185441DF550F100D80BFB /* RootTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA185431DF550F100D80BFB /* RootTabbar.m */; };
 		DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA7ACFD1CF5B9FF00BFDB62 /* BaseViewController.m */; };
 		DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA8DF431E24B52500C57761 /* ChartVC.m */; };
@@ -185,6 +188,8 @@
 		DF0D654D1EE6B05300026773 /* searchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchVC.h; sourceTree = "<group>"; };
 		DF0D654E1EE6B05300026773 /* searchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchVC.m; sourceTree = "<group>"; };
 		DF0D654F1EE6B05300026773 /* searchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchVC.xib; sourceTree = "<group>"; };
+		DF18889E1F1F7BE800CBB605 /* SqliteDBStore+select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+select.h"; sourceTree = "<group>"; };
+		DF18889F1F1F7BE800CBB605 /* SqliteDBStore+select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+select.m"; sourceTree = "<group>"; };
 		DF1A8F0E1ECD913C007BA10E /* AppleStepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStepCounter.h; sourceTree = "<group>"; };
 		DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleStepCounter.m; sourceTree = "<group>"; };
 		DF1A8F111ECD91B8007BA10E /* StepCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCounter.h; sourceTree = "<group>"; };
@@ -276,6 +281,10 @@
 		DF85ED8A1CFD856000D3FE0C /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 		DF8FBC211D66E78D00E5BDC6 /* UIImage+convenient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+convenient.h"; sourceTree = "<group>"; };
 		DF8FBC221D66E78D00E5BDC6 /* UIImage+convenient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+convenient.m"; sourceTree = "<group>"; };
+		DF9A27581F20501A006B2A7D /* SqliteDBStore+insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+insert.h"; sourceTree = "<group>"; };
+		DF9A27591F20501A006B2A7D /* SqliteDBStore+insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+insert.m"; sourceTree = "<group>"; };
+		DF9A275B1F2068DB006B2A7D /* SqliteDBStore+update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SqliteDBStore+update.h"; sourceTree = "<group>"; };
+		DF9A275C1F2068DB006B2A7D /* SqliteDBStore+update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SqliteDBStore+update.m"; sourceTree = "<group>"; };
 		DFA185421DF550F100D80BFB /* RootTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabbar.h; sourceTree = "<group>"; };
 		DFA185431DF550F100D80BFB /* RootTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabbar.m; sourceTree = "<group>"; };
 		DFA7ACCE1CF5B1EE00BFDB62 /* sdfd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sdfd.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1142,6 +1151,12 @@
 				DFE635001F18A8510049FF30 /* SqliteDBStore+TableVersion.m */,
 				DFE635011F18A8510049FF30 /* SqliteDBStore.h */,
 				DFE635021F18A8510049FF30 /* SqliteDBStore.m */,
+				DF9A27581F20501A006B2A7D /* SqliteDBStore+insert.h */,
+				DF9A27591F20501A006B2A7D /* SqliteDBStore+insert.m */,
+				DF18889E1F1F7BE800CBB605 /* SqliteDBStore+select.h */,
+				DF18889F1F1F7BE800CBB605 /* SqliteDBStore+select.m */,
+				DF9A275B1F2068DB006B2A7D /* SqliteDBStore+update.h */,
+				DF9A275C1F2068DB006B2A7D /* SqliteDBStore+update.m */,
 			);
 			path = BASE;
 			sourceTree = "<group>";
@@ -1426,6 +1441,7 @@
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
 				DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */,
+				DF9A275A1F20501A006B2A7D /* SqliteDBStore+insert.m in Sources */,
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
 				DFE5D7661F161A2E00F145DF /* HealthKit.m in Sources */,
 				DF2D19A21CFC08A50032083A /* BaseNavigationControl.m in Sources */,
@@ -1473,9 +1489,11 @@
 				DF85ED861CFD5F7B00D3FE0C /* DiscoverMainViewControl.m in Sources */,
 				DFC4559D1E34B6B1003E7E80 /* RSAController.m in Sources */,
 				DFBE717A1DB0E5D100AF9A79 /* iOS8FixedCell.m in Sources */,
+				DF1888A01F1F7BE800CBB605 /* SqliteDBStore+select.m in Sources */,
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
+				DF9A275D1F2068DB006B2A7D /* SqliteDBStore+update.m in Sources */,
 				DFB656F61DFEB0C0004BCE36 /* UIView+SeparateLine.m in Sources */,
 				DFE634ED1F18A7AC0049FF30 /* SqlManager.m in Sources */,
 				DF23E9AD1DCD8554002613D1 /* LQCPhotoBrowseModel.m in Sources */,
