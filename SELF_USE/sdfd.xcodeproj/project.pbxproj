@@ -66,6 +66,7 @@
 		DF5A759B1D9678A100D416F1 /* PullToRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759A1D9678A100D416F1 /* PullToRefresh.xcassets */; };
 		DF5A759D1D96798A00D416F1 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A759C1D96798A00D416F1 /* Common.xcassets */; };
 		DF75F8B81DED6C2A00B53A4E /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */; };
+		DF8047051F21B4E100199A6D /* RDStepCounterFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8047041F21B4E100199A6D /* RDStepCounterFacade.m */; };
 		DF8287DD1DE691F3002C384C /* common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8287DC1DE691F3002C384C /* common.xcassets */; };
 		DF85ED7C1CFD5EF200D3FE0C /* HomeMainControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */; };
 		DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */; };
@@ -268,6 +269,8 @@
 		DF5A759C1D96798A00D416F1 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		DF75F8B61DED6C2A00B53A4E /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
 		DF75F8B71DED6C2A00B53A4E /* HTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPManager.m; sourceTree = "<group>"; };
+		DF8047031F21B4E100199A6D /* RDStepCounterFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStepCounterFacade.h; sourceTree = "<group>"; };
+		DF8047041F21B4E100199A6D /* RDStepCounterFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStepCounterFacade.m; sourceTree = "<group>"; };
 		DF8287DC1DE691F3002C384C /* common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = common.xcassets; sourceTree = "<group>"; };
 		DF85ED791CFD5EF200D3FE0C /* HomeMainControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMainControl.xib; sourceTree = "<group>"; };
 		DF85ED7A1CFD5EF200D3FE0C /* HomeMainControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMainControl.m; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 				DF1A8F0F1ECD913C007BA10E /* AppleStepCounter.m */,
 				DF1A8F171ECDA6C0007BA10E /* RDStepCounter.h */,
 				DF1A8F181ECDA6C0007BA10E /* RDStepCounter.m */,
+				DF8047031F21B4E100199A6D /* RDStepCounterFacade.h */,
+				DF8047041F21B4E100199A6D /* RDStepCounterFacade.m */,
 				DFE5D7641F161A2E00F145DF /* HealthKit.h */,
 				DFE5D7651F161A2E00F145DF /* HealthKit.m */,
 			);
@@ -1498,6 +1503,7 @@
 				DF4793D81DC04C83001CD592 /* BMKClusterAlgorithm.m in Sources */,
 				DFB5CA691CF6FACE00A4AF48 /* NSObject+Usual.m in Sources */,
 				DF2D198E1CFBEB090032083A /* main.m in Sources */,
+				DF8047051F21B4E100199A6D /* RDStepCounterFacade.m in Sources */,
 				DF9A275D1F2068DB006B2A7D /* SqliteDBStore+update.m in Sources */,
 				DFB656F61DFEB0C0004BCE36 /* UIView+SeparateLine.m in Sources */,
 				DFE634ED1F18A7AC0049FF30 /* SqlManager.m in Sources */,

@@ -7,12 +7,15 @@
 //
 
 #import "CommonDB.h"
-#import "RDStepService.h"
+
 
 @interface CommonDB (TableStep)
 
 /*12800 第一次创建该表*/
 - (NSString *)tableStep_creatTableStepSql;
+
+
+- (NSArray <NSDictionary *>*)tableStep_allRecords;
 
 
 /*只保留10天的记录，10天之前的删除.*/

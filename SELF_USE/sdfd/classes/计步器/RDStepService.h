@@ -16,7 +16,6 @@
 @end
 
 
-
 @interface RDOneDayStepM : NSObject
 
 @property (nonatomic,strong) NSDate *date;
@@ -30,8 +29,6 @@ typedef void(^HistoryBlock)(NSArray <RDOneDayStepM *> * historyArr);
 typedef void(^UpdateTodayBlock)(BOOL authorizationFailed,RDOneDayStepM *todayStep,BOOL newDay);
 
 @interface RDStepService : NSObject
-
-@property (nonatomic,strong) NSDate *firstEffectiveDate;
 
 - (void)queryHistoryWithCompleteBlock:(HistoryBlock)completeBlock;
 

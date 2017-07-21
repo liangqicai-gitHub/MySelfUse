@@ -32,6 +32,12 @@
 }
 
 
+- (NSArray <NSDictionary *>*)tableStep_allRecords
+{
+    return [super selectInTable:KTableStepTableName];
+}
+
+
 - (BOOL)tableStep_deleteOldData
 {
     NSDate *date = [NSDate date].startDate;
@@ -60,8 +66,8 @@
 }
 
 /*查询步数*/
-- (NSInteger)tableStep_stepsSinceDate:(NSDate *)sd
-                               toDate:(NSDate *)ed
+- (NSInteger)tableStep_queryStepsSinceDate:(NSDate *)sd
+                                    toDate:(NSDate *)ed
 {
     NSInteger start = KTableStep_PKValue(sd);
     NSInteger end = KTableStep_PKValue(ed);
