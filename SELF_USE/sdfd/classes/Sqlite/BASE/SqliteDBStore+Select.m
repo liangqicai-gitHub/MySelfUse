@@ -70,7 +70,10 @@ LQCDLog(@"%s error:%@",__FUNCTION__,[db lastErrorMessage]); \
         NSDictionary *d = fields[i];
         NSString *key = d.allKeys[0];
         BOOL asc = [d.allValues[0] boolValue];
-        [sql appendFormat:@"%@ %@, ",key,asc ? @"ASC" : @"DESC"];
+        [sql appendFormat:@"%@ %@",key,asc ? @"ASC" : @"DESC"];
+        if (i + 1 < fields.count){
+            [sql appendString:@", "];
+        }
     }
     return sql;
 }

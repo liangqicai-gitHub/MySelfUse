@@ -14,6 +14,8 @@
 @interface SqliteDBStore (delete)
 
 
+- (BOOL)deletWithSql:(NSString *)sql;
+
 
 - (BOOL)deleteTable:(NSString *)t;
 

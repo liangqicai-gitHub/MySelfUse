@@ -11,6 +11,18 @@
 
 @implementation CommonDB
 
+
+- (instancetype)initWithDBPath:(NSString *)DBPath
+                    encryptKey:(NSString *)encryptKey
+{
+    self = [super initWithDBPath:DBPath encryptKey:encryptKey];
+    if (self){
+        [self tableStep_deleteOldData];
+    }
+    return self;
+}
+
+
 - (NSDictionary *)versionSqlDic
 {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
@@ -19,10 +31,14 @@
     [dic setObject:[self tableStep_creatTableStepSql]
             forKey:@"12800"];
     
-    /**/
-    
     return dic;
 }
+
+
+
+
+
+
 
 
 

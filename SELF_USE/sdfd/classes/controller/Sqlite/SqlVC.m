@@ -11,6 +11,9 @@
 #import "CommonDB+TableStep.h"
 #import "NSDate+RDLogic.h"
 #import "SqliteDBStore+update.h"
+#import "SqliteDBStore+insert.h"
+#import "SqliteDBStore+select.h"
+#import "SqliteDBStore+delete.h"
 
 
 @interface SqlVC ()
@@ -31,36 +34,24 @@
 
 - (void)initVars
 {
-//    [[SqlManager sharedInstance] switchOverToUser:@"a"];
-//    
-//    RDOneDayStepM *m = [[RDOneDayStepM alloc] init];
-//    m.date = [NSDate date].startDate;
-//    
-//    [[SqlManager sharedInstance].commonDB insertOneDay:m];
-//    
-//    NSMutableArray *arr = [NSMutableArray array];
-//    for (NSInteger i = 0; i < 23; i++) {
-//        RDHourStepM *hm = [[RDHourStepM alloc] init];
-//        hm.hour = i;
-//        hm.steps = 100 * i;
-//        [arr addObject:hm];
-//    }
-//    m.hourSteps = arr;
-//    
-//    [[SqlManager sharedInstance].commonDB updateOneDay:m];
-//    
-//    
-//    [[SqlManager sharedInstance].commonDB updateOneDay:m];
     
 }
 
 - (void)initViews
 {
-    NSDictionary *d = @{@"pk" : @(1),
-                        @"ss" : @"dsfsdf",
-                        @"bb" : @"sdfdf"
+    NSDictionary *d = @{@"date" : @(111),
+                        @"step" : @(223)
                         };
-    [[SqlManager sharedInstance].commonDB updateTable:@"tt" value:d condition:d];
+    
+    
+    
+    BOOL a = [[SqlManager sharedInstance].commonDB updateTable:@"step" value:d condition:@{@"step" : @(223)}];
+    if (a){
+        LQCDLog(@"yes");
+    }else{
+        LQCDLog(@"NO");
+    }
+    
     
 }
 

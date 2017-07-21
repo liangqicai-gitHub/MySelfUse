@@ -7,9 +7,16 @@
 //
 
 #import "CommonDB+TableStep.h"
+#import "SqliteDBStore+insert.h"
+#import "SqliteDBStore+select.h"
+#import "SqliteDBStore+delete.h"
+#import "NSDate+RDLogic.h"
 #define KTableStepTableName @"step"
 #define KTableStepColumnPK @"date"
-#define KTableStepColumnHourPerfix @"hour"
+#define KTableStepColumnStep @"step"
+
+#define KTableStep_PKValue(v) (NSInteger)(v.timeIntervalSince1970 * 1000.0)
+
 
 @implementation CommonDB (TableStep)
 
@@ -25,46 +32,57 @@
 }
 
 
-//- (BOOL)insertOneDay:(RDOneDayStepM *)oneDaySetp
-//{
-//    NSDictionary *d = [self convertRDOneDayStepM:oneDaySetp];
-//    if (!d) return NO;
-//    
-//    return [self insertTable:KTableStepTableName
-//                    valueDic:d];
-//}
-//
-//
-//- (BOOL)updateOneDay:(RDOneDayStepM *)oneDaySetp
-//{
-//    NSDictionary *vd = [self convertRDOneDayStepM:oneDaySetp];
-//    if (!vd) return NO;
-//    
-//    NSDictionary *cd = @{KTableStepColumnPK:@((NSInteger)oneDaySetp.date.timeIntervalSince1970)};
-//    return [self updateTable:KTableStepTableName
-//                       value:vd
-//                   condition:cd];
-//}
-//
-//
-//- (NSDictionary *)convertRDOneDayStepM:(RDOneDayStepM *)m
-//{
-//    if (![m isKindOfClass:[RDOneDayStepM class]]) return nil;
-//    
-//    NSMutableDictionary *d = [NSMutableDictionary dictionary];
-//    [d setObject:@((NSInteger)m.date.timeIntervalSince1970) forKey:KTableStepColumnPK];
-//    
-//    if (![NSArray isEmpty:m.hourSteps]){
-//        for (RDHourStepM *one in m.hourSteps) {
-//            NSInteger hour = one.hour;
-//            if (hour < 0 || hour >23) continue;
-//            NSString *columnName = Str_F(@"%@%zd",KTableStepColumnHourPerfix,hour);
-//            [d setObject:@(one.steps) forKey:columnName];
-//        }
-//    }
-//    
-//    return d;
-//}
+- (BOOL)tableStep_deleteOldData
+{
+    NSDate *date = [NSDate date].startDate;
+    date = [NSDate dateWithTimeInterval:-3600 * 240 sinceDate:date];
+    NSInteger ts = KTableStep_PKValue(date);
+    
+    NSString *sql = Str_F(@"delete from %@ where %@ < %zd",
+                          KTableStepTableName,
+                          KTableStepColumnPK,
+                          ts
+                          );
+    
+    return [super deletWithSql:sql];
+}
+
+
+
+- (BOOL)tableStep_insertRecordWithDate:(NSDate *)date
+                                 steps:(NSInteger)step
+{
+    
+    NSDictionary *vd = @{KTableStepColumnPK : @(KTableStep_PKValue(date)),
+                         KTableStepColumnStep : @(step)
+                         };
+    return [super insertOrReplace:KTableStepTableName value:vd];
+}
+
+/*查询步数*/
+- (NSInteger)tableStep_stepsSinceDate:(NSDate *)sd
+                               toDate:(NSDate *)ed
+{
+    NSInteger start = KTableStep_PKValue(sd);
+    NSInteger end = KTableStep_PKValue(ed);
+    
+    NSString *sql = Str_F(@"select sum(%@) as totalStep from %@ where %@ >= %zd and %@ <= %zd",
+                          KTableStepColumnStep,
+                          KTableStepTableName,
+                          KTableStepColumnPK,
+                          start,
+                          KTableStepColumnPK,
+                          end);
+    
+    NSDictionary *rs = [[super selectWithSql:sql] safeObjAtIndex:0];
+    if (rs){
+        return [rs[@"totalStep"] integerValue];
+    }
+    
+    return 0;
+}
+
+
 
 
 @end

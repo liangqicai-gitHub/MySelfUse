@@ -17,7 +17,6 @@
 @property (nonatomic,readonly) FMDatabaseQueue *queue;
 
 
-
 - (void)close;
 
 

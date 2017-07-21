@@ -8,21 +8,28 @@
 
 #import "SqliteDBStore+delete.h"
 
+#define SqliteDBStoreDelete_Return(sql,cd)  __block BOOL ret = NO; \
+[self.queue inDatabase:^(FMDatabase *db) { \
+    ret = [db executeUpdate:sql withParameterDictionary:cd]; \
+    if (!ret){ \
+        LQCDLog(@"%s error:%@",__FUNCTION__,[db lastErrorMessage]); \
+    } \
+}]; \
+return ret;
+
+
 @implementation SqliteDBStore (delete)
+
+- (BOOL)deletWithSql:(NSString *)sql
+{
+    SqliteDBStoreDelete_Return(sql,nil)
+}
+
 
 - (BOOL)deleteTable:(NSString *)t
 {
     NSString *sql = Str_F(@"delete from %@",t);
-    
-    __block BOOL ret = NO;
-    [self.queue inDatabase:^(FMDatabase *db) {
-        ret = [db executeUpdate:sql];
-        if (!ret){
-            LQCDLog(@"%s error:%@",__FUNCTION__,[db lastErrorMessage]);
-        }
-    }];
-    
-    return ret;
+    SqliteDBStoreDelete_Return(sql,nil)
 }
 
 
@@ -39,15 +46,7 @@
         }
     }
     
-    __block BOOL ret = NO;
-    [self.queue inDatabase:^(FMDatabase *db) {
-        ret = [db executeUpdate:sql withParameterDictionary:cd];
-        if (!ret){
-            LQCDLog(@"%s error:%@",__FUNCTION__,[db lastErrorMessage]);
-        }
-    }];
-    
-    return ret;
+    SqliteDBStoreDelete_Return(sql,cd)
 }
 
 

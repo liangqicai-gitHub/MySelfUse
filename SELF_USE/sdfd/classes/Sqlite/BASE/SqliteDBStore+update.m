@@ -66,7 +66,7 @@
     for (NSInteger i = 0; i < cfCount; i++) {
         NSString *field = allCF[i];
         [sql appendFormat:@"%@ = :%@%@",field,kSqliteDBStoreUpdate_cpk,field];
-        if (i + 1 < fieldsCount){
+        if (i + 1 < cfCount){
             [sql appendFormat:@" and "];
         }else{
             [sql appendFormat:@" "];

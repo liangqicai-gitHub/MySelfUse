@@ -7,6 +7,8 @@
 //
 
 #import "SqliteDBStore+TableVersion.h"
+#import "SqliteDBStore+select.h"
+#import "SqliteDBStore+insert.h"
 
 #define KVersionTableName @"version"
 #define KVersionColumnPK @"id"
@@ -32,8 +34,8 @@
     if ([NSString isEmptyString:versionSql]) return NO;
     
     NSInteger lastVersion = 0;
-    NSDictionary *versionD = [self selectLastItemInT:KVersionTableName
-                                              column:KVersionColumnPK];
+    NSDictionary *versionD = [self lastItemInTable:KVersionTableName
+                                      orderByField:KVersionColumnPK];
     if (versionD){
         lastVersion = [versionD[KVersionColumnPK] integerValue];
     }
@@ -41,16 +43,19 @@
     
     __block BOOL success = YES;
     
-    NSDictionary *changeVersionDic = @{KVersionColumnPK:@(version),
-                                       KVersionColumnSql:versionSql
-                                       };
-    
-    NSString *changeVersionSql = [self replaceSql:KVersionTableName valueDic:changeVersionDic];
+
+    NSString *changeVersionSql = Str_F(@"insert or replace into %@ values (:%@, :%@)",
+                                       KVersionTableName,
+                                       KVersionColumnPK,
+                                       KVersionColumnSql
+                                       );
     
     [self.queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
         BOOL one = [db executeUpdate:versionSql];
         BOOL two = [db executeUpdate:changeVersionSql
-             withParameterDictionary:changeVersionDic];
+             withParameterDictionary:@{KVersionColumnPK  : @(version),
+                                       KVersionColumnSql : versionSql
+                                       }];
         success = one && two;
         if (!success){
             *rollback = YES;
