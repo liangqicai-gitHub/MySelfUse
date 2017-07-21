@@ -37,7 +37,10 @@
 @interface RDStepService ()
 {
     StepCounter *_counter;
-    NSDate *_currentDate;
+    NSDate *_lastUpdateTime;
+    RDOneDayStepM *_currentDayStepM;
+    dispatch_semaphore_t _queryOneDaysema;// 第一次查询 一天的详细信息，还未完成时，不允许第二次开始
+    dispatch_queue_t _queryOneDayQueue;
 }
 
 @end
@@ -47,7 +50,29 @@
 @implementation RDStepService
 
 
+#define OneByOneQuery_oneDayDetail_begin dispatch_async(_queryOneDayQueue, ^{ \
+dispatch_semaphore_wait(_queryOneDaysema, DISPATCH_TIME_FOREVER);
+
+
+#define OneByOneQuery_oneDayDetail_end    dispatch_semaphore_signal(_queryOneDaysema); \
+});
+
 #pragma mark - init
+
++ (void)beginRecordData
+{
+    if (![self useAppleStepCounter]){
+        [RDStepCounter sharedStepCounter];
+    }
+}
+
+
++ (BOOL)useAppleStepCounter
+{
+    BOOL useAppleStepCounter = [CMPedometer isStepCountingAvailable];
+//    useAppleStepCounter = NO;
+    return useAppleStepCounter;
+}
 
 - (instancetype)init
 {
@@ -61,15 +86,20 @@
 
 - (void)initVars
 {
-    BOOL useAppleStepCounter = [CMPedometer isStepCountingAvailable];
-    useAppleStepCounter = NO;
-    if (useAppleStepCounter){
+    if ([RDStepService useAppleStepCounter]){
         _counter = [[AppleStepCounter alloc] init];
     }else{
-        _counter = [[RDStepCounter alloc] init];
+        _counter = [RDStepCounter sharedStepCounter];
     }
     
-    _currentDate = [NSDate date].startDate;
+    _queryOneDaysema = dispatch_semaphore_create(1);
+    _queryOneDayQueue = dispatch_queue_create("_queryOneDayQueue", DISPATCH_QUEUE_SERIAL);
+    
+    
+    _lastUpdateTime = [NSDate date];
+    _currentDayStepM = [[RDOneDayStepM alloc] init];
+    _currentDayStepM.date = _lastUpdateTime.startDate;
+    _currentDayStepM.hourSteps = [NSMutableArray array];
 }
 
 
@@ -79,9 +109,8 @@
 {
     dispatch_group_t group = dispatch_group_create();
     
-    NSDate *now = [NSDate date];
-    NSInteger week = now.weekday;
-    NSDate *firstStart = [now weekStartDate];
+    NSInteger week = _lastUpdateTime.weekday;
+    NSDate *firstStart = [_lastUpdateTime weekStartDate];
   
     NSTimeInterval oneDay = 3600.0 * 24.0;
     
@@ -116,73 +145,81 @@
 
 
 
-- (void )queryOneDay:(NSDate *)oneDay completeBlock:(void (^)(RDOneDayStepM *oneDay))completeBlock
+- (void)startWithHandler:(UpdateTodayBlock)handler
 {
-    RDOneDayStepM *rs = [[RDOneDayStepM alloc] init];
-    rs.date = oneDay.startDate;
-    rs.hourSteps = [NSMutableArray array];
+    [self callBackUpdateLastUpdateDate:[NSDate date]
+                               handler:handler];
     
-    //查询每个小时
-    dispatch_group_t group = dispatch_group_create();
-    NSTimeInterval oneHour = 3600.0;
-    
-    NSLock *lock = [[NSLock alloc] init];
-    
-    NSInteger count = oneDay.hour;
-    if (count == 0) count = 24;
-    
-    for (NSInteger i = 0; i < count + 1; i++) {
-        dispatch_group_enter(group);
-        NSDate *end = [NSDate dateWithTimeInterval:oneHour * (i + 1) sinceDate:rs.date];
-        NSDate *start = [NSDate dateWithTimeInterval:oneHour * i sinceDate:rs.date];
-        
-        RDHourStepM *hourM = [[RDHourStepM alloc] init];
-        [_counter queryFormDate:start endDate:end handler:^(NSInteger steps) {
-            hourM.hour = start.hour;
-            hourM.steps = steps;
-            [lock lock];
-            [rs.hourSteps addObject:hourM];
-            [lock unlock];
-            
-            dispatch_group_leave(group);
-        }];
-    }
-    
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        [rs.hourSteps sortUsingComparator:^NSComparisonResult(RDHourStepM *obj1, RDHourStepM *obj2) {
-            return [@(obj1.hour) compare:@(obj2.hour)];
-        }];
-        
-        if (completeBlock) completeBlock(rs);
-    });
+    __weak typeof(self) weakSelf = self;
+    [_counter startUpdateWithHandler:^(NSDate *endDate) {
+        if (!weakSelf) return ;
+        [weakSelf callBackUpdateLastUpdateDate:endDate handler:handler];
+    } fail:^{
+        dispatch_main_async_safe(^{
+            if (handler) handler(YES,nil,NO);
+        });
+    }];
 }
 
 
-
-
-- (void)startWithHandler:(UpdateTodayBlock)handler
+- (void)callBackUpdateLastUpdateDate:(NSDate *)lastDate
+                             handler:(UpdateTodayBlock)handler
 {
-    [self queryOneDay:_currentDate completeBlock:^(RDOneDayStepM *oneDay) {
-        if (handler) handler(NO,oneDay,YES);
-    }];
+    OneByOneQuery_oneDayDetail_begin
     
-    [_counter startUpdateWithHandler:^(NSDate *endDate){
-        
-        if ([_currentDate earlyThanDate:endDate.startDate]){//到了第二天了
-            _currentDate = endDate.startDate;
-            [self queryOneDay:endDate completeBlock:^(RDOneDayStepM *oneDay) {
-                if (handler) handler(NO,oneDay,YES);
-            }];
+    BOOL secondDay = NO;
+    if ([_lastUpdateTime earlyThanDate:lastDate.startDate]){
+        //第二天
+        _lastUpdateTime = lastDate;
+        [_currentDayStepM.hourSteps removeAllObjects];
+        _currentDayStepM.date = _lastUpdateTime.startDate;
+        secondDay = YES;
+    }
+    
+    //开始查询今天的详细数据
+    NSInteger lastH = _lastUpdateTime.hour;
+    NSInteger queryedH = 0;
+    if (![NSArray isEmpty:_currentDayStepM.hourSteps]){
+        queryedH = [_currentDayStepM.hourSteps.lastObject hour];
+    }
+    
+    dispatch_semaphore_t eachHourS = dispatch_semaphore_create(1);
+    
+    NSDate *oneDayMorning = _currentDayStepM.date;
+    for (NSInteger i = queryedH; i < lastH + 1; i++) {
+        dispatch_semaphore_wait(eachHourS, DISPATCH_TIME_FOREVER);
+        NSDate *start = [NSDate dateWithTimeInterval:3600 * i  sinceDate:oneDayMorning];
+        NSDate *end = [NSDate dateWithTimeInterval:3600 sinceDate:start];
+    
+        [_counter queryFormDate:start endDate:end handler:^(NSInteger steps) {
+    
+            NSInteger count = _currentDayStepM.hourSteps.count;
+            if (i < count){//修改
+                RDHourStepM *hourM = _currentDayStepM.hourSteps[i];
+                hourM.steps = steps;
+            }else{//添加
+                RDHourStepM *hourM = [[RDHourStepM alloc] init];
+                hourM.hour = start.hour;
+                hourM.steps = steps;
+                [_currentDayStepM.hourSteps addObject:hourM];
+            }
             
-        }else{
-            [self queryOneDay:endDate completeBlock:^(RDOneDayStepM *oneDay) {
-                if (handler) handler(NO,oneDay,NO);
-            }];
-        }
-        
-    } fail:^{
-        if (handler) handler(YES,nil,NO);
-    }];
+            dispatch_semaphore_signal(eachHourS);
+        }];
+    }
+    
+    NSInteger d = dispatch_semaphore_wait(eachHourS, DISPATCH_TIME_FOREVER);
+    LQCDLog(@"aaaaaaa  %zd",d);
+    NSInteger x = dispatch_semaphore_signal(eachHourS);
+    LQCDLog(@"bbbbbbb  %zd",x);
+    
+    
+    
+    dispatch_main_async_safe(^{
+        if (handler) handler(NO,_currentDayStepM,YES);
+    });
+    
+    OneByOneQuery_oneDayDetail_end
 }
 
 

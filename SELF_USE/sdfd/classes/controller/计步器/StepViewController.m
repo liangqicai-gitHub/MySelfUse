@@ -29,32 +29,31 @@
         _service = [[RDStepService alloc] init];
     }
     
-    NSArray *rs = [[SqlManager sharedInstance].commonDB tableStep_allRecords];
+ 
     
-    LQCDLog(@"dsfadsfa %@",rs);
-    
-//    [_service startWithHandler:^(BOOL authorizationFailed,
-//                                 RDOneDayStepM *todayStep,
-//                                 BOOL newDay) {
-//        
-//        if (todayStep){
-//            dispatch_main_async_safe((^{
-//                
-//                NSMutableString *rs = [[NSMutableString alloc] initWithFormat:@"%zd",todayStep.date.day];
-//                [todayStep.hourSteps enumerateObjectsUsingBlock:^(RDHourStepM * _Nonnull obj,
-//                                                                  NSUInteger idx,
-//                                                                  BOOL * _Nonnull stop) {
-//                    [rs appendString:obj.description];
-//                }];
-//                
-//                _aa.text = rs;
-//                
-//            }));
-//        }
-//        
-//        
-//        
-//    }];
+    [_service startWithHandler:^(BOOL authorizationFailed,
+                                 RDOneDayStepM *todayStep,
+                                 BOOL newDay) {
+        
+        if (todayStep){
+            dispatch_main_async_safe((^{
+                
+                NSMutableString *rs = [[NSMutableString alloc] initWithFormat:@"%zd",todayStep.date.day];
+                [todayStep.hourSteps enumerateObjectsUsingBlock:^(RDHourStepM * _Nonnull obj,
+                                                                  NSUInteger idx,
+                                                                  BOOL * _Nonnull stop) {
+                    [rs appendString:obj.description];
+                }];
+                
+                LQCDLog(@"startWithHandler %zd",todayStep.hourSteps.count);
+                _aa.text = rs;
+                
+            }));
+        }
+        
+        
+        
+    }];
     
    
     
@@ -64,6 +63,14 @@
 //    }];
 }
 
+
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [_service stop];
+}
 
 
 @end

@@ -18,15 +18,28 @@
     CMMotionManager *_motionManager;
     CLLocationManager *_locationManager;
     NSOperationQueue *_operationQueue;
-    dispatch_queue_t _calculateQueue;
+    dispatch_queue_t _calculateQueue;//串行的
 }
 
 @property (nonatomic, strong) RDStepCounterFacade *stepCounterFacade;
+@property (nonatomic,copy) UpdateBlock upblock;
 
 @end
 
 
 @implementation RDStepCounter
+
+
++ (instancetype)sharedStepCounter
+{
+    static RDStepCounter *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[RDStepCounter alloc] init];
+    });
+    return instance;
+}
+
 
 - (instancetype)init
 {
@@ -79,11 +92,40 @@
                         z:motion.userAcceleration.z];
     
     if (oneStepMore){
-        LQCDLog(@"heheda");
         CommonDB *db = [SqlManager sharedInstance].commonDB;
         [db tableStep_insertRecordWithDate:[NSDate date] steps:1];
+        
+        dispatch_async(_calculateQueue, ^{
+            if (self.upblock) self.upblock([NSDate date]);
+        });
     }
 }
 
+
+- (void)queryFormDate:(NSDate *)startDate
+              endDate:(NSDate *)endDate
+              handler:(QueryBlock)handler
+{
+    CommonDB *db = [SqlManager sharedInstance].commonDB;
+    NSInteger steps = [db tableStep_queryStepsSinceDate:startDate toDate:endDate];
+    if (handler) handler(steps);
+}
+
+- (void)startUpdateWithHandler:(UpdateBlock)handler
+                          fail:(AuthorizationFailedBlock)fail
+{
+    [self stopUpdate];
+    
+    dispatch_async(_calculateQueue, ^{
+        self.upblock = handler;
+    });
+}
+
+- (void)stopUpdate
+{
+    dispatch_async(_calculateQueue, ^{
+        self.upblock = nil;
+    });
+}
 
 @end

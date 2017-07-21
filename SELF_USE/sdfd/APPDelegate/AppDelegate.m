@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "RootControl.h"
 #import "BaseNavigationControl.h"
+#import "RDStepService.h"
 
 @interface AppDelegate ()
 {
@@ -24,6 +25,9 @@
 {
     [self setUpBaiDuMap];
     [self configerRoot];
+    
+    [RDStepService beginRecordData];
+    
     return YES;
 }
 

@@ -10,8 +10,8 @@
 
 @interface RDStepCounter : StepCounter
 
-
-
+//因为这个是需要持续计步，所以请使用单例
++ (instancetype)sharedStepCounter;
 
 
 @end

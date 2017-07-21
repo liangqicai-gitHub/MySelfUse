@@ -66,7 +66,6 @@
          if (!error && handler){
              NSDate *end = pedometerData.endDate;
              handler(end);
-             LQCDLog(@"updateted end %@",end);
          }
          
          if (error && error.code == CMErrorMotionActivityNotAuthorized && fail){

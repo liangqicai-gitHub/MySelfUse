@@ -293,4 +293,9 @@ pushAnimation:(BOOL)animation
 }
 
 
+- (void)dealloc
+{
+    LQCDLog(@"_____%s  ",__FUNCTION__);
+}
+
 @end

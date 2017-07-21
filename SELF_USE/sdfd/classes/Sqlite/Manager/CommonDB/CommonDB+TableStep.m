@@ -82,7 +82,10 @@
     
     NSDictionary *rs = [[super selectWithSql:sql] safeObjAtIndex:0];
     if (rs){
-        return [rs[@"totalStep"] integerValue];
+        id steps = rs[@"totalStep"];
+        if ([steps isKindOfClass:[NSNumber class]]){
+            return [steps integerValue];
+        }
     }
     
     return 0;
