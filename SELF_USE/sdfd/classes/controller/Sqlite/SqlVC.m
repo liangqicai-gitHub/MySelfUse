@@ -52,7 +52,6 @@
         LQCDLog(@"NO");
     }
     
-    
 }
 
 @end

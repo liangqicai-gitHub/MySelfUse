@@ -39,6 +39,15 @@
         _search.transform = CGAffineTransformIdentity;
         _btn.transform = CGAffineTransformIdentity;
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(haha) name:UIApplicationSignificantTimeChangeNotification object:nil];
+    
+}
+
+- (void)haha{
+
+    LQCDLog(@"hahahah");
+    
 }
 
 

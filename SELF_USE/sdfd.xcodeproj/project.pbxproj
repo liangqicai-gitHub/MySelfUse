@@ -142,6 +142,8 @@
 		DFF16E191F176E8B003DE57F /* t_step.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E181F176E8B003DE57F /* t_step.sql */; };
 		DFF16E1B1F176EA8003DE57F /* t_version.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E1A1F176EA8003DE57F /* t_version.sql */; };
 		DFF16E1D1F177588003DE57F /* t_xiaomiStep.sql in Resources */ = {isa = PBXBuildFile; fileRef = DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */; };
+		DFF4B5411F3879B400F6249F /* MenuItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF4B5401F3879B400F6249F /* MenuItemVC.m */; };
+		DFF4B5441F3879D700F6249F /* myTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF4B5431F3879D700F6249F /* myTextView.m */; };
 		DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */; };
 /* End PBXBuildFile section */
 
@@ -402,6 +404,10 @@
 		DFF16E181F176E8B003DE57F /* t_step.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_step.sql; sourceTree = "<group>"; };
 		DFF16E1A1F176EA8003DE57F /* t_version.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_version.sql; sourceTree = "<group>"; };
 		DFF16E1C1F177588003DE57F /* t_xiaomiStep.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t_xiaomiStep.sql; sourceTree = "<group>"; };
+		DFF4B53F1F3879B400F6249F /* MenuItemVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemVC.h; sourceTree = "<group>"; };
+		DFF4B5401F3879B400F6249F /* MenuItemVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemVC.m; sourceTree = "<group>"; };
+		DFF4B5421F3879D700F6249F /* myTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTextView.h; sourceTree = "<group>"; };
+		DFF4B5431F3879D700F6249F /* myTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTextView.m; sourceTree = "<group>"; };
 		DFF52FF71D01977300BAC9F3 /* NSAttributedString+Usual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Usual.h"; sourceTree = "<group>"; };
 		DFF52FF81D01977300BAC9F3 /* NSAttributedString+Usual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Usual.m"; sourceTree = "<group>"; };
 		E5E83CFD2C4C5DD8615DD686 /* Pods-mytodayWidge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mytodayWidge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mytodayWidge/Pods-mytodayWidge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -904,6 +910,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFF4B53E1F38799800F6249F /* menuItem */,
 				DF4521AE1F04B87100A73ED6 /* Sqlite */,
 				DFAB6BBD1EF267B90059D17D /* multiScrlloer */,
 				DF0D654C1EE6B03C00026773 /* 搜索 */,
@@ -1205,6 +1212,17 @@
 			path = "测试跳转系统设置";
 			sourceTree = "<group>";
 		};
+		DFF4B53E1F38799800F6249F /* menuItem */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4B53F1F3879B400F6249F /* MenuItemVC.h */,
+				DFF4B5401F3879B400F6249F /* MenuItemVC.m */,
+				DFF4B5421F3879D700F6249F /* myTextView.h */,
+				DFF4B5431F3879D700F6249F /* myTextView.m */,
+			);
+			path = menuItem;
+			sourceTree = "<group>";
+		};
 		DFF7AF961F039BD400673B76 /* Sqlite */ = {
 			isa = PBXGroup;
 			children = (
@@ -1444,6 +1462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD25AAF1E07EDE7003DDD0C /* SocketClient.m in Sources */,
+				DFF4B5441F3879D700F6249F /* myTextView.m in Sources */,
 				DFF52FF91D01977300BAC9F3 /* NSAttributedString+Usual.m in Sources */,
 				DF39049D1EE2A1AF00933F81 /* DMGPlayerView.m in Sources */,
 				DF4437F91DEBD5ED0085FB79 /* RKImageBrowser.m in Sources */,
@@ -1458,6 +1477,7 @@
 				DFB118671D02C89F005BD91F /* SynAFSessionManager.m in Sources */,
 				DFC455AC1E34B6FA003E7E80 /* SecKeyTools.m in Sources */,
 				DFA8DF441E24B52500C57761 /* ChartVC.m in Sources */,
+				DFF4B5411F3879B400F6249F /* MenuItemVC.m in Sources */,
 				DFE16EC81ECEEF66008876CD /* RDRiceChatVC.m in Sources */,
 				DFA7ACFE1CF5B9FF00BFDB62 /* BaseViewController.m in Sources */,
 				DF562A9D1DF7BAE300153F97 /* RootBarItem.m in Sources */,
