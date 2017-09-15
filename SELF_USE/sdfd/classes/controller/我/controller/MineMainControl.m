@@ -29,6 +29,8 @@
 
 
 
+
+
 @interface MineMainControl ()
 
 
@@ -180,6 +182,10 @@
 }
 
 
+- (IBAction)xiangce:(UIButton *)sender
+{
+   
+}
 
 
 @end

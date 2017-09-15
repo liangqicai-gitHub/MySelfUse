@@ -10,4 +10,6 @@
 
 @interface RDSendMessageInputView : UIView
 
+
+
 @end

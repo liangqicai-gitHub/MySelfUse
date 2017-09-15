@@ -24,6 +24,8 @@
 #define DeviceHeight [UIScreen mainScreen].bounds.size.height
 
 
+#define KImg(a) [UIImage imageNamed:a]
+
 //pods 引入的第三方库
 #import <Masonry/Masonry.h>
 #import "AFNetworking.h"

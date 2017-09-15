@@ -125,6 +125,9 @@
 		DFE355031DAA1AA90023432B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE355011DAA1AA90023432B /* MainInterface.storyboard */; };
 		DFE355071DAA1AA90023432B /* mytodayWidge.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFE354FA1DAA1AA90023432B /* mytodayWidge.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DFE5914E1ECE91BF004363C3 /* NSDate+RDLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */; };
+		DFE5CA281F3DA30E009118C1 /* emojiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5CA271F3DA30E009118C1 /* emojiVC.m */; };
+		DFE5CA2B1F3DA426009118C1 /* RDSendMessageInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5CA2A1F3DA426009118C1 /* RDSendMessageInputView.m */; };
+		DFE5CA2D1F3DA491009118C1 /* InputView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE5CA2C1F3DA491009118C1 /* InputView.xcassets */; };
 		DFE5D7661F161A2E00F145DF /* HealthKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5D7651F161A2E00F145DF /* HealthKit.m */; };
 		DFE5D7691F16219400F145DF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE5D7681F16219400F145DF /* HealthKit.framework */; };
 		DFE634EB1F18A7AC0049FF30 /* CommonDB+TableStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE634E11F18A7AC0049FF30 /* CommonDB+TableStep.m */; };
@@ -375,6 +378,11 @@
 		DFE355041DAA1AA90023432B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFE5914C1ECE91BF004363C3 /* NSDate+RDLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RDLogic.h"; sourceTree = "<group>"; };
 		DFE5914D1ECE91BF004363C3 /* NSDate+RDLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RDLogic.m"; sourceTree = "<group>"; };
+		DFE5CA261F3DA30E009118C1 /* emojiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emojiVC.h; sourceTree = "<group>"; };
+		DFE5CA271F3DA30E009118C1 /* emojiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = emojiVC.m; sourceTree = "<group>"; };
+		DFE5CA291F3DA426009118C1 /* RDSendMessageInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSendMessageInputView.h; sourceTree = "<group>"; };
+		DFE5CA2A1F3DA426009118C1 /* RDSendMessageInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSendMessageInputView.m; sourceTree = "<group>"; };
+		DFE5CA2C1F3DA491009118C1 /* InputView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InputView.xcassets; sourceTree = "<group>"; };
 		DFE5D7641F161A2E00F145DF /* HealthKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKit.h; sourceTree = "<group>"; };
 		DFE5D7651F161A2E00F145DF /* HealthKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthKit.m; sourceTree = "<group>"; };
 		DFE5D7671F16219400F145DF /* sdfd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sdfd.entitlements; sourceTree = "<group>"; };
@@ -910,6 +918,7 @@
 		DFA7ACF91CF5B96B00BFDB62 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DFE5CA251F3DA2E2009118C1 /* 键盘啊 */,
 				DFF4B53E1F38799800F6249F /* menuItem */,
 				DF4521AE1F04B87100A73ED6 /* Sqlite */,
 				DFAB6BBD1EF267B90059D17D /* multiScrlloer */,
@@ -1124,6 +1133,18 @@
 				DFE355041DAA1AA90023432B /* Info.plist */,
 			);
 			path = mytodayWidge;
+			sourceTree = "<group>";
+		};
+		DFE5CA251F3DA2E2009118C1 /* 键盘啊 */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5CA261F3DA30E009118C1 /* emojiVC.h */,
+				DFE5CA271F3DA30E009118C1 /* emojiVC.m */,
+				DFE5CA291F3DA426009118C1 /* RDSendMessageInputView.h */,
+				DFE5CA2A1F3DA426009118C1 /* RDSendMessageInputView.m */,
+				DFE5CA2C1F3DA491009118C1 /* InputView.xcassets */,
+			);
+			path = "键盘啊";
 			sourceTree = "<group>";
 		};
 		DFE634DE1F18A7AC0049FF30 /* Manager */ = {
@@ -1359,6 +1380,7 @@
 				DF0BE2061DEC0C9100A32A6A /* APLViewController.xib in Resources */,
 				DFBE71801DB0EBFC00AF9A79 /* iOS8VariableCell.xib in Resources */,
 				DF2D199B1CFBED590032083A /* Assets.xcassets in Resources */,
+				DFE5CA2D1F3DA491009118C1 /* InputView.xcassets in Resources */,
 				DFC455A81E34B6FA003E7E80 /* CPPRI.p12 in Resources */,
 				DF4793E11DC04D33001CD592 /* BaiduMapClusterTest.xib in Resources */,
 				DFC455A91E34B6FA003E7E80 /* CPPUB.cer in Resources */,
@@ -1469,6 +1491,7 @@
 				DFE634EE1F18A7AC0049FF30 /* UserDB+TableXiaomiStep.m in Sources */,
 				DF2D19A61CFC2E2A0032083A /* RootControl.m in Sources */,
 				DFB5CA631CF6EC4400A4AF48 /* NSString+Usual.m in Sources */,
+				DFE5CA281F3DA30E009118C1 /* emojiVC.m in Sources */,
 				DF2ED3111DC4B05E00DEDE68 /* LandscapePlayerController.m in Sources */,
 				DF9A275A1F20501A006B2A7D /* SqliteDBStore+insert.m in Sources */,
 				DF85ED7D1CFD5EF200D3FE0C /* HomeMainControl.m in Sources */,
@@ -1493,6 +1516,7 @@
 				DFE751121DE6BE0C00BAB23F /* UIButton+EdgeInsets.m in Sources */,
 				DFAB6BC01EF267E60059D17D /* MultiScroller.m in Sources */,
 				DF4793C01DC04AB8001CD592 /* KTRFootPrintPhotosModel.m in Sources */,
+				DFE5CA2B1F3DA426009118C1 /* RDSendMessageInputView.m in Sources */,
 				DFAB6BC31EF26DDC0059D17D /* mytableView.m in Sources */,
 				DF1A8F1E1ECDA756007BA10E /* StepViewController.m in Sources */,
 				DF1A8F191ECDA6C0007BA10E /* RDStepCounter.m in Sources */,

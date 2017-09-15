@@ -36,6 +36,7 @@ PODS:
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
+  - ZLPhotoBrowser (2.2.4)
 
 DEPENDENCIES:
   - AFNetworking
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - Reveal-iOS-SDK
   - SDWebImage
   - YYKit
+  - ZLPhotoBrowser
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -63,7 +65,8 @@ SPEC CHECKSUMS:
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
   SQLCipher: 43d12c0eb9c57fb438749618fc3ce0065509a559
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZLPhotoBrowser: 5444c31d5900e305eff145a57ab13ff89daed413
 
-PODFILE CHECKSUM: 4989c7d92d92b6142e983fab11edb18559c5d9d1
+PODFILE CHECKSUM: f999f2996598a3ddf2541e7efe0b208e99b1ef59
 
 COCOAPODS: 1.2.1

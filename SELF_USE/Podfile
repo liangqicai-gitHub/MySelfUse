@@ -12,6 +12,7 @@ pod 'YYKit'
 pod 'BaiduMapKit'
 pod 'JHChart'
 pod 'FMDB/SQLCipher'             #数据库
+pod 'ZLPhotoBrowser'
 
 
 #   Debug模式下使用的一些辅助库,只在开发Target上面使用
